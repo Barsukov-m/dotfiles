@@ -1,0 +1,15 @@
+[$Version]
+update_info=kscreenlocker.upd:0.1-autolock
+
+[Daemon]
+LockGrace=10
+Timeout=10
+
+[Greeter]
+Theme=org.kde.breeze.desktop
+
+[Greeter][LnF][General]
+showMediaControls=false
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=file:///home/michael/MEGA/Docs/Wallpapers/wallhaven-dgmvyo.jpg
