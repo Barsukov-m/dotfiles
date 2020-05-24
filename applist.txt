@@ -1,0 +1,19 @@
+Chromium
+Firefox Dev
+GIMP
+Geary
+Gweenview
+Inkscape
+KeePassX
+LibreOffice
+MEGA
+OBS
+Okular
+Papirus
+SpeedCrunch
+Terminal + Photonica (theme) + zsh
+Timer
+Timeshift
+VLC
+Visual Studio Code
+qBitTorrent
