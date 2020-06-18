@@ -1,2 +1,1 @@
-snap install chromium code firefox gimp gnome-clocks inkscape libreoffice okular telegram-desktop vlc
-flatpak install flathub org.gnome.Geary
+Snap: code gimp gnome-clocks inkscape libreoffice telegram-desktop thunderbird timeshift
