@@ -1,0 +1,8 @@
+# === Gnome === #
+sudo apt install -y tilix zsh neofetch dconf-cli uuid-runtime
+sudo update-alternatives --config x-terminal-emulator
+
+# Terminal theming
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+cd /tmp && git clone https://github.com/Mayccoll/Gogh.git gogh && cd gogh/themes
+./dracula.sh
