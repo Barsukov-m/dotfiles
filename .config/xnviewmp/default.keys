@@ -1,0 +1,325 @@
+[Browser]
+cmd_addFavorite 
+cmd_apg 
+cmd_app 
+cmd_archive 
+cmd_banner Ctrl+B
+cmd_batchRename 
+cmd_capture 
+cmd_catFocus F9
+cmd_category 
+cmd_changeTime 
+cmd_clean 
+cmd_compare Shift+C
+cmd_contactSheet 
+cmd_convert Ctrl+U
+cmd_copyFile Ctrl+C
+cmd_copyFileTo Alt+C
+cmd_copyFilename 
+cmd_copyImage Ctrl+Shift+C
+cmd_copyName 
+cmd_copyPathname 
+cmd_createMulti 
+cmd_cutFile Ctrl+X
+cmd_deleteFile 
+cmd_editGPS 
+cmd_editIPTC Ctrl+I
+cmd_editXMP 
+cmd_email 
+cmd_emptyImage 
+cmd_exifThumb90L 
+cmd_exifThumb90R 
+cmd_exifThumbRebuild 
+cmd_export Ctrl+Alt+S
+cmd_fileFirst 
+cmd_fileLast 
+cmd_fileNext 
+cmd_filePrevious 
+cmd_fitAll /
+cmd_fitHeight 
+cmd_fitLarge 
+cmd_fitNone 
+cmd_fitSmall 
+cmd_fitWH 
+cmd_fitWidth 
+cmd_ftp 
+cmd_fullscreen F11
+cmd_googleEarth 
+cmd_googleMap 
+cmd_historyNext 
+cmd_historyPrev 
+cmd_import 
+cmd_importClipboard Ctrl+Shift+V
+cmd_infoShow 
+cmd_infoUseTabs 
+cmd_invertSelection 
+cmd_join 
+cmd_label0 Ctrl+Shift+0
+cmd_label0m 
+cmd_label1 Ctrl+Shift+1
+cmd_label1m 
+cmd_label2 Ctrl+Shift+2
+cmd_label2m 
+cmd_label3 Ctrl+Shift+3
+cmd_label3m 
+cmd_label4 Ctrl+Shift+4
+cmd_label4m 
+cmd_label5 Ctrl+Shift+5
+cmd_label5m 
+cmd_lhflip 
+cmd_listing Shift+L
+cmd_lockZoom 
+cmd_lresetExif 
+cmd_lrotate180 
+cmd_lrotate270 Ctrl+Shift+L
+cmd_lrotate90 Ctrl+Shift+R
+cmd_lrotateExif 
+cmd_lvflip 
+cmd_moveFileTo Alt+M
+cmd_new 
+cmd_newFolder F7
+cmd_open Ctrl+O
+cmd_openAll 
+cmd_openContainer Ctrl+O
+cmd_openExplorer 
+cmd_openFile 
+cmd_openFilelist 
+cmd_pageFirst 
+cmd_pageLast 
+cmd_pageNext 
+cmd_pagePrevious 
+cmd_pasteFile Ctrl+V
+cmd_previewAsTab 
+cmd_print Ctrl+P
+cmd_properties Alt+Enter
+cmd_quickFilter Ctrl+Y
+cmd_rating0 Ctrl+0
+cmd_rating0m 
+cmd_rating1 Ctrl+1
+cmd_rating1m 
+cmd_rating2 Ctrl+2
+cmd_rating2m 
+cmd_rating3 Ctrl+3
+cmd_rating3m 
+cmd_rating4 Ctrl+4
+cmd_rating4m 
+cmd_rating5 Ctrl+5
+cmd_rating5m 
+cmd_realSize Ctrl+/
+cmd_rebuildThumb 
+cmd_refreshThumb F5
+cmd_removeAllCat 
+cmd_removeCat 
+cmd_renameFile F2
+cmd_rotate180 
+cmd_rotate270 
+cmd_rotate90 
+cmd_search Ctrl+F
+cmd_selectAll Ctrl+A
+cmd_selectAllFiles 
+cmd_selectAllImages 
+cmd_selectNone 
+cmd_selectTagged 
+cmd_setComment Ctrl+D
+cmd_showAlpha M
+cmd_showBlue 
+cmd_showGreen 
+cmd_showHeader 
+cmd_showPaneTitle 
+cmd_showPreview 
+cmd_showRecursive 
+cmd_showRed 
+cmd_similar 
+cmd_slideshow 
+cmd_split 
+cmd_stop 
+cmd_tag Ctrl+T
+cmd_tagClearAll 
+cmd_tagInvert 
+cmd_tagShow 
+cmd_tagShowFiles Shift+T
+cmd_thumbsView 
+cmd_tiled 
+cmd_transfer 
+cmd_treeShow 
+cmd_treeVTabs 
+cmd_untag 
+cmd_untagAll 
+cmd_upFolder Backspace
+cmd_updateDB 
+cmd_updateFiles 
+cmd_useAlpha Ctrl+H
+cmd_useSmallToolbar 
+cmd_useStatusbar Ctrl+Shift+B
+cmd_useToolbar Ctrl+Shift+T
+cmd_useTranspIndex Ctrl+Alt+H
+cmd_wallpaper 
+cmd_webUpload 
+cmd_zoom100 *
+cmd_zoomIn +
+cmd_zoomOut -
+
+[View]
+cmd_align 
+cmd_animation 
+cmd_autoContrast Ctrl+Alt+O
+cmd_autoDeskew 
+cmd_autoLevels Ctrl+Alt+L
+cmd_browse 
+cmd_canvasResize Shift+C
+cmd_capture 
+cmd_changeDepth 
+cmd_clear 
+cmd_close 
+cmd_colorsCount 
+cmd_conbright 
+cmd_convert Ctrl+U
+cmd_copy Ctrl+C
+cmd_copyFileTo Alt+C
+cmd_copyFilename 
+cmd_copyImage Ctrl+Shift+C
+cmd_copyName 
+cmd_copyPathname 
+cmd_crop Shift+X
+cmd_curves 
+cmd_cut Ctrl+X
+cmd_deleteFile 
+cmd_desaturate 
+cmd_editCmap 
+cmd_editIPTC Ctrl+I
+cmd_editXMP 
+cmd_emptyImage 
+cmd_enhance Shift+E
+cmd_equalize 
+cmd_export Ctrl+Alt+S
+cmd_fileFirst Home
+cmd_fileLast End
+cmd_fileNext PgDown
+cmd_filePrevious PgUp
+cmd_fileRandom 
+cmd_film 
+cmd_filter 
+cmd_fitAll /
+cmd_fitHeight 
+cmd_fitLarge 
+cmd_fitNone 
+cmd_fitSmall 
+cmd_fitWH 
+cmd_fitWidth 
+cmd_fitWindow 
+cmd_flipH Shift+H
+cmd_flipV Shift+V
+cmd_formatSettings 
+cmd_fullscreen F11
+cmd_googleEarth 
+cmd_googleMap 
+cmd_goxy 
+cmd_gridSettings 
+cmd_importClipboard Ctrl+Shift+V
+cmd_label0 Ctrl+Shift+0
+cmd_label0m 
+cmd_label1 Ctrl+Shift+1
+cmd_label1m 
+cmd_label2 Ctrl+Shift+2
+cmd_label2m 
+cmd_label3 Ctrl+Shift+3
+cmd_label3m 
+cmd_label4 Ctrl+Shift+4
+cmd_label4m 
+cmd_label5 Ctrl+Shift+5
+cmd_label5m 
+cmd_lcrop 
+cmd_levels L
+cmd_lhflip 
+cmd_lockZoom 
+cmd_logLut 
+cmd_lresetExif 
+cmd_lrotate180 
+cmd_lrotate270 Ctrl+Shift+L
+cmd_lrotate90 Ctrl+Shift+R
+cmd_lrotateExif 
+cmd_lvflip 
+cmd_moveFileTo Alt+M
+cmd_negative 
+cmd_new 
+cmd_normalize 
+cmd_normalize2 
+cmd_offset 
+cmd_oldCamera 
+cmd_opBackColor 
+cmd_open Ctrl+O
+cmd_openExplorer 
+cmd_pageFirst Shift+Home
+cmd_pageLast Shift+End
+cmd_pageNext Shift+PgDown
+cmd_pagePrevious Shift+PgUp
+cmd_paint Shift+D
+cmd_paste Ctrl+V
+cmd_posterize 
+cmd_print Ctrl+P
+cmd_printSelection 
+cmd_properties Alt+Return
+cmd_quickSlide Pause
+cmd_rating0 Ctrl+0
+cmd_rating0m 
+cmd_rating1 Ctrl+1
+cmd_rating1m 
+cmd_rating2 Ctrl+2
+cmd_rating2m 
+cmd_rating3 Ctrl+3
+cmd_rating3m 
+cmd_rating4 Ctrl+4
+cmd_rating4m 
+cmd_rating5 Ctrl+5
+cmd_rating5m 
+cmd_realSize Ctrl+/
+cmd_redeyes 
+cmd_redo Ctrl+Y
+cmd_reload Ctrl+R
+cmd_removeAlpha 
+cmd_renameFile F2
+cmd_resize Shift+S
+cmd_rotate 
+cmd_rotate180 
+cmd_rotate270 Shift+L
+cmd_rotate90 Shift+R
+cmd_save Ctrl+S
+cmd_saveAll 
+cmd_saveSelection 
+cmd_saveas Ctrl+Shift+S
+cmd_selectAll Ctrl+A
+cmd_selectNone 
+cmd_selectionFree A
+cmd_selectionImage D
+cmd_selectionRestore C
+cmd_selectionSave 
+cmd_selectionSwap W
+cmd_sepia 
+cmd_setComment Ctrl+D
+cmd_shadow 
+cmd_showAlpha M
+cmd_showBlue 
+cmd_showColorInfo Ctrl+Shift+I
+cmd_showGreen 
+cmd_showGrid 
+cmd_showHisto H
+cmd_showInfo I
+cmd_showRed 
+cmd_showRegion 
+cmd_snapshot 
+cmd_solarize 
+cmd_spotlight 
+cmd_tag Ctrl+T
+cmd_undo Ctrl+Z
+cmd_untag 
+cmd_useAlpha Ctrl+H
+cmd_useSmooth 
+cmd_useStatusbar Ctrl+Shift+B
+cmd_useToolbar Ctrl+Shift+T
+cmd_useTranspIndex Ctrl+Alt+H
+cmd_userFilter 
+cmd_vignetting 
+cmd_wallpaper 
+cmd_zoom100 *
+cmd_zoomIn +
+cmd_zoomOut -
