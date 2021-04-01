@@ -9,10 +9,5 @@ catimg
 mlocate
 npm
 tmux
+  tmux source-file ~/.tmux.conf \;
 zsh
-
-
-# Terminal theming
-sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-cd /tmp && git clone https://github.com/Mayccoll/Gogh.git gogh && cd gogh/themes
-./dracula.sh
