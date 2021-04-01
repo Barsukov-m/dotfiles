@@ -1,6 +1,16 @@
-# === Gnome === #
-sudo apt install -y tilix zsh neofetch dconf-cli uuid-runtime
+### Gnome Setup ###
+
 sudo update-alternatives --config x-terminal-emulator
+
+### Packages ###
+
+alacritty
+catimg
+mlocate
+npm
+tmux
+zsh
+
 
 # Terminal theming
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
