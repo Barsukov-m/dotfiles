@@ -1,13 +1,31 @@
 ### Gnome Setup ###
+git config --global user.email "barsukov.m23@gmail.com"
+git config --global user.name "Michael Barsukov"
 
-sudo update-alternatives --config x-terminal-emulator
+Ubuntu-based:
+  sudo update-alternatives --config x-terminal-emulator
+Manjaro:
+sudo pacman -Rdd manjaro-gdm-theme manjaro-gdm-branding
+
 
 ### Packages ###
-
 alacritty
 catimg
+flatpak
+gnome-session gnome-shell
+make gcc python python2 base-devel
 mlocate
 npm
+snapd (Arch)
+  git clone https://aur.archlinux.org/snapd.git && cd snapd && makepkg -si
+  sudo systemctl enable --now snapd.socket && sudo ln -s /var/lib/snapd/snap /snap
+code
+  sudo snap install code-insiders --classic
+telegram-desktop
 tmux
   tmux source-file ~/.tmux.conf \;
+w3m
 zsh
+
+# Oh-My-ZSH
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
