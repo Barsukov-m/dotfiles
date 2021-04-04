@@ -4,18 +4,31 @@ git config --global user.name "Michael Barsukov"
 
 Ubuntu-based:
   sudo update-alternatives --config x-terminal-emulator
+
 Manjaro:
 sudo pacman -Rdd manjaro-gdm-theme manjaro-gdm-branding
+
+# Fonts
+Intf: Noto Sans R        10
+Docs: Times New Roman    10
+Mono: Saarasa Mono CL R  10
+WinT: Noto Sans R        10
+
+Hinting: Full
+Antialiasing: Standard
+
 
 
 ### Packages ###
 alacritty
 catimg
+cmatrix
 flatpak
 gnome-session gnome-shell
 make gcc python python2 base-devel
 mlocate
 npm
+ranger
 snapd (Arch)
   git clone https://aur.archlinux.org/snapd.git && cd snapd && makepkg -si
   sudo systemctl enable --now snapd.socket && sudo ln -s /var/lib/snapd/snap /snap
@@ -24,6 +37,7 @@ code
 telegram-desktop
 tmux
   tmux source-file ~/.tmux.conf \;
+vim
 w3m
 zsh
 
