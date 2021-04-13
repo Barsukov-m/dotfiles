@@ -2,13 +2,7 @@
 git config --global user.email "barsukov.m23@gmail.com"
 git config --global user.name "Michael Barsukov"
 
-Ubuntu-based:
-  sudo update-alternatives --config x-terminal-emulator
-
-Manjaro:
-sudo pacman -Rdd manjaro-gdm-theme manjaro-gdm-branding
-
-# Fonts
+# System Fonts
 Intf: Noto Sans R        10
 Docs: Times New Roman    10
 Mono: Saarasa Mono CL R  10
@@ -17,29 +11,46 @@ WinT: Noto Sans R        10
 Hinting: Full
 Antialiasing: Standard
 
+# Ubuntu-based
+  sudo update-alternatives --config x-terminal-emulator
+
+# Manjaro
+  sudo pacman -Rdd manjaro-gdm-theme manjaro-gdm-branding
 
 
 ### Packages ###
 alacritty
 catimg
 cmatrix
+code
+  sudo snap install code-insiders --classic
 flatpak
 gnome-session gnome-shell
 make gcc python python2 base-devel
 mlocate
 npm
-ranger
+ranger (or nnn)
 snapd (Arch)
   git clone https://aur.archlinux.org/snapd.git && cd snapd && makepkg -si
   sudo systemctl enable --now snapd.socket && sudo ln -s /var/lib/snapd/snap /snap
-code
-  sudo snap install code-insiders --classic
 telegram-desktop
+trash-cli
 tmux
   tmux source-file ~/.tmux.conf \;
+ueberzug
+  pip3 install ueberzug
 vim
 w3m
 zsh
+
+# Fonts
+fonts-noto
+ms-fonts (Arch):
+  AUR: ttf-ms-fonts
+ms-fonts (Ubuntu):
+  sudo add-apt-repository multiverse
+  ttf-mscorefonts-installer
+  sudo fc-cache -f -v
 
 # Oh-My-ZSH
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"

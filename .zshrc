@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/michael/.oh-my-zsh"
+export VISUAL=vim
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -90,18 +91,16 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-if [ -z "$TMUX" ]; then                                                                                                                                                                                                                                                                                                                                                     
-    tmux new-session -t 0 \; set-option destroy-unattached || tmux new-session -s 0                                                                                                                                                                                                                                                                                          
+if [ -z "$TMUX" ]; then 
+    tmux new-session -t 0 \; set-option destroy-unattached || tmux new-session -s 
 fi
 
 # ALIAS
 alias alist="cat ~/.zshrc | grep 'alias '"
 alias up="sudo apt update && sudo apt upgrade -y && flatpak update -y && sudo apt autoremove -y && sudo updatedb"
 alias upx="sudo apt update && sudo apt upgrade -y && flatpak update -y && sudo apt autoremove -y && sudo updatedb && exit"
-alias doc="cd ~/Documents"
 alias u="cd ~/Documents/university"
-alias fl="cd ~/Documents/front-end"
-alias ascii="more ~/.local/share/txt/ASCII"
 alias p="python3"
-alias t="code ~/.local/share/txt/todo.md"
 
+alias pipes="bash ~/.local/share/misc/pipes.sh"
+alias ascii="less ~/.local/share/misc/ascii"

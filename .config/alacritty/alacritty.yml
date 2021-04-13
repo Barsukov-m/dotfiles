@@ -19,7 +19,7 @@ window:
   dynamic_padding: true
 
   dimensions:
-    columns: 130
+    columns: 120
     lines: 30
 
   # Window decorations
@@ -55,13 +55,13 @@ scrolling:
 
 font:
   normal:
-    family: "Sarasa Mono CL"
+    family: "Iosevka Nerd Font"
     style: Regular
   bold:
-    family: "Sarasa Mono CL"
+    family: "Iosevka Nerd Font"
     style: Bold
   italic:
-    family: "Sarasa Mono CL"
+    family: "Iosevka Nerd Font"
     style: Italic
   size: 12
 
@@ -72,30 +72,30 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '#263238'
-    foreground: '#eeffff'
+    background: '#2E3440'
+    foreground: '#D8DEE9'
 
   # Normal colors
   normal:
-    black: '#000000' # Arbitrary
-    red: '#e53935'
-    green: '#91b859'
-    yellow: '#ffb62c'
-    blue: '#6182b8'
-    magenta: '#ff5370' # Dark pink of the original material theme
-    cyan: '#39adb5'
-    white: '#a0a0a0' # Arbitrary
+    black: '#3B4252'
+    red: '#BF616A'
+    green: '#A3BE8C'
+    yellow: '#EBCB8B'
+    blue: '#81A1C1'
+    magenta: '#B48EAD'
+    cyan: '#88C0D0'
+    white: '#E5E9F0'
 
   # Bright colors
   bright:
-    black: '#4e4e4e' # Arbitrary
-    red: '#ff5370'
-    green: '#c3e88d'
-    yellow: '#ffcb6b'
-    blue: '#82aaff'
-    magenta: '#f07178' # Pink of the original material theme
-    cyan: '#89ddff'
-    white: '#ffffff' # Arbitrary
+    black: '#4C566A'
+    red: '#BF616A'
+    green: '#A3BE8C'
+    yellow: '#EBCB8B'
+    blue: '#81A1C1'
+    magenta: '#B48EAD'
+    cyan: '#8FBCBB'
+    white: '#ECEFF4'
 
 mouse:
   # Click settings

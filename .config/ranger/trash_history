@@ -1,0 +1,18 @@
+trashed 'somefile'        from_dir /tmp/test
+trashed 'somefile'        from_dir /tmp/test
+         untrashed /tmp/test/somefile
+trashed 'somefile'        from_dir /tmp/test
+         untrashed /tmp/test/somefile
+trashed 'somefile'        from_dir /tmp/test
+trashed 'ТА_РР1_БС04_Барсуков (1).pdf'        from_dir /home/michael/Downloads
+trashed 'ТА_РР1_БС04_Барсуков.pdf'        from_dir /home/michael/Downloads
+trashed 'Untitled Diagram.png'        from_dir /home/michael/Downloads
+trashed 'Untitled Diagram(1).png'        from_dir /home/michael/Downloads
+trashed 'file' 'fileeee' 'files'        from_dir /tmp
+trashed 'file' 'fileeee' 'files'        from_dir /home/michael/.config/alacritty
+trashed 'testfolder'        from_dir /home/michael/.config/alacritty
+trashed 'alacritty.yml'        from_dir /home/michael/Documents/system/.config/alacritty
+trashed 'txt'        from_dir /home/michael/Documents/system/.local/share/misc
+trashed 'todo.md'        from_dir /home/michael/.local/share/txt
+trashed 'txt'        from_dir /home/michael/.local/share
+trashed '.zshrc'        from_dir /home/michael/Documents/system
