@@ -20,6 +20,7 @@ Antialiasing: Standard
 
 ### Packages ###
 alacritty
+bluez (Arch)
 catimg
 cmatrix
 code
@@ -29,12 +30,9 @@ gnome-session gnome-shell
 make gcc python python2 base-devel
 mlocate
 npm
+python-pip
 ranger (or nnn)
-snapd (Arch)
-  git clone https://aur.archlinux.org/snapd.git && cd snapd && makepkg -si
-  sudo systemctl enable --now snapd.socket && sudo ln -s /var/lib/snapd/snap /snap
 telegram-desktop
-trash-cli
 tmux
   tmux source-file ~/.tmux.conf \;
 ueberzug
