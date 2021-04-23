@@ -97,10 +97,13 @@ fi
 
 # ALIAS
 alias alist="cat ~/.zshrc | grep 'alias '"
-alias up="sudo apt update && sudo apt upgrade -y && flatpak update -y && sudo apt autoremove -y && sudo updatedb"
-alias upx="sudo apt update && sudo apt upgrade -y && flatpak update -y && sudo apt autoremove -y && sudo updatedb && exit"
+# alias up="sudo apt update && sudo apt upgrade -y && flatpak update -y && sudo apt autoremove -y && sudo updatedb"
+# alias upx="sudo apt update && sudo apt upgrade -y && flatpak update -y && sudo apt autoremove -y && sudo updatedb && exit"
+alias up="sudo pacman -Syu && flatpak update -y && sudo updatedb"
+alias upx="up && exit"
 alias u="cd ~/Documents/university"
 alias p="python3"
-
+alias nf="neofetch"
 alias pipes="bash ~/.local/share/misc/pipes.sh"
 alias ascii="less ~/.local/share/misc/ascii"
+alias inet="ping archlinux.org"
