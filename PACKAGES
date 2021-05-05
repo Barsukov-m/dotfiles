@@ -1,0 +1,31 @@
+make cmake gcc python python2 python-pip tk base-devel
+
+alacritty
+  tmux
+    tmux source-file ~/.tmux.conf \;
+  vim
+  w3m
+  zsh
+bluez (Arch)
+catimg
+cmatrix
+code
+ffmpeg
+flameshot
+flatpak
+  gimp
+gnome-session
+  gnome-shell
+i3-gaps
+  feh
+  picom
+mlocate
+npm
+ranger (github)
+  ueberzug
+    pip3 install ueberzug
+redshift
+telegram-desktop
+vlc
+zathura zathura-pdf-poppler
+

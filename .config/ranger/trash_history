@@ -1,18 +1,16 @@
-trashed 'somefile'        from_dir /tmp/test
-trashed 'somefile'        from_dir /tmp/test
-         untrashed /tmp/test/somefile
-trashed 'somefile'        from_dir /tmp/test
-         untrashed /tmp/test/somefile
-trashed 'somefile'        from_dir /tmp/test
-trashed 'ТА_РР1_БС04_Барсуков (1).pdf'        from_dir /home/michael/Downloads
-trashed 'ТА_РР1_БС04_Барсуков.pdf'        from_dir /home/michael/Downloads
-trashed 'Untitled Diagram.png'        from_dir /home/michael/Downloads
-trashed 'Untitled Diagram(1).png'        from_dir /home/michael/Downloads
-trashed 'file' 'fileeee' 'files'        from_dir /tmp
-trashed 'file' 'fileeee' 'files'        from_dir /home/michael/.config/alacritty
-trashed 'testfolder'        from_dir /home/michael/.config/alacritty
-trashed 'alacritty.yml'        from_dir /home/michael/Documents/system/.config/alacritty
-trashed 'txt'        from_dir /home/michael/Documents/system/.local/share/misc
-trashed 'todo.md'        from_dir /home/michael/.local/share/txt
-trashed 'txt'        from_dir /home/michael/.local/share
-trashed '.zshrc'        from_dir /home/michael/Documents/system
+trashed '2-1 Визначення опору провідника за допомогою моста Уітстона_Rev.pptx'        from_dir /home/michael/Downloads
+trashed '683-Текст статті-682-1-10-20151106.pdf'        from_dir /home/michael/Downloads
+trashed 'Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg'        from_dir /home/michael/Downloads
+trashed '.viminfo.tmp' '.viminfq.tmp' '.viminfr.tmp' '.viminfs.tmp' '.viminft.tmp' '.viminfu.tmp' '.viminfv.tmp' '.viminfw.tmp' '.viminfx.tmp' '.viminfy.tmp' '.viminfz.tmp'        from_dir /home/michael
+trashed 'Screenshot from 2021-04-03 17-52-00.png'        from_dir /home/michael/Pictures
+trashed 'Screenshot from 2021-05-04 11-59-00.png'        from_dir /home/michael/Pictures
+trashed 'Screenshot_20210504_123204.png'        from_dir /home/michael
+trashed 'Screenshot_20210504_122039.png'        from_dir /home/michael
+trashed 'Screenshot_20210504_122007.png'        from_dir /home/michael
+trashed '2021-05-04-120940_465x117_scrot.png'        from_dir /home/michael
+trashed '2021-05-04-120925_667x359_scrot.png'        from_dir /home/michael
+trashed 'Screenshot_20210504_124516.png'        from_dir /home/michael
+trashed 'Screenshot_20210504_123511.png'        from_dir /home/michael
+trashed 'Brave-Browser'        from_dir /home/michael/.cache/BraveSoftware
+trashed '.bluetoothctl_history'        from_dir /home/michael/.cache
+trashed 'misc'        from_dir /home/michael/Documents/dotfiles/.local/share

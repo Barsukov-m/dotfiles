@@ -1,0 +1,40 @@
+# Manjaro desktop
+sudo pacman -Rdd manjaro-gdm-theme manjaro-gdm-branding
+logout
+cd /usr/share/gnome-shell
+sudo mv gnome-shell-theme.gresource gnome-shell-theme.gresource.manjaro
+sudo mv gnome-shell-theme.gresource.old gnome-shell-theme.gresource
+reboot
+
+
+# Fonts
+Intf: Noto Sans R			10
+Docs: Times New Roman		10
+Mono: Iosevka R				10
+WinT: Noto Sans R			10
+---
+Hinting: Full
+Antialiasing: Standard
+---
+Rendering:
+  https://wiki.manjaro.org/index.php?title=Improve_Font_Rendering
+fonts-noto
+ms-fonts (APT):
+  sudo add-apt-repository multiverse
+  ttf-mscorefonts-installer
+  sudo fc-cache -f -v
+ms-fonts (AUR):
+  ttf-ms-fonts
+
+
+# Default terminal
+  sudo update-alternatives --config x-terminal-emulator
+
+
+# Oh-My-ZSH
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
+
+# Git
+git config --global user.email "barsukov.m23@gmail.com"
+git config --global user.name "Michael Barsukov"

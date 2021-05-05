@@ -1,7 +1,0 @@
-1. sudo pacman -Rdd manjaro-gdm-theme
-2. logout
-
-1. cd /usr/share/gnome-shell
-2. sudo mv gnome-shell-theme.gresource gnome-shell-theme.gresource.manjaro
-3. sudo mv gnome-shell-theme.gresource.old gnome-shell-theme.gresource
-4. logout
