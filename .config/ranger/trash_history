@@ -14,3 +14,63 @@ trashed 'Screenshot_20210504_123511.png'        from_dir /home/michael
 trashed 'Brave-Browser'        from_dir /home/michael/.cache/BraveSoftware
 trashed '.bluetoothctl_history'        from_dir /home/michael/.cache
 trashed 'misc'        from_dir /home/michael/Documents/dotfiles/.local/share
+trashed 'alacritty'        from_dir /home/michael/Documents/dotfiles/.config
+trashed 'ranger'        from_dir /home/michael/Documents/dotfiles/.config
+trashed 'neofetch'        from_dir /home/michael/Documents/dotfiles/.config
+trashed 'презентація_2-1.pdf'        from_dir /home/michael/Downloads
+trashed '2021-05-04-215900_1366x768_scrot.png'        from_dir /home/michael
+trashed 'Screenshot_20210504_220605.png'        from_dir /home/michael
+trashed '2021-05-04-220357_1366x768_scrot.png'        from_dir /home/michael
+trashed '2021-05-04_22-53.png'        from_dir /home/michael/Pictures/Screenshots
+trashed '2021-05-04_22-54.png'        from_dir /home/michael/Pictures/Screenshots
+trashed '2021-05-04-124524_1366x768_scrot.png'        from_dir /home/michael/Pictures/Screenshots
+trashed 'Screenshot from 2021-04-02 15-40-33.png'        from_dir /home/michael/Pictures/Screenshots
+trashed '2021-05-04_23-01.png'        from_dir /home/michael/Pictures/Screenshots
+trashed 'flameshot.ini'        from_dir /home/michael/Documents/dotfiles/.config/flameshot
+trashed 'config'        from_dir /home/michael/Documents/dotfiles/.config/i3
+trashed 'redshift.conf'        from_dir /home/michael/Documents/dotfiles/.config
+trashed '.png'        from_dir /home/michael
+trashed '.zshrc'        from_dir /home/michael/Documents/dotfiles
+trashed '.zshrc_'        from_dir /home/michael/Documents/dotfiles
+trashed 'alias.txt'        from_dir /home/michael/Documents/dotfiles
+trashed 'lock.png' 'lock_000.png' 'lock_001.png' 'lock_002.png' 'lock_003.png'        from_dir /tmp
+trashed 'lock-0.png' 'lock-1.png' 'lock-2.png' 'lock-3.png' 'lock-4.png' 'lock.png'        from_dir /tmp
+trashed 'wallhaven-9mogy1.jpg'        from_dir /home/michael/Downloads
+trashed 'i3-auto-layout (1)'        from_dir /home/michael/Downloads
+trashed '1.jpg'        from_dir /home/michael/Downloads
+trashed 'wallhaven-1kqqrv_1920x1080.png'        from_dir /home/michael/Downloads
+trashed 'Риторика_Тест_БС04_Барсуков.pdf'        from_dir /home/michael/Downloads
+trashed 'css'        from_dir /home/michael/Downloads/fontawesome-free-5.15.3-web
+trashed 'js'        from_dir /home/michael/Downloads/fontawesome-free-5.15.3-web
+trashed 'less'        from_dir /home/michael/Downloads/fontawesome-free-5.15.3-web
+trashed '2021-05-06_17-22_1.png'        from_dir /home/michael/Pictures/Screenshots
+trashed '2021-05-06_17-22_2.png'        from_dir /home/michael/Pictures/Screenshots
+trashed '2021-05-06_17-22_3.png'        from_dir /home/michael/Pictures/Screenshots
+trashed '2021-05-06_17-22_4.png'        from_dir /home/michael/Pictures/Screenshots
+trashed '2021-05-06_17-22_5.png' '2021-05-06_17-24.png'        from_dir /home/michael/Pictures/Screenshots
+trashed 'telegram'        from_dir /tmp
+trashed 'telegram-master.zip'        from_dir /home/michael/Downloads
+trashed 'ргр.docx'        from_dir /home/michael/Downloads/Telegram Desktop
+trashed 'потенц.PNG'        from_dir /home/michael/Downloads/Telegram Desktop
+trashed 'растотнапр.PNG'        from_dir /home/michael/Downloads/Telegram Desktop
+trashed 'фізика ргр.docx'        from_dir /home/michael/Downloads/Telegram Desktop
+trashed 'физика.rar'        from_dir /home/michael/Downloads/Telegram Desktop
+trashed '.viminfo.tmp' '.viminfp.tmp' '.viminfq.tmp' '.viminfr.tmp' '.viminfs.tmp' '.viminft.tmp' '.viminfu.tmp' '.viminfv.tmp' '.viminfw.tmp' '.viminfx.tmp' '.viminfy.tmp' '.viminfz.tmp'        from_dir /home/michael
+trashed 'RR_Dynamic.zip'        from_dir /home/michael/Documents/university/Algorithms/RR2
+trashed 'ТА_РР2_БС04_Барсуков (1).pdf'        from_dir /home/michael/Downloads
+trashed 'ТА_РР2_БС04_Барсуков.pdf'        from_dir /home/michael/Downloads
+trashed 'folder'        from_dir /home/michael
+trashed 'alacritty-master.zip'        from_dir /home/michael/Downloads
+trashed 'fontawesome-free-5.15.3-web'        from_dir /home/michael/Downloads
+trashed 'Untitled Diagram.png'        from_dir /home/michael/Downloads
+trashed 'Systemd243NoParameterSet.txt'        from_dir /home/michael/Downloads
+trashed 'bg.png' 'bg2.png'        from_dir /home/michael/Documents/dotfiles
+trashed '.Xclients'        from_dir /home/michael/Documents/dotfiles
+trashed '.vimrc'        from_dir /home/michael/Documents/dotfiles
+trashed '.vimrc_'        from_dir /home/michael/Documents/dotfiles
+trashed '.tmux.conf'        from_dir /home/michael/Documents/dotfiles
+trashed '.tmux.conf_'        from_dir /home/michael/Documents/dotfiles
+trashed '.viminfo.tmp'        from_dir /home/michael
+trashed '.viminfw.tmp' '.viminfx.tmp' '.viminfy.tmp' '.viminfz.tmp'        from_dir /home/michael
+trashed 'config'        from_dir /home/michael/Documents/dotfiles/.config/i3
+trashed 'light'        from_dir /home/michael/.config

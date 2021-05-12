@@ -8,8 +8,11 @@ alacritty
   zsh
 bluez (Arch)
 catimg
+cava
+  https://github.com/karlstav/cava
 cmatrix
 code
+dunst
 ffmpeg
 flameshot
 flatpak
@@ -19,13 +22,19 @@ gnome-session
 i3-gaps
   feh
   picom
+    yay -S picom-ibhagwan-git
+  xbacklight
 mlocate
 npm
+pamixer
 ranger (github)
   ueberzug
     pip3 install ueberzug
 redshift
+rofi
 telegram-desktop
+tty-clock
+  https://github.com/xorg62/tty-clock
 vlc
 zathura zathura-pdf-poppler
 

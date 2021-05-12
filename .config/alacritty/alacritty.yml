@@ -1,10 +1,7 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
+
 shell:
   program: /bin/zsh
-  args:
-    - -l
-    - -c
-    - "tmux"
 
 window:
   # Window padding (changes require restart)
@@ -12,8 +9,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 0
-    y: 0
+    x: 10
+    y: 10
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: true
@@ -70,32 +67,66 @@ draw_bold_text_with_bright_colors: true
 
 # Colors
 colors:
-  # Default colors
   primary:
     background: '#282a36'
-    foreground: '#f8f8f2'
+    foreground: '#F8F8F2'
 
-  # Normal colors
   normal:
-    black: '#000000'
-    red: '#ff5555'
-    green: '#50fa7b'
-    yellow: '#f1fa8c'
-    blue: '#caa9fa'
+    black:   '#000000'
+    red:     '#ff5555'
+    green:   '#50fa7b'
+    yellow:  '#f1fa8c'
+    blue:    '#bd93f9'
     magenta: '#ff79c6'
-    cyan: '#8be9fd'
-    white: '#bfbfbf'
+    cyan:    '#8be9fd'
+    white:   '#bfbfbf'
 
-  # Bright colors
   bright:
-    black: '#575b70'
-    red: '#ff6e67'
-    green: '#5af78e'
-    yellow: '#f4f99d'
-    blue: '#caa9fa'
+    black:   '#4d4d4d'
+    red:     '#ff6e67'
+    green:   '#5af78e'
+    yellow:  '#f4f99d'
+    blue:    '#caa9fa'
     magenta: '#ff92d0'
-    cyan: '#9aedfe'
-    white: '#e6e6e6'
+    cyan:    '#9aedfe'
+    white:   '#e6e6e6'
+  
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
+  
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+
+  search:
+    matches:
+      foreground: '#44475a'
+      background: '#50fa7b'
+    focused_match:
+      foreground: '#44475a'
+      background: '#ffb86c'
+    bar:
+      background: '#282a36'
+      foreground: '#f8f8f2'
+  
+  line_indicator:
+    foreground: None
+    background: None
+  
+  selection:
+    text: CellForeground
+    background: '#44475a'
+  
+  dim:
+    black:   '#14151b'
+    red:     '#ff2222'
+    green:   '#1ef956'
+    yellow:  '#ebf85b'
+    blue:    '#4d5b86'
+    magenta: '#ff46b0'
+    cyan:    '#59dffc'
+    white:   '#e6e6d1'
 
 mouse:
   # Click settings

@@ -7,6 +7,11 @@ sudo mv gnome-shell-theme.gresource.old gnome-shell-theme.gresource
 reboot
 
 
+# i3
+sudo chown michael:michael ~/.config/i3/brightness
+setxkbmap -option compose:menu
+
+
 # Fonts
 Intf: Noto Sans R			10
 Docs: Times New Roman		10

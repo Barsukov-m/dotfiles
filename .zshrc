@@ -26,6 +26,7 @@ DISABLE_UPDATE_PROMPT="true"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.local/share/icons-in-terminal/icons_bash.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -52,3 +53,4 @@ alias t0="redshift -x"
 alias pipes="bash ~/.local/share/misc/pipes.sh"
 alias ufetch="sh ~/.local/share/misc/ufetch-manjaro"
 alias rain="sh ~/.local/share/misc/rain.sh"
+alias wtime="tty-clock -cbnC 4"
