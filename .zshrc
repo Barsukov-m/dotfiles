@@ -37,10 +37,8 @@ source ~/.local/share/icons-in-terminal/icons_bash.sh
 
 # ALIAS
 alias alist="cat ~/.zshrc | grep 'alias '"
-# alias up="sudo apt update && sudo apt upgrade -y && flatpak update -y && sudo apt autoremove -y && sudo updatedb"
-# alias upx="sudo apt update && sudo apt upgrade -y && flatpak update -y && sudo apt autoremove -y && sudo updatedb && exit"
-alias up="sudo pacman -Syu && flatpak update -y && sudo updatedb"
-alias upx="up && exit"
+alias up="sudo pacman -Syu"
+alias fup="sudo pacman -Syu && flatpak update -y && sudo updatedb"
 alias u="cd ~/Documents/university"
 alias p="python3"
 alias nf="neofetch"
@@ -54,3 +52,4 @@ alias pipes="bash ~/.local/share/misc/pipes.sh"
 alias ufetch="sh ~/.local/share/misc/ufetch-manjaro"
 alias rain="sh ~/.local/share/misc/rain.sh"
 alias wtime="tty-clock -cbnC 4"
+alias feh="feh --scale-down"

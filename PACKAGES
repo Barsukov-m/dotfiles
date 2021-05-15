@@ -19,11 +19,14 @@ flatpak
   gimp
 gnome-session
   gnome-shell
+gotop-bin
 i3-gaps
   feh
   picom
     yay -S picom-ibhagwan-git
   xbacklight
+  xss-lock
+lxappearance
 mlocate
 npm
 pamixer

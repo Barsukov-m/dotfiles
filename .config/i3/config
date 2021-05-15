@@ -4,13 +4,13 @@ set $exec_noid exec --no-startup-id
 set $mod Mod4
 floating_modifier $mod
 
-font pango:Fira Code Retina 8
+font pango:Hack 9
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-$exec_noid xss-lock --transfer-sleep-lock -- i3lock --nofork
+$exec_noid xss-lock -- lock
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -50,16 +50,16 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+f floating toggle
 
 # workspaces
-set $ws1 "1 browser"
-set $ws2 "2 coding"
-set $ws3 "3 terminal"
-set $ws4 "4 telegram"
-set $ws5 "5 misc"
-set $ws6 "6 misc"
-set $ws7 "7 misc"
-set $ws8 "8 misc"
-set $ws9 "9 misc"
-set $ws10 "0 misc"
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9
+set $ws10 10
 
 # workspace navigation
 bindsym $mod+1 workspace number $ws1
@@ -106,6 +106,15 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+# colors
+# class                 border  backgr. text    indicator child_border
+client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.background       #ffffff
+
 # basic configuration
 exec_always --no-startup-id /usr/lib/gnome-settings-daemon-3.0
 exec --no-startup-id picom &
@@ -121,8 +130,7 @@ bindsym Print exec mkdir -p ~/Pictures/Screenshots && flameshot full -p ~/Pictur
 bindsym Shift+Print exec flameshot gui
 
 # polybar
-# exec_always --no-startup-id ~/.config/polybar/launch.sh
-exec_always --no_startup-id polybar example
+exec_always sh ~/.config/polybar/launch.sh
 
 # i3status
 # bar {
@@ -130,13 +138,13 @@ exec_always --no_startup-id polybar example
 # }
 
 # brightness
-bindsym XF86MonBrightnessUp $exec_noid xbacklight -inc 5 && sh ~/.config/dunst/brightness.sh
-bindsym XF86MonBrightnessDown $exec_noid xbacklight -dec 5 && sh ~/.config/dunst/brightness.sh
+bindsym XF86MonBrightnessUp $exec_noid xbacklight -inc 5
+bindsym XF86MonBrightnessDown $exec_noid xbacklight -dec 5
 
 # volume
-bindsym XF86AudioRaiseVolume $exec_noid pamixer -i 5 | ~/.config/dunst/volume.sh
-bindsym XF86AudioLowerVolume $exec_noid pamixer -d 5 | ~/.config/dunst/volume.sh
-bindsym XF86AudioMute $exec_noid pamixer -t | ~/.config/dunst/volume.sh
+bindsym XF86AudioRaiseVolume $exec_noid pamixer -i 5
+bindsym XF86AudioLowerVolume $exec_noid pamixer -d 5
+bindsym XF86AudioMute $exec_noid pamixer -t
 
 # scratchpad
 bindsym $mod+Shift+minus move scratchpad
