@@ -3,8 +3,7 @@ Name=Code
 Comment=Visual Studio Code
 Exec=env GTK_THEME=Arc-Dark /opt/VSCode-linux-x64/bin/code
 Icon=/opt/VSCode-linux-x64/resources/app/resources/linux/code.png
-Terminal=False
+Terminal=false
 Type=Application
-Encoding=UTF-8
-Categories=Development;TextEditor;
+Categories=Utility;
 

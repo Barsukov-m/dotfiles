@@ -1,13 +1,13 @@
 make cmake gcc python python2 python-pip tk base-devel
 
-alacritty
-  tmux
+alacritty (x)
+  tmux (x)
     tmux source-file ~/.tmux.conf \;
   vim
-  w3m
+  w3m (x)
   zsh
 bluez (Arch)
-catimg
+catimg (x)
 cava
   https://github.com/karlstav/cava
 cmatrix
@@ -26,11 +26,13 @@ i3-gaps
     yay -S picom-ibhagwan-git
   xbacklight
   xss-lock
+kitty
 lxappearance
 mlocate
+nnn
 npm
 pamixer
-ranger (github)
+ranger-git (x)
   ueberzug
     pip3 install ueberzug
 redshift
