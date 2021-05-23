@@ -22,22 +22,11 @@ Hinting: Full
 Antialiasing: Standard
 ---
 Rendering:
-  https://wiki.manjaro.org/index.php?title=Improve_Font_Rendering
-fonts-noto
-ms-fonts (APT):
-  sudo add-apt-repository multiverse
-  ttf-mscorefonts-installer
-  sudo fc-cache -f -v
-ms-fonts (AUR):
-  ttf-ms-fonts
+https://wiki.manjaro.org/index.php?title=Improve_Font_Rendering
 
 
 # Default terminal
   sudo update-alternatives --config x-terminal-emulator
-
-
-# Oh-My-ZSH
-sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 
 # Git

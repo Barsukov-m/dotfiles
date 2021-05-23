@@ -6,6 +6,8 @@ alacritty (x)
   vim
   w3m (x)
   zsh
+    oh-my-zsh
+      sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 bluez (Arch)
 catimg (x)
 cava
@@ -17,6 +19,7 @@ ffmpeg
 flameshot
 flatpak
   gimp
+fonts-noto
 gnome-session
   gnome-shell
 gotop-bin
@@ -28,6 +31,8 @@ i3-gaps
   xss-lock
 kitty
 lxappearance
+material-design-icons
+  npm install @mdi/font
 mlocate
 nnn
 npm
@@ -38,8 +43,10 @@ ranger-git (x)
 redshift
 rofi
 telegram-desktop
-tty-clock
-  https://github.com/xorg62/tty-clock
+trash-cli
+ttf-ms-fonts (AUR)
+tty-clock (AUR)
 vlc
 zathura zathura-pdf-poppler
+xdotool
 
