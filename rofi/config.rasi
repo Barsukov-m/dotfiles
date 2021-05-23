@@ -1,6 +1,0 @@
-configuration {
-  modi: "window,drun,run,file-browser,combi";
-  font: "Iosevka Nerd Font 12";
-  theme: "onedark";
-  combi-modi: "drun,run";
-}

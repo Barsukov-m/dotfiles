@@ -2,10 +2,12 @@
 
 DOTFILES_DIR=~/Documents/dotfiles
 
+mkdir -p $DOTFILES_DIR/{.config,.local/share}
+
 # Backup the configuration files
-sudo cp -r {.fehbg,.vim,.vimrc,.xinitrc,.Xresources,.zshrc} $DOTFILES_DIR
-cp -r ~/.config/{alacritty,cava,dunst,flameshot,fontconfig,i3,kitty,mimeapps.list,neofetch,nnn,picom,polybar,rofi,zathura} $DOTFILES_DIR
-cp -r ~/.local/share/fonts $DOTFILES_DIR
+sudo cp -rv ~/{.fehbg,.vim,.vimrc,.xinitrc,.Xresources,.zshrc} $DOTFILES_DIR
+cp -rv ~/.config/{alacritty,cava,dunst,flameshot,fontconfig,i3,kitty,mimeapps.list,neofetch,nnn,picom,polybar,rofi,zathura} $DOTFILES_DIR/.config
+cp -rv ~/.local/share/fonts $DOTFILES_DIR/.local/share
 
 # Check git status
 gs="$(git status | grep -i modified)"
