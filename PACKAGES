@@ -8,6 +8,8 @@ alacritty (x)
   zsh
     oh-my-zsh
       sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+autotiling
+betterlockscreen (AUR)
 bluez (Arch)
 catimg (x)
 cava
@@ -32,7 +34,7 @@ i3-gaps
 kitty
 lxappearance
 material-design-icons
-  npm install @mdi/font
+  sudo npm i -g @mdi/font
 mlocate
 nnn
 npm

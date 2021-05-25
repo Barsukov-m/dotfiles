@@ -117,10 +117,12 @@ client.background       #ffffff
 
 # basic configuration
 exec_always --no-startup-id /usr/lib/gnome-settings-daemon-3.0
+$exec_noid eval $(ssh-agent)
+# ssh-add
 exec --no-startup-id picom &
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 bindsym $mod+Escape exec betterlockscreen -l dimblur
-$exec_noid setxkbmap -option compose:menu
+$exec_noid setxkbmap -layout us,ua -option grp:win_space_toggle compose:menu
 exec_always --no-startup-id autotiling
 bindsym $mod+d $exec_noid rofi -show combi
 bindsym $mod+Return exec kitty
@@ -155,8 +157,8 @@ $exec_noid sh ~/.fehbg
 
 # windows
 for_window [class=".*"] border pixel 1
-gaps inner 10
-gaps outer 10
+gaps inner 20
+gaps outer 15
 assign [class=Brave-browser] $ws1
 assign [class=Code] $ws2
 assign [class=TelegramDesktop] $ws4
