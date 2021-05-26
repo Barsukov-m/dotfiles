@@ -1,13 +1,14 @@
 [Added Associations]
 text/plain=vim;org.gnome.gedit.desktop;
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop;org.gnome.Evince.desktop;libreoffice-draw.desktop;
-x-scheme-handler/tg=userapp-Telegram Desktop-380H10.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-380H10.desktop;userapp-Telegram Desktop-Q2Y030.desktop;
 image/png=feh.desktop;
 application/xml=brave-browser.desktop;
 image/jpeg=feh.desktop;
+font/ttf=org.gnome.FontManager.desktop;
 
 [Default Applications]
-x-scheme-handler/tg=userapp-Telegram Desktop-380H10.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-Q2Y030.desktop
 image/png=feh.desktop
 image/jpeg=feh.desktop
 text/html=brave-browser.desktop
@@ -18,3 +19,4 @@ x-scheme-handler/unknown=brave-browser.desktop
 x-scheme-handler/mailto=brave-browser.desktop
 text/plain=vim.desktop
 application/pdf=org.pwmt.zathura.desktop
+font/ttf=org.gnome.FontManager.desktop

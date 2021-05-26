@@ -156,9 +156,10 @@ bindsym $mod+minus scratchpad show
 $exec_noid sh ~/.fehbg
 
 # windows
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 2
 gaps inner 20
-gaps outer 15
+gaps outer 10
 assign [class=Brave-browser] $ws1
 assign [class=Code] $ws2
 assign [class=TelegramDesktop] $ws4
+for_window [class="SpeedCrunch"] floating enable

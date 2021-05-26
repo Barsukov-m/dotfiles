@@ -39,7 +39,6 @@ alias trash
 
 ## Screensavers
 alias pipes="bash ~/.local/share/misc/pipes.sh"
-alias ufetch="sh ~/.local/share/misc/ufetch-manjaro"
 alias rain="sh ~/.local/share/misc/rain.sh"
 alias wtime="tty-clock -cbnC 4"
 alias feh="feh --scale-down"

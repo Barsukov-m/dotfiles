@@ -34,6 +34,9 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 nnoremap <silent> ; :NERDTreeToggle<CR>
 nnoremap <silent> <C-f> :Files<CR>
+vmap <C-c> y
+vmap <C-x> x
+imap <C-v> <esc>P
 
 
 call plug#begin('~/.vim/plugged')
