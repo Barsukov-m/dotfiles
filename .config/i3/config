@@ -119,6 +119,7 @@ client.background       #ffffff
 $exec_noid picom &
 $exec_noid setxkbmap -layout us,ua -option grp:win_space_toggle
 $exec_noid setxkbmap -option compose:menu
+$exec_noid numlockx
 $exec_noid pamixer -u
 $exec_noid dunst -config ~/.config/dunst/dunstrc
 $exec_noid nmcli device connect wlan0

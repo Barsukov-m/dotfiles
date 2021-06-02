@@ -15,6 +15,7 @@ lightdm lightdm-gtk-greeter
 lxappearance
 mlocate
 noto-fonts
+noto-fonts-cjk
 npm
 numlockx
 oh-my-zsh
@@ -37,10 +38,11 @@ ttf-liberation
 ttf-ubuntu-font-family
 vim
 vlc
-xautolock
+xautolock (x)
 xbacklight
 xdotool
 xf86-video-intel
-xss-lock
+xfce4-power-manager
+xss-lock (x)
 zathura zathura-pdf-mupdf
 zsh
