@@ -5,17 +5,21 @@ dunst
 feh
 ffmpeg
 flameshot
+fzf
+gnome-font-viewer
 i3-gaps
+imagemagick
 kitty
 libpulse
 lightdm lightdm-gtk-greeter
 lxappearance
 mlocate
-nnn
 noto-fonts
 npm
 numlockx
 oh-my-zsh
+otf-libertinus
+p7zip
 pamixer
 pfetch
 picom
@@ -23,13 +27,20 @@ python-pip
 redshift
 rofi
 telegram-desktop
+tex-gyre-fonts
 thunar
 tk
 trash-cli
+ttf-bitstream-vera
+ttf-dejavu
+ttf-liberation
+ttf-ubuntu-font-family
 vim
 vlc
+xautolock
 xbacklight
 xdotool
+xf86-video-intel
 xss-lock
-zathura zathura-pdf-poppler
+zathura zathura-pdf-mupdf
 zsh

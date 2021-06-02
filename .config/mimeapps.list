@@ -6,6 +6,7 @@ image/png=feh.desktop;
 application/xml=brave-browser.desktop;
 image/jpeg=feh.desktop;
 font/ttf=org.gnome.FontManager.desktop;
+application/x-cd-image=thunar.desktop;
 
 [Default Applications]
 x-scheme-handler/tg=userapp-Telegram Desktop-Q2Y030.desktop

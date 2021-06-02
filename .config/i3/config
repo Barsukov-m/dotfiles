@@ -1,6 +1,7 @@
 # i3-gaps configuration file
 
 set $exec_noid exec --no-startup-id
+set $exec_aw_noid exec_always --no-startup-id
 set $mod Mod4
 floating_modifier $mod
 
@@ -10,11 +11,10 @@ font pango:Hack 9
 # they are included here as an example. Modify as you see fit.
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-$exec_noid xss-lock -- betterlockscreen -l dimblur
+# $exec_noid xss-lock -- lock
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-$exec_noid nm-applet
 
 bindsym $mod+Shift+q kill
 
@@ -108,24 +108,31 @@ mode "resize" {
 
 # colors
 # class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.focused_inactiv  #333333 #222222 #888888 #292d2e   #222222
+client.focused          #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 client.background       #ffffff
 
 # basic configuration
-exec_always --no-startup-id /usr/lib/gnome-settings-daemon-3.0
-$exec_noid eval $(ssh-agent)
-# ssh-add
-exec --no-startup-id picom &
-exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
-bindsym $mod+Escape exec betterlockscreen -l dimblur
-$exec_noid setxkbmap -layout us,ua -option grp:win_space_toggle compose:menu
-exec_always --no-startup-id autotiling
+$exec_noid picom &
+$exec_noid setxkbmap -layout us,ua -option grp:win_space_toggle
+$exec_noid setxkbmap -option compose:menu
+$exec_noid pamixer -u
+$exec_noid dunst -config ~/.config/dunst/dunstrc
+$exec_noid nmcli device connect wlan0
+$exec_noid sleep 3 && xfce4-power-manager
+$exec_aw_noid autotiling
+$exec_aw_noid nmcli connection up Barsik_2
+$exec_aw_noid eval `ssh-agent -s`
+# $exec_aw_noid ssh-add
+bindsym $mod+Escape exec sh lock
 bindsym $mod+d $exec_noid rofi -show combi
 bindsym $mod+Return exec kitty
+
+# screen locker (5m - lock; 15m - suspend)
+# $exec_aw_noid xautolock -detectsleep -time 15 -locker "systemctl suspend" -notify 600 -notifier "sh lock"
 
 # screenshots
 bindsym Print exec mkdir -p ~/Pictures/Screenshots && flameshot full -p ~/Pictures/Screenshots
@@ -134,11 +141,6 @@ bindsym Shift+Print exec flameshot gui
 # polybar
 exec_always sh ~/.config/polybar/launch.sh
 
-# i3status
-# bar {
-#         status_command i3status
-# }
-
 # brightness
 bindsym XF86MonBrightnessUp $exec_noid xbacklight -inc 5
 bindsym XF86MonBrightnessDown $exec_noid xbacklight -dec 5
@@ -146,7 +148,6 @@ bindsym XF86MonBrightnessDown $exec_noid xbacklight -dec 5
 # volume
 bindsym XF86AudioRaiseVolume $exec_noid pamixer -i 5
 bindsym XF86AudioLowerVolume $exec_noid pamixer -d 5
-bindsym XF86AudioMute $exec_noid pamixer -t
 
 # scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -159,7 +160,9 @@ $exec_noid sh ~/.fehbg
 for_window [class=".*"] border pixel 2
 gaps inner 20
 gaps outer 10
-assign [class=Brave-browser] $ws1
-assign [class=Code] $ws2
-assign [class=TelegramDesktop] $ws4
+assign [class="Brave-browser"] $ws1
+assign [class="firefox"] $ws1
+assign [class="Code"] $ws3
+assign [class="TelegramDesktop"] $ws4
+assign [class="Thunderbird"] $ws5
 for_window [class="SpeedCrunch"] floating enable

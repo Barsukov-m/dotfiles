@@ -14,8 +14,9 @@ set noerrorbells
 " set visualbell
 set wrap                    " text wrap
 set linebreak               " break line
-set incsearch               " search
+set is                      " incsearch
 set smartcase               " match 'T' when searching 't', not vice versa
+set ic                      " ignore case
 set nobackup
 set noswapfile
 set undodir=~/.vim/undo
@@ -32,7 +33,7 @@ highlight ColorColumn ctermbg=8
 
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 
-nnoremap <silent> ; :NERDTreeToggle<CR>
+nnoremap <silent> ; :Np<CR>
 nnoremap <silent> <C-f> :Files<CR>
 vmap <C-c> y
 vmap <C-x> x
@@ -42,6 +43,7 @@ imap <C-v> <esc>P
 call plug#begin('~/.vim/plugged')
 
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'mcchrish/nnn.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
@@ -49,7 +51,6 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'lilydjwg/colorizer'
-Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-eunuch'
 Plug 'w0rp/ale'
 Plug 'mg979/vim-visual-multi'

@@ -1,6 +1,6 @@
 configuration {
   modi: "window,drun,run,file-browser,combi";
   font: "Iosevka Nerd Font 12";
-  theme: "onedark";
+  theme: "android_notification";
   combi-modi: "drun,run";
 }

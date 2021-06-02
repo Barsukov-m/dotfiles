@@ -1,9 +1,35 @@
 #!/bin/bash
-TMPBG=/tmp/screen.png
-RES=1366x768
 
-rm $TMPBG
-ffmpeg -f x11grab -video_size $RES -i $DISPLAY -filter_complex "boxblur=8:8" -vframes 1 $TMPBG
+B='#00000000'  # blank
+C='#ffffff22'  # clear
+D='#ffffffcc'  # default
+T='#ffffffff'  # text
+V='#ffffffff'  # verification
+W='#77dd11bb'  # wrong
 
-i3lock -t -i $TMPBG
-rm $TMPBG
+i3lock -c 334455 -e --keylayout 1\
+    --insidevercolor=$C\
+    --ringvercolor=$V\
+    --insidewrongcolor=$C\
+    --ringwrongcolor=$W\
+    --insidecolor=$B\
+    --ringcolor=$D\
+    --linecolor=$B\
+    --separatorcolor=$D\
+    --verifcolor=$T\
+    --wrongcolor=$T\
+    --timecolor=$T\
+    --datecolor=$T\
+    --layoutcolor=$T\
+    --keyhlcolor=$W\
+    --bshlcolor=$W\
+    --timestr="%H:%M"\
+    --datestr="%A, %m %Y"\
+    --veriftext="..."\
+    --wrongtext="Try again"\
+    --locktext=""\
+    --lockfailedtext=""\
+    --radius=100\
+    --ring-width=5
+
+xset dpms force off

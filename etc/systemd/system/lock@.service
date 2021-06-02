@@ -1,0 +1,13 @@
+[Unit]
+Description=Lock X session using i3lock
+Before=sleep.target
+
+[Service]
+User=michael
+Type=forking
+Environment=DISPLAY=:0
+ExecStartPro=
+ExecStart=/usr/bin/lock
+
+[Install]
+WantedBy=sleep.target

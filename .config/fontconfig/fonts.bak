@@ -1,0 +1,9 @@
+<match target="pattern">
+  <test qual="any" name="family">
+    <string>monospace</string>
+  </test>
+  <edit binding="strong" mode="prepend" name="family">
+    <string>Iosevka Nerd Font</string>
+  </edit>
+</match>
+
