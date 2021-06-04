@@ -11,7 +11,7 @@ font pango:Hack 9
 # they are included here as an example. Modify as you see fit.
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-# $exec_noid xss-lock -- lock
+$exec_noid xss-lock -- lock
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -120,12 +120,12 @@ $exec_noid picom &
 $exec_noid setxkbmap -layout us,ua -option grp:win_space_toggle
 $exec_noid setxkbmap -option compose:menu
 $exec_noid numlockx
-$exec_noid pamixer -u
 $exec_noid dunst -config ~/.config/dunst/dunstrc
-$exec_noid nmcli device connect wlan0
+# $exec_aw_noid nmcli connection up Barsik_2
 $exec_noid sleep 3 && xfce4-power-manager
+$exec_aw_noid pamixer -u
 $exec_aw_noid autotiling
-$exec_aw_noid nmcli connection up Barsik_2
+$exec_aw_noid nmcli device connect wlan0
 $exec_aw_noid eval `ssh-agent -s`
 # $exec_aw_noid ssh-add
 bindsym $mod+Escape exec sh lock

@@ -1,6 +1,8 @@
 export ZSH="/home/michael/.oh-my-zsh"
-export VISUAL=vim
-export EDITOR=vim
+export TERMINAL="kitty"
+export EDITOR="vim"
+export VISUAL="vim"
+export BROWSER="brave"
 
 ZSH_THEME="main"
 DISABLE_UPDATE_PROMPT="true"
@@ -18,13 +20,13 @@ xset b off # disable the beep
 ## NNN Configuration
 export NNN_TRASH=1
 export NNN_COLORS="2136"
-export NNN_FIFO=/tmp/nnn.fifo
+export NNN_FIFO="/tmp/nnn.fifo"
 export NNN_BMS='r:/;d:~/Documents;D:~/Documents/dotfiles;u:~/Documents/university;'
 export NNN_PLUG='d:dragdrop;e:suedit;f:fzcd;l:launch;m:nmount;p:preview-tui;'
-export NNN_DE_FILE_MANAGER=nautilus
-export NNN_FALLBACK_OPENER=xdg-open
+export NNN_DE_FILE_MANAGER="nautilus"
+export NNN_FALLBACK_OPENER="xdg-open"
 export NNN_FALLBACK_OPENER="gio open"
-export NNN_FALLBACK_OPENER=gvfs-open
+export NNN_FALLBACK_OPENER="gvfs-open"
 
 
 ## Aliases
@@ -35,8 +37,8 @@ alias p="python3"
 alias nf="neofetch"
 alias ascii="less ~/.local/share/etc/ascii"
 alias inet="ping archlinux.org"
-alias conadd="nmcli connection up Barsik_2"
-alias conrel="nmcli connection reload"
+alias conadd="nmcli device connect wlan0"
+alias conup="nmcli connection up Barsik_2"
 alias n="nnn -de"
 alias t="redshift -P -O"
 alias t0="redshift -x"
@@ -46,7 +48,7 @@ alias trash
 alias pipes="bash ~/.local/share/etc/pipes.sh"
 alias rain="sh ~/.local/share/etc/rain.sh"
 alias wtime="tty-clock -cbnC 4"
-alias feh="feh --scale-down"
+alias feh="feh -d --scale-down"
 
 ## Kitty
 alias icat="kitty +kitten icat"
