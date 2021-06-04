@@ -43,6 +43,6 @@ xbacklight
 xdotool
 xf86-video-intel
 xfce4-power-manager
-xss-lock (x)
+xss-lock
 zathura zathura-pdf-mupdf
 zsh
