@@ -1,6 +1,7 @@
 bluez
 broadcom-wl
 cmatrix
+dragon
 dunst
 feh
 ffmpeg
@@ -14,12 +15,12 @@ libpulse
 lightdm lightdm-gtk-greeter
 lxappearance
 mlocate
+neovim
 noto-fonts
 noto-fonts-cjk
 npm
 numlockx
 oh-my-zsh
-otf-libertinus
 p7zip
 pamixer
 pfetch
@@ -27,8 +28,8 @@ picom
 python-pip
 redshift
 rofi
+speedcrunch
 telegram-desktop
-tex-gyre-fonts
 thunar
 tk
 trash-cli
@@ -38,8 +39,8 @@ ttf-liberation
 ttf-ubuntu-font-family
 vim
 vlc
-xautolock (x)
 xbacklight
+xclip
 xdotool
 xf86-video-intel
 xfce4-power-manager

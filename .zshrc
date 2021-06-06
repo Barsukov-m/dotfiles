@@ -1,8 +1,9 @@
 export ZSH="/home/michael/.oh-my-zsh"
 export TERMINAL="kitty"
-export EDITOR="vim"
-export VISUAL="vim"
+export EDITOR="nvim"
+export VISUAL="nvim"
 export BROWSER="brave"
+export FZF_DEFAULT_COMMAND="find -L"
 
 ZSH_THEME="main"
 DISABLE_UPDATE_PROMPT="true"
@@ -30,16 +31,20 @@ export NNN_FALLBACK_OPENER="gvfs-open"
 
 
 ## Aliases
+alias l="ls -A"
+alias ll="ls -Alh"
+alias lls="ls -Alhgo"
 alias alist="cat ~/.zshrc | grep 'alias '"
 alias up="sudo pacman -Syu && flatpak update -y && sudo updatedb"
 alias u="cd ~/Documents/university"
 alias p="python3"
+alias n="nnn -de"
 alias nf="neofetch"
+alias nv="nvim"
 alias ascii="less ~/.local/share/etc/ascii"
 alias inet="ping archlinux.org"
 alias conadd="nmcli device connect wlan0"
 alias conup="nmcli connection up Barsik_2"
-alias n="nnn -de"
 alias t="redshift -P -O"
 alias t0="redshift -x"
 alias trash

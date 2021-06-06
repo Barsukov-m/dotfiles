@@ -121,19 +121,15 @@ $exec_noid setxkbmap -layout us,ua -option grp:win_space_toggle
 $exec_noid setxkbmap -option compose:menu
 $exec_noid numlockx
 $exec_noid dunst -config ~/.config/dunst/dunstrc
-# $exec_aw_noid nmcli connection up Barsik_2
 $exec_noid sleep 3 && xfce4-power-manager
 $exec_aw_noid pamixer -u
 $exec_aw_noid autotiling
 $exec_aw_noid nmcli device connect wlan0
-$exec_aw_noid eval `ssh-agent -s`
-# $exec_aw_noid ssh-add
+# $exec_aw_noid nmcli connection up Barsik_2
+exec_always eval `ssh-agent -s`
 bindsym $mod+Escape exec sh lock
 bindsym $mod+d $exec_noid rofi -show combi
 bindsym $mod+Return exec kitty
-
-# screen locker (5m - lock; 15m - suspend)
-# $exec_aw_noid xautolock -detectsleep -time 15 -locker "systemctl suspend" -notify 600 -notifier "sh lock"
 
 # screenshots
 bindsym Print exec mkdir -p ~/Pictures/Screenshots && flameshot full -p ~/Pictures/Screenshots

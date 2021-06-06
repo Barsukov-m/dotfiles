@@ -1,7 +1,5 @@
 syntax on
 filetype indent on
-
-set encoding=utf-8
 set t_Co=256
 set mouse=i                 " mouse access
 set tabstop=4 softtabstop=4
@@ -10,21 +8,13 @@ set expandtab
 set smartindent
 set relativenumber          " lines numbering
 set nu                      " current line number
-set noerrorbells
-" set visualbell
 set wrap                    " text wrap
 set linebreak               " break line
-set is                      " incsearch
 set smartcase               " match 'T' when searching 't', not vice versa
 set ic                      " ignore case
-set nobackup
-set noswapfile
-set undodir=~/.vim/undo
-set undofile
 set showcmd
 set laststatus=2            " show status
 set noshowmode              " custom status
-set pastetoggle=<F2>
 set scrolloff=5
 
 set termguicolors
@@ -33,13 +23,24 @@ highlight ColorColumn ctermbg=8
 
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 
-nnoremap <silent> ; :Np<CR>
+
+" NNN
+nnoremap <silent> ; :Np %:p:h<CR>
+let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug' } }
+let g:nnn#action = {
+      \ '<c-t>': 'tab split',
+      \ '<c-x>': 'split',
+      \ '<c-v>': 'vsplit' }
+let g:nnn#session = 'local'
+let g:nnn#command = 'nnn -de'
+
+
+" FZF
 nnoremap <silent> <C-f> :Files<CR>
-vmap <C-c> y
-vmap <C-x> x
 imap <C-v> <esc>P
 
 
+" Plugins
 call plug#begin('~/.vim/plugged')
 
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -54,6 +55,8 @@ Plug 'lilydjwg/colorizer'
 Plug 'tpope/vim-eunuch'
 Plug 'w0rp/ale'
 Plug 'mg979/vim-visual-multi'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
