@@ -1,9 +1,12 @@
-flatpak:
-  org.gimp.GIMP
-  org.gnome.FontManager
-snap:
-  code --classic
-EmojiOneColor:
-  wget https://github.com/eosrei/emojione-color-font/releases/download/v1.4/EmojiOneColor-SVGinOT-Linux-1.4.tar.gz && tar zxf EmojiOneColor-SVGinOT-Linux-1.4.tar.gz && cd EmojiOneColor-SVGinOT-Linux-1.4
-  ./install
-  
+GIMP
+$flatpak install org.gimp.GIMP
+
+FontManager
+$ flatpak install org.gnome.FontManager
+
+EmojiOneColor
+$ wget https://github.com/eosrei/emojione-color-font/releases/download/v1.4/EmojiOneColor-SVGinOT-Linux-1.4.tar.gz && tar zxf EmojiOneColor-SVGinOT-Linux-1.4.tar.gz && cd EmojiOneColor-SVGinOT-Linux-1.4
+$ ./install
+
+NodeJS
+curl -sL install-node.now.sh/release | bash

@@ -3,7 +3,7 @@ export TERMINAL="kitty"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="brave"
-export FZF_DEFAULT_COMMAND="find -L"
+export FZF_DEFAULT_COMMAND="ag -g ''"
 
 ZSH_THEME="main"
 DISABLE_UPDATE_PROMPT="true"

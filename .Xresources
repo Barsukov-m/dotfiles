@@ -5,3 +5,37 @@ Xft.rgba: rgb
 Xft.autohint: 0
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
+
+! urxvt
+URxvt.font:                     xft:Iosevka:size=14
+URxvt.scrollBar:                false
+URxvt.keysym.C-Left:            \033[1;5D
+URxvt.keysym.C-Right:           \033[1;5C
+URxvt.keysym.C-Up:              \033[1;5A
+URxvt.keysym.C-Down:            \033[1;5B
+URxvt.keysym.M-Left:            \033[1;3D
+URxvt.keysym.M-Right:           \033[1;3C
+URxvt.keysym.M-C-k:             33[1;7B
+URxvt.keysym.M-C-j:             33[1;7C
+URxvt.internalBorder:           25
+
+URxvt.foreground: #F8F8F2
+URxvt.background: #282A36
+URxvt.color0:     #000000
+URxvt.color8:     #4D4D4D
+URxvt.color1:     #FF5555
+URxvt.color9:     #FF6E67
+URxvt.color2:     #50FA7B
+URxvt.color10:    #5AF78E
+URxvt.color3:     #F1FA8C
+URxvt.color11:    #F4F99D
+URxvt.color4:     #BD93F9
+URxvt.color12:    #CAA9FA
+URxvt.color5:     #FF79C6
+URxvt.color13:    #FF92D0
+URxvt.color6:     #8BE9FD
+URxvt.color14:    #9AEDFE
+URxvt.color7:     #BFBFBF
+URxvt.color15:    #E6E6E6
+
+

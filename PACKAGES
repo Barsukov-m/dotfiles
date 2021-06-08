@@ -1,7 +1,6 @@
 bluez
 broadcom-wl
 cmatrix
-dragon
 dunst
 feh
 ffmpeg
@@ -30,13 +29,14 @@ redshift
 rofi
 speedcrunch
 telegram-desktop
+the_silver_searcher
 thunar
 tk
 trash-cli
-ttf-bitstream-vera
 ttf-dejavu
 ttf-liberation
 ttf-ubuntu-font-family
+ueberzug
 vim
 vlc
 xbacklight
@@ -45,5 +45,6 @@ xdotool
 xf86-video-intel
 xfce4-power-manager
 xss-lock
+yarn
 zathura zathura-pdf-mupdf
 zsh
