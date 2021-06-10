@@ -1,23 +1,24 @@
 [Added Associations]
-text/plain=vim;org.gnome.gedit.desktop;
+text/plain=nvim;org.gnome.gedit.desktop;
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop;org.gnome.Evince.desktop;libreoffice-draw.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-380H10.desktop;userapp-Telegram Desktop-Q2Y030.desktop;
 image/png=feh.desktop;
-application/xml=brave-browser.desktop;
+application/xml=firefox.desktop;brave-browser.desktop;
 image/jpeg=feh.desktop;
 font/ttf=org.gnome.FontManager.desktop;
-application/x-cd-image=thunar.desktop;
+application/x-cd-image=nnn.desktop;
 
 [Default Applications]
 x-scheme-handler/tg=userapp-Telegram Desktop-Q2Y030.desktop
 image/png=feh.desktop
 image/jpeg=feh.desktop
-text/html=brave-browser.desktop
-x-scheme-handler/http=brave-browser.desktop
-x-scheme-handler/https=brave-browser.desktop
-x-scheme-handler/about=brave-browser.desktop
-x-scheme-handler/unknown=brave-browser.desktop
-x-scheme-handler/mailto=brave-browser.desktop
-text/plain=vim.desktop
-application/pdf=org.pwmt.zathura.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=brave.desktop
+x-scheme-handler/unknown=firefox.desktop
+x-scheme-handler/mailto=firefox.desktop
+text/plain=nvim.desktop
 font/ttf=org.gnome.FontManager.desktop
+application/xhtml+xml=firefox.desktop
+application/x-xpinstall=firefox.desktop

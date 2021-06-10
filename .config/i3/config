@@ -115,27 +115,30 @@ client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 client.background       #ffffff
 
-# basic configuration
-$exec_noid picom &
+
+# xorg
 exec_always setxkbmap -layout us,ua -option grp:win_space_toggle
 exec_always setxkbmap -option compose:menu
+exec_always xset r rate 250 50
+exec_always pamixer -u
 $exec_noid numlockx
-$exec_noid dunst -config ~/.config/dunst/dunstrc
-$exec_noid sleep 3 && xfce4-power-manager
-$exec_aw_noid pamixer -u
-$exec_aw_noid autotiling
-exec_always eval `ssh-agent -s`
-exec_always nmcli device connect wlan0
+
 bindsym $mod+Escape exec sh lock
 bindsym $mod+d $exec_noid rofi -show combi
 bindsym $mod+Return exec urxvt
 
+# autostart
+exec_always nmcli device connect wlan0
+$exec_noid picom &
+$exec_noid dunst -config ~/.config/dunst/dunstrc
+$exec_noid sleep 3 && xfce4-power-manager
+$exec_aw_noid sh ~/.config/polybar/launch.sh
+$exec_aw_noid autotiling
+# exec_always eval `ssh-agent -s`
+
 # screenshots
 bindsym Print exec mkdir -p ~/Pictures/Screenshots && flameshot full -p ~/Pictures/Screenshots
 bindsym Shift+Print exec flameshot gui
-
-# polybar
-exec_always sh ~/.config/polybar/launch.sh
 
 # brightness
 bindsym XF86MonBrightnessUp $exec_noid xbacklight -inc 5
@@ -157,8 +160,7 @@ for_window [class=".*"] border pixel 2
 gaps inner 20
 gaps outer 10
 assign [class="Brave-browser"] $ws1
-assign [class="firefox"] $ws1
+# assign [class="firefox"] $ws1
 assign [class="Code"] $ws3
 assign [class="TelegramDesktop"] $ws4
-assign [class="Thunderbird"] $ws5
 for_window [class="SpeedCrunch"] floating enable

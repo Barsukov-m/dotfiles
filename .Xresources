@@ -7,8 +7,10 @@ Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
 ! urxvt
-URxvt.font:                     xft:Iosevka:size=14
+URxvt.font:                     xft:Iosevka:size=14:autohint=true
 URxvt.scrollBar:                false
+URxvt.cursorBlink:              true
+URxvt.internalBorder:           25
 URxvt.keysym.C-Left:            \033[1;5D
 URxvt.keysym.C-Right:           \033[1;5C
 URxvt.keysym.C-Up:              \033[1;5A
@@ -17,7 +19,8 @@ URxvt.keysym.M-Left:            \033[1;3D
 URxvt.keysym.M-Right:           \033[1;3C
 URxvt.keysym.M-C-k:             33[1;7B
 URxvt.keysym.M-C-j:             33[1;7C
-URxvt.internalBorder:           25
+URxvt.keysym.Shift-Up:          command:\033]720;1\007
+URxvt.keysym.Shift-Down:        command:\033]721;1\007
 
 URxvt.foreground: #F8F8F2
 URxvt.background: #282A36
@@ -37,5 +40,3 @@ URxvt.color6:     #8BE9FD
 URxvt.color14:    #9AEDFE
 URxvt.color7:     #BFBFBF
 URxvt.color15:    #E6E6E6
-
-

@@ -1,5 +1,4 @@
 export ZSH="/home/michael/.oh-my-zsh"
-export TERMINAL="kitty"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="brave"
