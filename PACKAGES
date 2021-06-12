@@ -1,5 +1,7 @@
+arc-gtk-theme
 bluez
 broadcom-wl
+ccls
 cmatrix
 dunst
 feh
@@ -10,8 +12,9 @@ gnome-font-viewer
 i3-gaps
 imagemagick
 kitty
+lightdm
+lightdm-gtk-greeter
 libpulse
-lightdm lightdm-gtk-greeter
 lxappearance
 mlocate
 neovim
@@ -36,7 +39,6 @@ trash-cli
 ttf-dejavu
 ttf-liberation
 ttf-ubuntu-font-family
-ueberzug
 vim
 vlc
 xbacklight

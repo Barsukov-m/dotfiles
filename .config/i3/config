@@ -117,18 +117,17 @@ client.background       #ffffff
 
 
 # xorg
-exec_always setxkbmap -layout us,ua -option grp:win_space_toggle
-exec_always setxkbmap -option compose:menu
+# exec_always setxkbmap -layout us,ua -option grp:win_space_toggle
+# exec_always setxkbmap -option compose:menu
 exec_always xset r rate 250 50
 exec_always pamixer -u
 $exec_noid numlockx
 
 bindsym $mod+Escape exec sh lock
 bindsym $mod+d $exec_noid rofi -show combi
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec kitty
 
 # autostart
-exec_always nmcli device connect wlan0
 $exec_noid picom &
 $exec_noid dunst -config ~/.config/dunst/dunstrc
 $exec_noid sleep 3 && xfce4-power-manager
@@ -158,7 +157,7 @@ $exec_noid sh ~/.fehbg
 # windows
 for_window [class=".*"] border pixel 2
 gaps inner 20
-gaps outer 10
+gaps outer 15
 assign [class="Brave-browser"] $ws1
 # assign [class="firefox"] $ws1
 assign [class="Code"] $ws3

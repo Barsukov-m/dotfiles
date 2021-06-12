@@ -4,7 +4,7 @@ DOTFILES_DIR=~/Documents/dotfiles
 
 # Back up the configuration
 sudo cp -rv ~/{.vim,.vimrc,.xinitrc,.Xresources,.zshrc} $DOTFILES_DIR
-sudo cp -rv ~/.config/{cava,dunst,flameshot,fontconfig,i3,kitty,mimeapps.list,neofetch,nnn,nvim,picom,polybar,rofi,xfce4,zathura} $DOTFILES_DIR/.config
+sudo cp -rv ~/.config/{cava,dunst,flameshot,fontconfig,GIMP,i3,kitty,mimeapps.list,neofetch,nnn,nvim,picom,polybar,rofi,xfce4,zathura} $DOTFILES_DIR/.config
 
 # Check git status
 gs="$(git status | grep -i modified)"

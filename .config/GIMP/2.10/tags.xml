@@ -1426,9 +1426,6 @@
   <resource identifier="Cantarell" checksum="(null)">
   </resource>
 
-  <resource identifier="Cantarell" checksum="(null)">
-  </resource>
-
   <resource identifier="Cantarell Bold" checksum="(null)">
   </resource>
 
@@ -1456,6 +1453,18 @@
   <resource identifier="Caveat Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Charter" checksum="(null)">
+  </resource>
+
+  <resource identifier="Charter Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Charter Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Charter Medium Italic" checksum="(null)">
+  </resource>
+
   <resource identifier="Code Pro" checksum="(null)">
   </resource>
 
@@ -1466,6 +1475,18 @@
   </resource>
 
   <resource identifier="Cookie" checksum="(null)">
+  </resource>
+
+  <resource identifier="Courier" checksum="(null)">
+  </resource>
+
+  <resource identifier="Courier Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Courier Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Courier Medium Oblique" checksum="(null)">
   </resource>
 
   <resource identifier="D050000L" checksum="(null)">
@@ -1625,6 +1646,18 @@
   </resource>
 
   <resource identifier="Hack Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Helvetica" checksum="(null)">
+  </resource>
+
+  <resource identifier="Helvetica Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Helvetica Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Helvetica Medium Oblique" checksum="(null)">
   </resource>
 
   <resource identifier="icomoon" checksum="(null)">
@@ -2134,6 +2167,30 @@
   <resource identifier="Lobster 1.4," checksum="(null)">
   </resource>
 
+  <resource identifier="Lucida Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Lucida Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="LucidaBright" checksum="(null)">
+  </resource>
+
+  <resource identifier="LucidaBright Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Lucida Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Lucida Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="LucidaTypewriter Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="LucidaTypewriter Medium" checksum="(null)">
+  </resource>
+
   <resource identifier="Material" checksum="(null)">
   </resource>
 
@@ -2321,6 +2378,21 @@
   </resource>
 
   <resource identifier="MT Extra" checksum="(null)">
+  </resource>
+
+  <resource identifier="mtx" checksum="(null)">
+  </resource>
+
+  <resource identifier="New Century Schoolbook" checksum="(null)">
+  </resource>
+
+  <resource identifier="New Century Schoolbook Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="New Century Schoolbook Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="New Century Schoolbook Medium Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Nimbus Mono PS" checksum="(null)">
@@ -3691,7 +3763,7 @@
   <resource identifier="Noto Sans Tai Tham Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Tai Tham weight=482" checksum="(null)">
+  <resource identifier="Noto Sans Tai Tham weight=480" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Tai Viet" checksum="(null)">
@@ -4774,6 +4846,12 @@
   <resource identifier="Symbol" checksum="(null)">
   </resource>
 
+  <resource identifier="Terminal" checksum="(null)">
+  </resource>
+
+  <resource identifier="Terminal Bold" checksum="(null)">
+  </resource>
+
   <resource identifier="Terminus" checksum="(null)">
   </resource>
 
@@ -4882,6 +4960,18 @@
   <resource identifier="TeX Gyre Termes Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="Times" checksum="(null)">
+  </resource>
+
+  <resource identifier="Times Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Times Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Times Medium Italic" checksum="(null)">
+  </resource>
+
   <resource identifier="Times New Roman," checksum="(null)">
   </resource>
 
@@ -4958,6 +5048,18 @@
   </resource>
 
   <resource identifier="URW Gothic Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Utopia" checksum="(null)">
+  </resource>
+
+  <resource identifier="Utopia Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Utopia Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Utopia Medium Italic" checksum="(null)">
   </resource>
 
   <resource identifier="v_KomikaAxis" checksum="(null)">

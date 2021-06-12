@@ -1,13 +1,14 @@
 # GIMP action-history
 
-(history-item "tools-paintbrush" 5)
+(history-item "tools-paintbrush" 4)
 (history-item "image-new" 1)
 (history-item "dialogs-preferences" 2)
+(history-item "layers-delete" 0)
+(history-item "file-quit" 1)
 (history-item "file-save" 0)
 (history-item "tools-vector" 0)
 (history-item "tools-color-picker" 0)
 (history-item "edit-clear" 0)
-(history-item "layers-delete" 0)
-(history-item "file-quit" 1)
+(history-item "file-export-as" 1)
 
 # end of action-history

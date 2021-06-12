@@ -7,10 +7,25 @@
 # Preferences dialog.
 
 (swap-compression "best")
+(tile-cache-size 2000M)
+(default-image
+    (icon-name "gimp-video")
+    (width 1920)
+    (height 1080)
+    (unit pixels)
+    (xresolution 72)
+    (yresolution 72)
+    (resolution-unit inches)
+    (image-type rgb)
+    (precision u8-gamma)
+    (color-managed yes)
+    (color-profile NULL)
+    (fill-type transparent))
 (undo-levels 100)
 (import-raw-plug-in "${gimp_plug_in_dir}/plug-ins/file-raw-placeholder/file-raw-placeholder")
 (monitor-xresolution 99)
 (monitor-yresolution 103)
+(theme "System")
 (icon-theme "Symbolic-High-Contrast")
 (fill-options
     (style solid)

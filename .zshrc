@@ -15,7 +15,7 @@ mkcd () {
   mkdir -p -- "$1" && cd -P -- "$1"
 }
 
-xset b off # disable the beep
+xset b off # disable the sound bell
 
 ## NNN Configuration
 export NNN_TRASH=1
