@@ -6,16 +6,6 @@ set $mod Mod4
 floating_modifier $mod
 
 font pango:Hack 9
-
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-$exec_noid xss-lock -- lock
-
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-
 bindsym $mod+Shift+q kill
 
 # focus
@@ -115,14 +105,13 @@ client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 client.background       #ffffff
 
-
 # xorg
 # exec_always setxkbmap -layout us,ua -option grp:win_space_toggle
 # exec_always setxkbmap -option compose:menu
 exec_always xset r rate 250 50
 exec_always pamixer -u
+$exec_noid sh ~/.fehbg
 $exec_noid numlockx
-
 bindsym $mod+Escape exec sh lock
 bindsym $mod+d $exec_noid rofi -show combi
 bindsym $mod+Return exec kitty
@@ -131,9 +120,9 @@ bindsym $mod+Return exec kitty
 $exec_noid picom &
 $exec_noid dunst -config ~/.config/dunst/dunstrc
 $exec_noid sleep 3 && xfce4-power-manager
-$exec_aw_noid sh ~/.config/polybar/launch.sh
-$exec_aw_noid autotiling
+exec_always sh ~/.config/polybar/launch.sh
 # exec_always eval `ssh-agent -s`
+$exec_aw_noid autotiling
 
 # screenshots
 bindsym Print exec mkdir -p ~/Pictures/Screenshots && flameshot full -p ~/Pictures/Screenshots
@@ -151,13 +140,13 @@ bindsym XF86AudioLowerVolume $exec_noid pamixer -d 5
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
-# background
-$exec_noid sh ~/.fehbg
-
 # windows
-for_window [class=".*"] border pixel 2
-gaps inner 20
-gaps outer 15
+for_window [class=".*"] border pixel 0
+gaps inner 15
+gaps outer 20
+workspace $ws2 gaps inner 15
+workspace $ws2 gaps outer 40
+border_radius 6
 assign [class="Brave-browser"] $ws1
 # assign [class="firefox"] $ws1
 assign [class="Code"] $ws3

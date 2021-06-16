@@ -19,7 +19,7 @@ xset b off # disable the sound bell
 
 ## NNN Configuration
 export NNN_TRASH=1
-export NNN_COLORS="2136"
+export NNN_COLORS="3241"
 export NNN_FIFO="/tmp/nnn.fifo"
 export NNN_BMS='r:/;d:~/Documents;D:~/Documents/dotfiles;u:~/Documents/university;'
 export NNN_PLUG='d:dragdrop;e:suedit;f:fzcd;l:launch;m:nmount;p:preview-tui;'
@@ -37,7 +37,7 @@ alias alist="cat ~/.zshrc | grep 'alias '"
 alias up="sudo pacman -Syu && flatpak update -y && sudo updatedb"
 alias u="cd ~/Documents/university"
 alias p="python3"
-alias n="nnn -de"
+alias n="nnn -deH"
 alias nf="neofetch"
 alias nv="nvim"
 alias ascii="less ~/.local/share/etc/ascii"

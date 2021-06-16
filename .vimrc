@@ -2,16 +2,19 @@
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'mcchrish/nnn.vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'itchyny/lightline.vim'
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'lilydjwg/colorizer'
 Plug 'jiangmiao/auto-pairs'
+Plug 'mg979/vim-visual-multi'
 Plug 'tpope/vim-commentary'
+
+Plug 'itchyny/lightline.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'mcchrish/nnn.vim'
+
+" Plug 'airblade/vim-gitgutter'
+Plug 'arcticicestudio/nord-vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'lilydjwg/colorizer'
+Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = [
   \ 'coc-clangd',
@@ -29,8 +32,11 @@ call plug#end()
 
 
 syntax on
-colorscheme dracula
-set t_Co=256
+colorscheme gruvbox
+
+if !has('gui_running')
+  set t_Co=256
+endif
 
 if (has("termguicolors"))
  set termguicolors
@@ -49,8 +55,8 @@ set linebreak
 set smartcase
 set ic
 set showcmd
-set laststatus=2
-set noshowmode
+set laststatus=0
+" set noshowmode
 set scrolloff=5
 set noswapfile
 set path+=**
@@ -58,32 +64,38 @@ set path+=**
 
 "" General key mappings
 imap <C-v> <esc>P
+
+nmap <silent> <space> :noh<CR>
+
 inoremap <C-j> gj
 inoremap <C-k> gk
-nmap <silent> <space> :noh<CR>
+
 nnoremap р h
 nnoremap о j
 nnoremap л k
 nnoremap д l
+nnoremap tw :set wrap!<CR>
+
 vnoremap <F9> :sort
-    
-    
-"" NNN
+
+
+""NNN
 nnoremap <silent> ; :Np %:p:h<CR>
-let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug' } }
+" let g:nnn#layout = { 'left': '~20%' } " or right, up, down
+let g:nnn#layout = { 'window': { 'width': 0.6, 'height': 0.6, 'highlight': 'Debug' } }
 let g:nnn#action = {
   \ '<C-t>': 'tab split',
   \ '<C-x>': 'split',
   \ '<C-v>': 'vsplit' }
 let g:nnn#session = 'local'
-let g:nnn#command = 'nnn -de'
+let g:nnn#command = 'nnn -deH'
    
    
 "" FZF
 nnoremap <C-p> :FZF<CR>
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
-  \ 'ctrl-s': 'split',
+  \ 'ctrl-x': 'split',
   \ 'ctrl-v': 'vsplit'
   \ } 
   
@@ -106,8 +118,10 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 inoremap <C-H> <C-W>
-nnoremap <A-h> :tabprevious<CR>
-nnoremap <A-l> :tabnext<CR>
+nnoremap <M-h> :tabprevious<CR>
+nnoremap <M-l> :tabnext<CR>
+nnoremap <M-S-h> :tabmove -1<CR>
+nnoremap <M-S-l> :tabmove +1<CR>
          
         
 "" CoC        

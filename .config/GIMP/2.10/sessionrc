@@ -82,10 +82,10 @@
     (size 827 508))
 (session-info "toplevel"
     (factory-entry "gimp-image-new-dialog")
-    (position 151 173))
+    (position 145 167))
 (session-info "toplevel"
     (factory-entry "gimp-file-save-dialog")
-    (position 0 29)
+    (position 0 27)
     (size 780 585))
 (session-info "toplevel"
     (factory-entry "gimp-image-new-dialog")
@@ -95,7 +95,11 @@
     (position 471 244))
 (session-info "toplevel"
     (factory-entry "gimp-file-export-dialog")
-    (position 418 108)
+    (position 406 96)
+    (size 780 585))
+(session-info "toplevel"
+    (factory-entry "gimp-file-open-dialog")
+    (position 291 96)
     (size 780 585))
 
 (hide-docks no)
