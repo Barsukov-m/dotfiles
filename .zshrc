@@ -1,4 +1,4 @@
-export ZSH="/home/michael/.oh-my-zsh"
+export ZSH="/home/michael/.config/oh-my-zsh"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="brave"
@@ -21,7 +21,7 @@ xset b off # disable the sound bell
 export NNN_TRASH=1
 export NNN_COLORS="3241"
 export NNN_FIFO="/tmp/nnn.fifo"
-export NNN_BMS='r:/;d:~/Documents;D:~/Documents/dotfiles;u:~/Documents/university;'
+export NNN_BMS='r:/run/media/michael;d:~/Documents;D:~/Documents/dotfiles;u:~/Documents/university;f:~/Documents/front-end;'
 export NNN_PLUG='d:dragdrop;e:suedit;f:fzcd;l:launch;m:nmount;p:preview-tui;'
 export NNN_DE_FILE_MANAGER="nautilus"
 export NNN_FALLBACK_OPENER="xdg-open"

@@ -6,6 +6,7 @@ set $mod Mod4
 floating_modifier $mod
 
 font pango:Hack 9
+$exec_noid xss-lock -- lock
 bindsym $mod+Shift+q kill
 
 # focus
@@ -144,8 +145,9 @@ bindsym $mod+minus scratchpad show
 for_window [class=".*"] border pixel 0
 gaps inner 15
 gaps outer 20
-workspace $ws2 gaps inner 15
 workspace $ws2 gaps outer 40
+workspace $ws3 gaps outer 40
+workspace $ws4 gaps outer 60
 border_radius 6
 assign [class="Brave-browser"] $ws1
 # assign [class="firefox"] $ws1

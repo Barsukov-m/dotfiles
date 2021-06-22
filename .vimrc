@@ -6,8 +6,9 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mg979/vim-visual-multi'
 Plug 'tpope/vim-commentary'
 
-Plug 'itchyny/lightline.vim'
+Plug 'Yggdroot/indentLine'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'itchyny/lightline.vim'
 Plug 'mcchrish/nnn.vim'
 
 " Plug 'airblade/vim-gitgutter'
@@ -86,7 +87,7 @@ let g:nnn#layout = { 'window': { 'width': 0.6, 'height': 0.6, 'highlight': 'Debu
 let g:nnn#action = {
   \ '<C-t>': 'tab split',
   \ '<C-x>': 'split',
-  \ '<C-v>': 'vsplit' }
+  \ '<C-s>': 'vsplit' }
 let g:nnn#session = 'local'
 let g:nnn#command = 'nnn -deH'
    
@@ -96,7 +97,7 @@ nnoremap <C-p> :FZF<CR>
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
-  \ 'ctrl-v': 'vsplit'
+  \ 'ctrl-s': 'vsplit'
   \ } 
   
    

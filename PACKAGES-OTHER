@@ -1,22 +1,25 @@
 GIMP
-$flatpak install org.gimp.GIMP
+  flatpak install org.gimp.GIMP
 
 FontManager
-$ flatpak install org.gnome.FontManager
+  flatpak install org.gnome.FontManager
 
 EmojiOneColor
-$ wget https://github.com/eosrei/emojione-color-font/releases/download/v1.4/EmojiOneColor-SVGinOT-Linux-1.4.tar.gz && tar zxf EmojiOneColor-SVGinOT-Linux-1.4.tar.gz && cd EmojiOneColor-SVGinOT-Linux-1.4
-$ ./install
+  wget https://github.com/eosrei/emojione-color-font/releases/download/v1.4/EmojiOneColor-SVGinOT-Linux-1.4.tar.gz && tar zxf EmojiOneColor-SVGinOT-Linux-1.4.tar.gz && cd EmojiOneColor-SVGinOT-Linux-1.4
+  ./install
 
 NVIDIA Drivers
-$ sudo pacman -Syu
-$ uname -r
-$ sudo pacman -S dkms linuxXX-headers ; XX - kernel version
+  sudo pacman -Syu
+  uname -r
+  sudo pacman -S dkms linuxXX-headers ; XX - kernel version
 /etc/default/grub:
-GRUB_CMDLINE_LINUX="nouveau.modeset=0"
-$ sudo update-grub
-$ sudo sh ./NVIDIA-Linux-x86_64-XXX.run
+>> GRUB_CMDLINE_LINUX="nouveau.modeset=0"
+  sudo update-grub
+  sudo sh ./NVIDIA-Linux-x86_64-XXX.run
 Yes. Yes.
 
 NodeJS
-curl -sL install-node.now.sh/release | bash
+  curl -sL install-node.now.sh/release | bash
+
+browser-sync
+  sudo npm i -g browser-sync

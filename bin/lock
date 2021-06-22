@@ -1,5 +1,7 @@
 #!/bin/bash
 
+IMAGE=~/Pictures/Wallpapers/lock-min.jpg
+
 B='#00000000'  # blank
 C='#ffffff22'  # clear
 D='#ffffffcc'  # default
@@ -7,7 +9,7 @@ T='#ffffffff'  # text
 V='#ffffffff'  # verification
 W='#77dd11bb'  # wrong
 
-i3lock -c 334455 -e --keylayout 1\
+i3lock -i $IMAGE -e --keylayout 1\
     --insidever-color=$C\
     --ringver-color=$V\
     --insidewrong-color=$C\

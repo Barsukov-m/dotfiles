@@ -3,7 +3,7 @@
 (brush "2. Hardness 050")
 (dynamics "Dynamics Off")
 (pattern "Pine")
-(gradient "FG to BG (RGB)")
+(gradient "FG to Transparent")
 (palette "Colour History")
 
 # end of gimp-vector-tool options
