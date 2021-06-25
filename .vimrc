@@ -45,8 +45,8 @@ endif
 
 filetype indent on
 set mouse=i
-set tabstop=4 softtabstop=4
-set shiftwidth=4
+set tabstop=2 softtabstop=2
+set sw=2
 set expandtab
 set smartindent
 set relativenumber
@@ -90,8 +90,8 @@ let g:nnn#action = {
   \ '<C-s>': 'vsplit' }
 let g:nnn#session = 'local'
 let g:nnn#command = 'nnn -deH'
-   
-   
+
+
 "" FZF
 nnoremap <C-p> :FZF<CR>
 let g:fzf_action = {
@@ -100,7 +100,7 @@ let g:fzf_action = {
   \ 'ctrl-s': 'vsplit'
   \ } 
   
-   
+
 "" Integrated terminal
 set splitright
 set splitbelow
@@ -111,8 +111,8 @@ function! OpenTerminal()
   resize 10
 endfunction
 nnoremap tt :call OpenTerminal()<CR>
-   
-   
+
+
 "" Tabs and panels 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -123,13 +123,13 @@ nnoremap <M-h> :tabprevious<CR>
 nnoremap <M-l> :tabnext<CR>
 nnoremap <M-S-h> :tabmove -1<CR>
 nnoremap <M-S-l> :tabmove +1<CR>
-         
-        
+
+
 "" CoC        
 set cmdheight=2     
 set updatetime=300  
 set shortmess+=c    
-       
+
 if has("nvim-0.5.0") || has("patch-8.1.1564")
   set signcolumn=number
 else 
@@ -141,12 +141,12 @@ inoremap <silent><expr> <TAB>
   \ <SID>check_back_space() ? "\<TAB>" :
   \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-    
+
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-   
+
 if has('nvim')
   inoremap <silent><expr> <c-space> coc#refresh()
 else
@@ -155,8 +155,8 @@ endif
 
 """ Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
-   
-   
+
+
 "" Markdown Preview
 let g:mkdp_auto_start = 1
 let g:mkdp_auto_close = 1
