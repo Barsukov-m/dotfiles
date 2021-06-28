@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.gnome.Nautilus.desktop" score="0" last-seen="1624534540"/>
+    <application id="org.gnome.tweaks.desktop" score="4" last-seen="1624562402"/>
+    <application id="firefox.desktop" score="54" last-seen="1624562432"/>
+    <application id="org.gnome.Terminal.desktop" score="0" last-seen="1624561632"/>
+    <application id="org.gnome.Totem.desktop" score="0" last-seen="1624534537"/>
+    <application id="org.gnome.Calculator.desktop" score="0" last-seen="1624534338"/>
+    <application id="kitty.desktop" score="113" last-seen="1624562402"/>
+    <application id="gnome-control-center.desktop" score="58" last-seen="1624562122"/>
+    <application id="gnome-keyboard-panel.desktop" score="0" last-seen="0"/>
+    <application id="brave-browser.desktop" score="2" last-seen="1624562301"/>
+    <application id="org.gnome.Extensions.desktop" score="0" last-seen="1624562432"/>
+    <application id="org.manjaro.pamac.manager.desktop" score="0" last-seen="1624561182"/>
+  </context>
+</application-state>

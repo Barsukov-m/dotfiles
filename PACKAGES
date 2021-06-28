@@ -9,14 +9,13 @@ ffmpeg
 flameshot
 fzf
 gnome-font-viewer
-i3-gaps
-imagemagick
 kitty
 lightdm
 lightdm-gtk-greeter
 libpulse
 lxappearance
 mlocate
+nautilus
 neovim
 noto-fonts
 noto-fonts-cjk
@@ -25,7 +24,6 @@ numlockx
 oh-my-zsh
 p7zip
 pamixer
-pfetch
 picom
 python-pip
 redshift
@@ -33,7 +31,6 @@ rofi
 speedcrunch
 telegram-desktop
 the_silver_searcher
-thunar
 tk
 trash-cli
 ttf-dejavu
