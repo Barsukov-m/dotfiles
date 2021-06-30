@@ -1558,9 +1558,6 @@
   <resource identifier="DHF Story Brush" checksum="(null)">
   </resource>
 
-  <resource identifier="Droid Sans" checksum="(null)">
-  </resource>
-
   <resource identifier="Droid Sans Mono for Powerline Plus Nerd File Types Mono" checksum="(null)">
   </resource>
 
@@ -1628,9 +1625,6 @@
   </resource>
 
   <resource identifier="icomoon" checksum="(null)">
-  </resource>
-
-  <resource identifier="icomoon-feather" checksum="(null)">
   </resource>
 
   <resource identifier="icons-in-terminal" checksum="(null)">
@@ -2132,9 +2126,6 @@
   </resource>
 
   <resource identifier="Lobster 1.4," checksum="(null)">
-  </resource>
-
-  <resource identifier="Material" checksum="(null)">
   </resource>
 
   <resource identifier="Material-Design-Iconic-Font Medium" checksum="(null)">
@@ -4961,6 +4952,9 @@
   </resource>
 
   <resource identifier="v_KomikaAxis" checksum="(null)">
+  </resource>
+
+  <resource identifier="waffle" checksum="(null)">
   </resource>
 
   <resource identifier="Webdings" checksum="(null)">

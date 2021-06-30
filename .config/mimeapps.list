@@ -8,6 +8,7 @@ image/gif=feh.desktop;
 application/xml=firefox.desktop;brave-browser.desktop;
 font/ttf=org.gnome.FontManager.desktop;
 application/x-cd-image=nnn.desktop;
+text/x-patch=vim.desktop;nvim.desktop;
 
 [Default Applications]
 application/pdf=org.pwmt.zathura.desktop
@@ -26,3 +27,4 @@ application/xhtml+xml=firefox.desktop
 application/x-xpinstall=firefox.desktop
 image/x-psd=gimp.desktop
 image/x-xcf=gimp.desktop
+text/x-patch=nvim.desktop

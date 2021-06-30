@@ -1,6 +1,6 @@
 # GIMP user context
 
-(tool "gimp-move-tool")
+(tool "gimp-paintbrush-tool")
 (paint-info "gimp-paintbrush")
 (brush "2. Hardness 050")
 (dynamics "Dynamics Off")
