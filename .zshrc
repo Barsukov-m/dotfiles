@@ -2,7 +2,7 @@ export ZSH="/home/michael/.config/oh-my-zsh"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="brave"
-export FZF_DEFAULT_COMMAND="ag -g ''"
+export FZF_DEFAULT_COMMAND="ag -g '' --hidden"
 
 ZSH_THEME="main"
 DISABLE_UPDATE_PROMPT="true"
@@ -31,8 +31,7 @@ export NNN_FALLBACK_OPENER="gvfs-open"
 
 ## Aliases
 alias l="ls -A"
-alias ll="ls -Alh"
-alias lls="ls -Alhgo"
+alias ll="ls -Alhgo"
 alias alist="cat ~/.zshrc | grep 'alias '"
 alias up="sudo pacman -Syu && flatpak update -y && sudo updatedb"
 alias u="cd ~/Documents/university"
@@ -49,24 +48,23 @@ alias t0="redshift -x"
 alias trash
 
 ## Screensavers
-alias pipes="bash ~/.local/share/etc/pipes.sh"
+# alias pipes="sh ~/.local/share/etc/pipes.sh"
 alias rain="sh ~/.local/share/etc/rain.sh"
 alias wtime="tty-clock -cbnC 4"
 alias feh="feh -d --scale-down"
 
 ## Kitty
 alias icat="kitty +kitten icat"
-alias kdiff="kitty +kitten diff"
-alias unicode="kitty +kitten unicode_input"
 
 ## Pacman
 alias S="sudo pacman -S"                    # Install a package
+alias S!="sudo pacman -Syu"                 # Full upgrade
 alias Syu="sudo pacman -Syu"                # Full upgrade
-alias Qu="sudo pacman -Qu"                  # List upgradable
-alias Qs="sudo pacman -Qs"                  # Short description
-alias Qi="sudo pacman -Qi"                  # Package info
-alias Qk="sudo pacman -QK"                  # Number of package files
-alias Ql="sudo pacman -Ql"                  # List of package files
+alias Qu="pacman -Qu"                       # List upgradable
+alias Qs="pacman -Qs"                       # Short description
+alias Qi="pacman -Qi"                       # Package info
+alias Qk="pacman -QK"                       # Number of package files
+alias Ql="pacman -Ql"                       # List of package files
 alias R="sudo pacman -R"                    # Remove a package
 alias R!="sudo pacman -Rcns"                # Remove a package with dependencies
 # Remove unneccessary packages

@@ -99,8 +99,8 @@ mode "resize" {
 
 # colors
 # class                 border  backgr. text    indicator child_border
-client.focused_inactiv  #333333 #222222 #888888 #292d2e   #222222
-client.focused          #333333 #5f676a #ffffff #484e50   #5f676a
+client.focused          #fabc2e #d79920 #ffffff #fabc2e   #d79920
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
@@ -114,11 +114,11 @@ exec_always pamixer -u
 $exec_noid sh ~/.fehbg
 $exec_noid numlockx
 bindsym $mod+Escape exec sh lock
-bindsym $mod+d $exec_noid rofi -show combi
+bindsym $mod+d $exec_noid rofi -show drun
 bindsym $mod+Return exec kitty
 
 # autostart
-$exec_noid picom &
+# $exec_noid picom &
 $exec_noid dunst -config ~/.config/dunst/dunstrc
 $exec_noid sleep 3 && xfce4-power-manager
 exec_always sh ~/.config/polybar/launch.sh
@@ -142,14 +142,11 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # windows
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 1
 gaps inner 15
-gaps outer 20
-workspace $ws2 gaps outer 40
-workspace $ws3 gaps outer 40
+gaps outer 40
 workspace $ws4 gaps outer 60
-border_radius 6
-assign [class="Brave-browser"] $ws1
+# assign [class="Brave-browser"] $ws1
 # assign [class="firefox"] $ws1
 assign [class="Code"] $ws3
 assign [class="TelegramDesktop"] $ws4

@@ -1,6 +1,7 @@
 # GIMP gimp-vector-tool options
 
-(brush "2. Hardness 050")
+(foreground (color-rgb 0.93333339691162109 0.094117656350135803 0.098039224743843079))
+(brush "2. Hardness 100")
 (dynamics "Dynamics Off")
 (pattern "Pine")
 (gradient "FG to Transparent")

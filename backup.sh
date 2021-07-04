@@ -1,12 +1,12 @@
 #!/bin/sh
 
-DOTFILES_DIR=~/Documents/dotfiles
+DOTFILES_DIR=~/.config/dotfiles
 
 # Back up the configuration
 mkdir -p $DOTFILES_DIR/{.local/share,.config}
-sudo cp -rv ~/{.themes,.vim,.vimrc,.xinitrc,.Xresources,.zshrc} $DOTFILES_DIR
+sudo cp -rv ~/{.themes,.vim,.xinitrc,.Xresources,.zshrc} $DOTFILES_DIR
 sudo cp -rv ~/.local/share/{etc,gnome-shell,icons} $DOTFILES_DIR/.local/share
-sudo cp -rv ~/.config/{cava,dunst,flameshot,fontconfig,GIMP,i3,kitty,mimeapps.list,neofetch,nnn,nvim,picom,polybar,rofi,xfce4,zathura} $DOTFILES_DIR/.config
+sudo cp -rv ~/.config/{cava,dunst,fontconfig,GIMP,i3,kitty,mimeapps.list,neofetch,nnn,nvim,picom,polybar,rofi,SpeedCrunch,xfce4,zathura} $DOTFILES_DIR/.config
 
 # Check git status
 gs="$(git status | grep -i modified)"
