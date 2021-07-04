@@ -99,6 +99,7 @@ mode "resize" {
 
 # colors
 # class                 border  backgr. text    indicator child_border
+# client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
 client.focused          #fabc2e #d79920 #ffffff #fabc2e   #d79920
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
@@ -118,7 +119,7 @@ bindsym $mod+d $exec_noid rofi -show drun
 bindsym $mod+Return exec kitty
 
 # autostart
-# $exec_noid picom &
+$exec_noid picom &
 $exec_noid dunst -config ~/.config/dunst/dunstrc
 $exec_noid sleep 3 && xfce4-power-manager
 exec_always sh ~/.config/polybar/launch.sh
