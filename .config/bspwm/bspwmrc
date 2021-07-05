@@ -1,0 +1,41 @@
+#! /bin/sh
+
+# Autostart
+pgrep -x sxhkd > /dev/null || sxhkd &
+xrdb merge .Xresources
+
+picom &
+~/.config/polybar/launch.sh &
+~/.fehbg &
+
+dunst -config ~/.config/dunst/dunstrc &
+pamixer -u &
+numlockx &
+xfce4-power-manager &
+
+
+# Config
+bspc monitor -d I II III IV V
+
+bspc config border_width            2
+bspc config window_gap              20
+
+bspc config top_padding             50
+bspc config right_padding           40
+bspc config bottom_padding          30
+bspc config left_padding            40
+
+bspc config focus_follows_pointer   true
+
+bspc config split_ratio             0.52
+bspc config borderless_monocle      false
+bspc config gapless_monocle         false
+
+bspc config focused_border_color "#d79920"
+# bspc config normal_border_color "#"
+
+# bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a firefox desktop='^1'
+# bspc rule -a mplayer2 state=floating
+# bspc rule -a Kupfer.py focus=on
+# bspc rule -a Screenkey manage=off

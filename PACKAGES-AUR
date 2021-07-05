@@ -2,11 +2,13 @@ autotiling
 brave-bin
 cava
 dragon-drag-and-drop
-gotop-bin
-i3lock-color
 font-manager
+gotop-bin
+i3-gaps
+i3lock-color
 neofetch-git
 nnn-icons
 pfetch
+picom-ibhagwan-git
 ttf-joypixels
 tty-clock

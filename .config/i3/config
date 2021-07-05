@@ -110,7 +110,6 @@ client.background       #ffffff
 # xorg
 # exec_always setxkbmap -layout us,ua -option grp:win_space_toggle
 # exec_always setxkbmap -option compose:menu
-exec_always xset r rate 250 50
 exec_always pamixer -u
 $exec_noid sh ~/.fehbg
 $exec_noid numlockx

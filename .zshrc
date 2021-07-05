@@ -16,6 +16,7 @@ mkcd () {
 }
 
 xset b off # disable the sound bell
+xset r rate 250 50
 
 ## NNN Configuration
 export NNN_TRASH=1
@@ -42,7 +43,7 @@ alias nv="nvim"
 alias ascii="less ~/.local/share/etc/ascii"
 alias inet="ping archlinux.org"
 alias conadd="nmcli device connect wlan0"
-alias conup="nmcli connection up Barsik_2"
+alias conadd="nmcli device connect $(ls /sys/class/net | grep -o "wl.*")"
 alias t="redshift -P -O"
 alias t0="redshift -x"
 alias trash
