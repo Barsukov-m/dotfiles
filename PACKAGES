@@ -4,9 +4,11 @@ cmatrix
 dunst
 feh
 ffmpeg
+ffmpegthumbnailer
 flameshot
 fzf
 gimp
+gstreamer
 gnome-font-viewer
 kitty
 lightdm
@@ -34,6 +36,7 @@ trash-cli
 ttf-dejavu
 ttf-liberation
 ttf-ubuntu-font-family
+tumbler
 vim
 vlc
 wget

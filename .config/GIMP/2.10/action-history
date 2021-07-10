@@ -1,12 +1,12 @@
 # GIMP action-history
 
-(history-item "tools-opacity-decrease" 5)
-(history-item "tools-move" 1)
+(history-item "tools-opacity-decrease" 1)
 (history-item "file-export-as" 4)
-(history-item "tools-text" 2)
+(history-item "tools-move" 4)
+(history-item "tools-text" 1)
 (history-item "image-new" 4)
-(history-item "tools-paintbrush" 1)
-(history-item "file-quit" 1)
+(history-item "tools-paintbrush" 0)
+(history-item "file-quit" 2)
 (history-item "view-zoom-in" 0)
 (history-item "view-zoom-out" 1)
 (history-item "image-scale" 1)

@@ -3,6 +3,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="brave"
 export FZF_DEFAULT_COMMAND="ag -g '' --hidden"
+export HDD=/dev/sdb1
 
 ZSH_THEME="main"
 DISABLE_UPDATE_PROMPT="true"
@@ -42,11 +43,11 @@ alias nf="neofetch"
 alias nv="nvim"
 alias ascii="less ~/.local/share/etc/ascii"
 alias inet="ping archlinux.org"
-alias conadd="nmcli device connect wlan0"
 alias conadd="nmcli device connect $(ls /sys/class/net | grep -o "wl.*")"
 alias t="redshift -P -O"
 alias t0="redshift -x"
 alias trash
+alias hdd="sudo mkdir -p /run/media/michael/HDD && sudo mount $HDD /run/media/michael/HDD "
 
 ## Screensavers
 # alias pipes="sh ~/.local/share/etc/pipes.sh"
