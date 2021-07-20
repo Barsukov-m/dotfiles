@@ -1,12 +1,12 @@
-Xft.dpi: 100
+Xft.dpi: 97
 Xft.antialias: 1
 Xft.hinting: 1
 Xft.rgba: rgb
 Xft.autohint: 0
-Xft.hintstyle: hintfull
+Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-*.font:                     xft:Iosevka:size=14:autohint=true
+*.font:                     "xft:Terminus:pixelsize=12"
 *.scrollBar:                false
 *.cursorBlink:              true
 *.internalBorder:           25

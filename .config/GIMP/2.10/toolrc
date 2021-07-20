@@ -98,7 +98,7 @@
             (visible yes))))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-pencil-tool")
+    (active-tool "gimp-paintbrush-tool")
     (children
         (GimpToolInfo "gimp-paintbrush-tool"
             (icon-name "gimp-tool-paintbrush")

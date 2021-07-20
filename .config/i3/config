@@ -99,7 +99,6 @@ mode "resize" {
 
 # colors
 # class                 border  backgr. text    indicator child_border
-# client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
 client.focused          #fabc2e #d79920 #ffffff #fabc2e   #d79920
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
@@ -110,6 +109,7 @@ client.background       #ffffff
 # xorg
 # exec_always setxkbmap -layout us,ua -option grp:win_space_toggle
 # exec_always setxkbmap -option compose:menu
+exec_always xset r rate 250 50
 exec_always pamixer -u
 $exec_noid sh ~/.fehbg
 $exec_noid numlockx
@@ -122,7 +122,7 @@ $exec_noid picom &
 $exec_noid dunst -config ~/.config/dunst/dunstrc
 $exec_noid sleep 3 && xfce4-power-manager
 exec_always sh ~/.config/polybar/launch.sh
-# exec_always eval `ssh-agent -s`
+exec_always eval `ssh-agent -s`
 $exec_aw_noid autotiling
 
 # screenshots
@@ -142,9 +142,9 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # windows
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 2
 gaps inner 15
-gaps outer 40
+gaps outer 25
 workspace $ws4 gaps outer 60
 # assign [class="Brave-browser"] $ws1
 # assign [class="firefox"] $ws1

@@ -1,17 +1,18 @@
 [Added Associations]
 text/plain=nvim;org.gnome.gedit.desktop;
 application/pdf=org.pwmt.zathura.desktop;firefox.desktop;brave-browser.desktop;
-x-scheme-handler/tg=userapp-Telegram Desktop-380H10.desktop;userapp-Telegram Desktop-Q2Y030.desktop;userapp-Telegram Desktop-EU8T50.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-380H10.desktop;userapp-Telegram Desktop-Q2Y030.desktop;
 image/png=feh.desktop;
 image/jpeg=feh.desktop;
 image/gif=feh.desktop;
 application/xml=firefox.desktop;brave-browser.desktop;
 font/ttf=org.gnome.FontManager.desktop;
 application/x-cd-image=nnn.desktop;
+text/x-patch=vim.desktop;nvim.desktop;
 
 [Default Applications]
 application/pdf=org.pwmt.zathura.desktop
-x-scheme-handler/tg=userapp-Telegram Desktop-EU8T50.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-Q2Y030.desktop
 image/png=feh.desktop
 image/jpeg=feh.desktop
 text/html=firefox.desktop
@@ -26,3 +27,4 @@ application/xhtml+xml=firefox.desktop
 application/x-xpinstall=firefox.desktop
 image/x-psd=gimp.desktop
 image/x-xcf=gimp.desktop
+text/x-patch=nvim.desktop

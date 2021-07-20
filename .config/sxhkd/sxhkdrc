@@ -2,7 +2,7 @@ super + Return
 	kitty
 
 super + d
-	rofi -show drun
+	sh ~/.config/rofi/scripts/launcher.sh
 
 super + alt + r
 	pkill -USR1 -x sxhkd
@@ -20,10 +20,10 @@ super + Escape
   sh lock
 
 XF86MonBrightnessUp
-  xbacklight -inc 10
+  xbacklight -inc 5
 
-XF86MonBrightnessDOwn
-  xbacklight -dec 10
+XF86MonBrightnessDown
+  xbacklight -dec 5
 
 XF86AudioRaiseVolume
   pamixer -i 5

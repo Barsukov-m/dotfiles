@@ -3,7 +3,6 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="brave"
 export FZF_DEFAULT_COMMAND="ag -g '' --hidden"
-export HDD=/dev/sdb1
 
 ZSH_THEME="main"
 DISABLE_UPDATE_PROMPT="true"
@@ -39,6 +38,7 @@ alias up="sudo pacman -Syu && flatpak update -y && sudo updatedb"
 alias u="cd ~/Documents/university"
 alias p="python3"
 alias n="nnn -deH"
+alias sun="sudo nnn -deH"
 alias nf="neofetch"
 alias nv="nvim"
 alias ascii="less ~/.local/share/etc/ascii"
@@ -46,8 +46,8 @@ alias inet="ping archlinux.org"
 alias conadd="nmcli device connect $(ls /sys/class/net | grep -o "wl.*")"
 alias t="redshift -P -O"
 alias t0="redshift -x"
-alias trash
-alias hdd="sudo mkdir -p /run/media/michael/HDD && sudo mount $HDD /run/media/michael/HDD "
+alias btc="bluetoothctl"
+
 
 ## Screensavers
 # alias pipes="sh ~/.local/share/etc/pipes.sh"

@@ -11,8 +11,8 @@
     (size 640 480))
 (session-info "toplevel"
     (factory-entry "gimp-single-image-window")
-    (position 60 70)
-    (size 1796 956)
+    (position 40 60)
+    (size 1282 674)
     (open-on-exit)
     (aux-info
         (left-docks-width "186")
@@ -59,7 +59,7 @@
                 (aux-info
                     (show-button-bar "true"))))
         (book
-            (position 240)
+            (position 216)
             (current-page 0)
             (dockable "gimp-layer-list"
                 (tab-style automatic)
@@ -82,11 +82,11 @@
     (size 827 508))
 (session-info "toplevel"
     (factory-entry "gimp-image-new-dialog")
-    (position 143 165))
+    (position 145 167))
 (session-info "toplevel"
     (factory-entry "gimp-file-save-dialog")
     (position 0 27)
-    (size 900 675))
+    (size 780 585))
 (session-info "toplevel"
     (factory-entry "gimp-image-new-dialog")
     (position 404 238))
@@ -95,25 +95,32 @@
     (position 471 244))
 (session-info "toplevel"
     (factory-entry "gimp-file-export-dialog")
-    (position 403 93)
-    (size 900 675))
+    (position 406 96)
+    (size 780 585))
 (session-info "toplevel"
     (factory-entry "gimp-file-open-dialog")
     (position 291 96)
-    (size 900 675))
+    (size 780 585))
 (session-info "toplevel"
     (factory-entry "gimp-operation-tool-dialog")
-    (position 1305 204))
+    (position 865 174))
 (session-info "toplevel"
     (factory-entry "gimp-curves-tool-dialog")
     (position 833 54)
     (size 421 598))
 (session-info "toplevel"
-    (factory-entry "gimp-brightness-contrast-tool-dialog")
-    (position 255 69))
+    (factory-entry "gimp-action-search-dialog")
+    (position 598 365)
+    (size 166 384))
 (session-info "toplevel"
     (factory-entry "gimp-toolbox-color-dialog")
-    (position 0 93))
+    (position 462 181))
+(session-info "toplevel"
+    (factory-entry "gimp-unified-transform-tool-dialog")
+    (position 428 285))
+(session-info "toplevel"
+    (factory-entry "gimp-brightness-contrast-tool-dialog")
+    (position 496 228))
 
 (hide-docks no)
 (single-window-mode yes)

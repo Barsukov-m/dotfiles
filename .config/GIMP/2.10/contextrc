@@ -1,9 +1,9 @@
 # GIMP user context
 
-(tool "gimp-pencil-tool")
-(paint-info "gimp-pencil")
+(tool "gimp-bucket-fill-tool")
+(paint-info "gimp-paintbrush")
 (foreground (color-rgb 0.15294117647058825 0.15294117647058825 0.15294117647058825))
-(brush "2. Hardness 100")
+(brush "2. Hardness 050")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")
 (pattern "Pine")

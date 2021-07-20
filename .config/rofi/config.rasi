@@ -1,7 +1,6 @@
+/** Basic config file **/
+
 configuration {
-  modi: "window,drun,run,file-browser,combi";
-  font: "Iosevka Nerd Font 13";
-  theme: "gruvbox-dark-soft";
-  combi-modi: "run";
-  show-icons: true;
+  show-icons:         true;
+  icon-theme:         "Papirus";
 }

@@ -58,7 +58,7 @@ set rnu               " relativenumber
 set sc                " showcmd
 set scs               " smartcase
 set si                " smartindent
-set nosmd             " noshowmode
+set nosmd               " noshowmode
 set so=5              " scrolloff
 set sw=2 ts=2 sts=2   " tab options
 set wrap

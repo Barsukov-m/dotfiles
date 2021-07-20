@@ -9,7 +9,13 @@ T='#ffffffff'  # text
 V='#ffffffff'  # verification
 W='#77dd11bb'  # wrong
 
-i3lock -i $IMAGE -e --keylayout 1\
+i3lock -c "#272727" -e --keylayout 1\
+    --time-font=Lato\
+    --date-font=Lato\
+    --layout-font=Lato\
+    --verif-font=Lato\
+    --wrong-font=Lato\
+    --greeter-font=Lato\
     --insidever-color=$C\
     --ringver-color=$V\
     --insidewrong-color=$C\

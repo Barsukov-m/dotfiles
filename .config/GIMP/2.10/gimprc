@@ -65,7 +65,7 @@
 (theme "System")
 (icon-theme "Symbolic-High-Contrast")
 (color-profile-policy keep)
-(layer-new-name "dim")
+(layer-new-name "ип")
 (fill-options
     (style solid)
     (antialias yes)
