@@ -8,6 +8,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
   Plug 'itchyny/lightline.vim'
   Plug 'mcchrish/nnn.vim'
+  Plug 'junegunn/goyo.vim'
+  Plug 'junegunn/limelight.vim'
+  Plug 'reedes/vim-colors-pencil'
+  Plug 'subnut/vim-iawriter'
 
   " Plug 'airblade/vim-gitgutter'
   Plug 'joshdick/onedark.vim'
@@ -69,14 +73,15 @@ syntax on
 imap <C-v> <esc>P
 nnoremap <C-j> gj
 nnoremap <C-k> gk
-nmap <silent> <space> :noh<CR>
-nnoremap tw :set wrap!<CR>
+nmap <silent> <space> :noh<cr>
+nnoremap tw :set wrap!<cr>
 nnoremap д l
 nnoremap л k
 nnoremap о j
 nnoremap р h
 vnoremap <C-c> "+y
-vnoremap <silent> <F9> :sort<CR>
+vnoremap <silent> <F9> :sort<cr>
+noremap <silent> <F1> :Iawriter<cr>
 
 
 " INTEGRATED TERMINAL
@@ -85,7 +90,7 @@ function! OpenTerminal()
   split term://zsh
   resize 10
 endfunction
-nnoremap tt :call OpenTerminal()<CR>
+nnoremap tt :call OpenTerminal()<cr>
 set splitbelow
 set splitright
 tnoremap <Esc> <C-\><C-n>
@@ -97,10 +102,10 @@ nnoremap <silent> <C-h> <C-w>h
 nnoremap <silent> <C-j> <C-w>j
 nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-l> <C-w>l
-nnoremap <silent> <M-S-h> :tabmove -1<CR>
-nnoremap <silent> <M-S-l> :tabmove +1<CR>
-nnoremap <silent> <M-h> :tabprevious<CR>
-nnoremap <silent> <M-l> :tabnext<CR>
+nnoremap <silent> <M-S-h> :tabmove -1<cr>
+nnoremap <silent> <M-S-l> :tabmove +1<cr>
+nnoremap <silent> <M-h> :tabprevious<cr>
+nnoremap <silent> <M-l> :tabnext<cr>
 
 
 " LIGTHLINE
@@ -110,7 +115,7 @@ let g:lightline = {
 
 
 " NNN
-nnoremap <silent> ; :Np %:p:h<CR>
+nnoremap <silent> ; :Np %:p:h<cr>
 " let g:nnn#layout = { 'left': '~20%' } " or right, up, down
 let g:nnn#layout = { 'window': { 'width': 0.6, 'height': 0.8, 'highlight': 'Debug' } }
 let g:nnn#action = {
@@ -122,7 +127,7 @@ let g:nnn#command = 'nnn -deH'
 
 
 " FZF
-nnoremap <C-p> :FZF<CR>
+nnoremap <C-p> :FZF<cr>
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',

@@ -15,8 +15,8 @@
     (size 1282 674)
     (open-on-exit)
     (aux-info
-        (left-docks-width "186")
-        (right-docks-width "209")
+        (left-docks-width "203")
+        (right-docks-width "269")
         (maximized "no"))
     (gimp-toolbox
         (side left)
@@ -46,11 +46,11 @@
                 (tab-style automatic)
                 (aux-info
                     (show-button-bar "true")))
-            (dockable "gimp-pattern-grid"
+            (dockable "gimp-font-list"
                 (tab-style automatic)
                 (aux-info
                     (show-button-bar "true")))
-            (dockable "gimp-font-list"
+            (dockable "gimp-pattern-grid"
                 (tab-style automatic)
                 (aux-info
                     (show-button-bar "true")))
@@ -59,19 +59,19 @@
                 (aux-info
                     (show-button-bar "true"))))
         (book
-            (position 216)
+            (position 275)
             (current-page 0)
             (dockable "gimp-layer-list"
                 (tab-style automatic)
                 (preview-size 32)
                 (aux-info
                     (show-button-bar "true")))
-            (dockable "gimp-channel-list"
+            (dockable "gimp-vectors-list"
                 (tab-style automatic)
                 (preview-size 32)
                 (aux-info
                     (show-button-bar "true")))
-            (dockable "gimp-vectors-list"
+            (dockable "gimp-channel-list"
                 (tab-style automatic)
                 (preview-size 32)
                 (aux-info
@@ -103,24 +103,24 @@
     (size 780 585))
 (session-info "toplevel"
     (factory-entry "gimp-operation-tool-dialog")
-    (position 865 174))
+    (position 732 147))
 (session-info "toplevel"
     (factory-entry "gimp-curves-tool-dialog")
     (position 833 54)
-    (size 421 598))
+    (size 434 610))
 (session-info "toplevel"
     (factory-entry "gimp-action-search-dialog")
-    (position 598 365)
+    (position 598 190)
     (size 166 384))
 (session-info "toplevel"
     (factory-entry "gimp-toolbox-color-dialog")
-    (position 462 181))
+    (position 877 177))
 (session-info "toplevel"
     (factory-entry "gimp-unified-transform-tool-dialog")
     (position 428 285))
 (session-info "toplevel"
     (factory-entry "gimp-brightness-contrast-tool-dialog")
-    (position 496 228))
+    (position 795 167))
 
 (hide-docks no)
 (single-window-mode yes)

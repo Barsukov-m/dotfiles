@@ -1177,7 +1177,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="bc03444ae346469df33e8aa47480916a">
+  <resource identifier="gimp-palette-color-history" checksum="20933214e12653bad573ab89739148fd">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">
@@ -1303,66 +1303,6 @@
   <resource identifier="${gimp_data_dir}/palettes/Web.gpl" checksum="f02e8dfa23d01d6acfbab7f895c2dd16">
   </resource>
 
-  <resource identifier="Adobe Courier" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Courier Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Courier Bold Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Courier Medium Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Helvetica" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Helvetica Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Helvetica Bold Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Helvetica Medium Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe New Century Schoolbook" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe New Century Schoolbook Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe New Century Schoolbook Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe New Century Schoolbook Medium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Times" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Times Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Times Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Times Medium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Utopia" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Utopia Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Utopia Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Adobe Utopia Medium Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="American Captain Cyrillic" checksum="(null)">
   </resource>
 
@@ -1432,49 +1372,7 @@
   <resource identifier="BERNIER Shade" checksum="(null)">
   </resource>
 
-  <resource identifier="B&amp;H Lucida Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="B&amp;H Lucida Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="B&amp;H LucidaBright" checksum="(null)">
-  </resource>
-
-  <resource identifier="B&amp;H LucidaBright Medium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="B&amp;H Lucida Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="B&amp;H Lucida Medium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="B&amp;H LucidaTypewriter Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="B&amp;H LucidaTypewriter Medium" checksum="(null)">
-  </resource>
-
   <resource identifier="BIPs" checksum="(null)">
-  </resource>
-
-  <resource identifier="Bitstream Charter" checksum="(null)">
-  </resource>
-
-  <resource identifier="Bitstream Charter Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Bitstream Charter Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Bitstream Charter Medium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Bitstream Terminal" checksum="(null)">
-  </resource>
-
-  <resource identifier="Bitstream Terminal Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Bitstream Vera Sans" checksum="(null)">
@@ -1567,6 +1465,15 @@
   <resource identifier="Code Pro Light, Light" checksum="(null)">
   </resource>
 
+  <resource identifier="Comfortaa" checksum="(null)">
+  </resource>
+
+  <resource identifier="Comfortaa Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Comfortaa Light" checksum="(null)">
+  </resource>
+
   <resource identifier="Cookie" checksum="(null)">
   </resource>
 
@@ -1577,12 +1484,6 @@
   </resource>
 
   <resource identifier="Dancing Script Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="DEC Terminal" checksum="(null)">
-  </resource>
-
-  <resource identifier="DEC Terminal Bold" checksum="(null)">
   </resource>
 
   <resource identifier="DejaVu Math TeX Gyre" checksum="(null)">
@@ -1672,6 +1573,9 @@
   <resource identifier="Fantasque Sans Mono" checksum="(null)">
   </resource>
 
+  <resource identifier="FantasqueSansMono Nerd Font" checksum="(null)">
+  </resource>
+
   <resource identifier="feather" checksum="(null)">
   </resource>
 
@@ -1730,6 +1634,9 @@
   </resource>
 
   <resource identifier="Hack Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Hurmit Nerd Font Mono Medium" checksum="(null)">
   </resource>
 
   <resource identifier="icomoon" checksum="(null)">
@@ -2528,9 +2435,6 @@
   </resource>
 
   <resource identifier="MT Extra" checksum="(null)">
-  </resource>
-
-  <resource identifier="mtx" checksum="(null)">
   </resource>
 
   <resource identifier="Nimbus Mono PS" checksum="(null)">
@@ -5173,9 +5077,6 @@
   <resource identifier="v_KomikaAxis" checksum="(null)">
   </resource>
 
-  <resource identifier="waffle" checksum="(null)">
-  </resource>
-
   <resource identifier="Webdings" checksum="(null)">
   </resource>
 
@@ -5186,12 +5087,6 @@
   </resource>
 
   <resource identifier="Wingdings 3," checksum="(null)">
-  </resource>
-
-  <resource identifier="xos4 Terminus" checksum="(null)">
-  </resource>
-
-  <resource identifier="xos4 Terminus Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Z003 Medium Italic" checksum="(null)">

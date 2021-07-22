@@ -8,7 +8,7 @@
  */
 
 configuration {
-    lines:							4;
+    lines:							5;
     columns:						1;
     font: 							"Terminus 12";
     bw: 							0;
@@ -16,7 +16,7 @@ configuration {
     padding: 						0;
     fixed-num-lines: 				true;
     show-icons: 					false;
-    sidebar-mode: 					true;
+    sidebar-mode: 					false;
     separator-style: 				"none";
     hide-scrollbar: 				true;
     fullscreen: 					false;
@@ -30,8 +30,9 @@ configuration {
     display-windowcd: 				"";
     display-run: 					"";
     display-ssh: 					"";
-    display-drun: 					"";
-    display-combi: 					"";
+    display-drun: 					"";
+    display-combi: 					"";
+    /* TODO */
 }
 
 @import "styles/colors.rasi"
@@ -44,7 +45,7 @@ window {
     border: 						0px;
     border-color: 					@ac;
     border-radius: 					6px;
-    padding: 						15;
+    padding: 						0;
     width: 							20%;
 }
 
@@ -56,8 +57,7 @@ prompt {
 
 textbox-prompt-colon {
     expand: 						false;
-    str: 							" ";
-    margin:							0px 4px 0px 0px;
+    margin:							0px 4px 0px 8px;
     text-color: 					inherit;
 }
 

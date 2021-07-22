@@ -6,7 +6,6 @@ Xft.autohint: 0
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-*.font:                     "xft:Terminus:pixelsize=12"
 *.scrollBar:                false
 *.cursorBlink:              true
 *.internalBorder:           25

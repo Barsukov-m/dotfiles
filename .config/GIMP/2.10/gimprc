@@ -65,7 +65,8 @@
 (theme "System")
 (icon-theme "Symbolic-High-Contrast")
 (color-profile-policy keep)
-(layer-new-name "ип")
+(image-resize-layer-set all)
+(layer-new-name "bg")
 (fill-options
     (style solid)
     (antialias yes)

@@ -3,6 +3,7 @@
 # Autostart
 pgrep -x sxhkd > /dev/null || sxhkd &
 xrdb merge .Xresources
+xss-lock -- lock &
 
 picom &
 ~/.config/polybar/launch.sh &

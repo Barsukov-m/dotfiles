@@ -47,6 +47,7 @@ alias conadd="nmcli device connect $(ls /sys/class/net | grep -o "wl.*")"
 alias t="redshift -P -O"
 alias t0="redshift -x"
 alias btc="bluetoothctl"
+alias "catdog"="cat ~/.local/share/etc/dog"
 
 
 ## Screensavers

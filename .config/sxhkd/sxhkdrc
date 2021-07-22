@@ -2,7 +2,7 @@ super + Return
 	kitty
 
 super + d
-	sh ~/.config/rofi/scripts/launcher.sh
+	rofi-launcher
 
 super + alt + r
 	pkill -USR1 -x sxhkd
@@ -18,6 +18,9 @@ super + w
 
 super + Escape
   sh lock
+
+super + alt + Escape
+  sh power
 
 XF86MonBrightnessUp
   xbacklight -inc 5
