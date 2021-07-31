@@ -40,7 +40,7 @@ export NNN_FALLBACK_OPENER="gvfs-open"
 ## Aliases
 alias l="ls -A"
 alias ll="ls -Alhgo"
-alias up="sudo pacman -Syu && flatpak update -y && sudo updatedb"
+alias up="sudo pacman -Syu && sudo updatedb"
 alias p="python3"
 alias n="nnn -deH"
 alias sun="sudo nnn -deH"

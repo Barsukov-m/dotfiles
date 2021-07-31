@@ -8,7 +8,7 @@ image/gif=feh.desktop;
 application/xml=firefox.desktop;brave-browser.desktop;
 font/ttf=org.gnome.FontManager.desktop;
 application/x-cd-image=nnn.desktop;
-text/x-patch=vim.desktop;nvim.desktop;
+text/x-patch=nvim.desktop;vim.desktop;
 x-scheme-handler/mailto=userapp-Thunderbird-WVU260.desktop;userapp-Evolution-3CFP60.desktop;
 message/rfc822=userapp-Thunderbird-WVU260.desktop;
 
