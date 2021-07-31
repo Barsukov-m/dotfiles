@@ -29,7 +29,7 @@ remove_packets () {
 export NNN_TRASH=1
 export NNN_COLORS="3241"
 export NNN_FIFO="/tmp/nnn.fifo"
-export NNN_BMS='r:/run/media/michael;d:~/Documents;D:~/Documents/dotfiles;u:~/Documents/university;f:~/Documents/front-end;'
+export NNN_BMS='r:/run/media/;d:~/Documents;D:~/Documents/dotfiles;u:~/Documents/university;f:~/Documents/front-end;'
 export NNN_PLUG='d:dragdrop;e:suedit;m:nmount;p:preview-tui;t:imgview'
 export NNN_DE_FILE_MANAGER="nautilus"
 export NNN_FALLBACK_OPENER="xdg-open"

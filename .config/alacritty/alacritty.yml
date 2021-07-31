@@ -9,8 +9,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 10
-    y: 10
+    x: 20
+    y: 20
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: true
@@ -39,7 +39,7 @@ window:
   #
   startup_mode: Windowed
 
-background_opacity: 0.92
+background_opacity: 1
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -52,13 +52,13 @@ scrolling:
 
 font:
   normal:
-    family: "Iosevka Nerd Font"
+    family: JetBrains Mono Nerd Font
     style: Regular
   bold:
-    family: "Iosevka Nerd Font"
+    family: JetBrains Mono Nerd Font
     style: Bold
   italic:
-    family: "Iosevka Nerd Font"
+    family: JetBrains Mono Nerd Font
     style: Italic
   size: 12
 
@@ -68,28 +68,28 @@ draw_bold_text_with_bright_colors: true
 # Colors
 colors:
   primary:
-    background: '#282a36'
-    foreground: '#F8F8F2'
+    background: '#272727'
+    foreground: '#ebdbb2'
 
   normal:
-    black:   '#000000'
-    red:     '#ff5555'
-    green:   '#50fa7b'
-    yellow:  '#f1fa8c'
-    blue:    '#bd93f9'
-    magenta: '#ff79c6'
-    cyan:    '#8be9fd'
-    white:   '#bfbfbf'
+    black:   '#272727'
+    red:     '#cc231c'
+    green:   '#989719'
+    yellow:  '#d79920'
+    blue:    '#448488'
+    magenta: '#b16185'
+    cyan:    '#689d69'
+    white:   '#a89983'
 
   bright:
-    black:   '#4d4d4d'
-    red:     '#ff6e67'
-    green:   '#5af78e'
-    yellow:  '#f4f99d'
-    blue:    '#caa9fa'
-    magenta: '#ff92d0'
-    cyan:    '#9aedfe'
-    white:   '#e6e6e6'
+    black:   '#928373'
+    red:     '#fb4833'
+    green:   '#b8ba25'
+    yellow:  '#fabc2e'
+    blue:    '#83a597'
+    magenta: '#d3859a'
+    cyan:    '#8ec07b'
+    white:   '#ebdbb2'
   
   cursor:
     text: CellBackground
@@ -99,16 +99,16 @@ colors:
     text: CellBackground
     cursor: CellForeground
 
-  search:
-    matches:
-      foreground: '#44475a'
-      background: '#50fa7b'
-    focused_match:
-      foreground: '#44475a'
-      background: '#ffb86c'
-    bar:
-      background: '#282a36'
-      foreground: '#f8f8f2'
+  # search:
+  #   matches:
+  #     foreground: '#44475a'
+  #     background: '#50fa7b'
+  #   focused_match:
+  #     foreground: '#44475a'
+  #     background: '#ffb86c'
+  #   bar:
+  #     background: '#282a36'
+  #     foreground: '#f8f8f2'
   
   line_indicator:
     foreground: None
