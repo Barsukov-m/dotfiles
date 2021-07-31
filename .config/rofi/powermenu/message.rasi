@@ -3,9 +3,9 @@
 @import "styles/colors.rasi"
 
 * {
-    background-color:       @background;
-    text-color:             @foreground;
-	font:				 	"FantasqueSansMono Nerd Font 12";
+  background-color:       @background;
+  text-color:             @foreground;
+	font:				 	          "Terminus 12";
 }
 
 window {

@@ -1,8 +1,8 @@
 # GIMP user context
 
-(tool "gimp-unified-transform-tool")
+(tool "gimp-move-tool")
 (paint-info "gimp-paintbrush")
-(brush "2. Hardness 050")
+(brush "2. Hardness 075")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")
 (pattern "Pine")

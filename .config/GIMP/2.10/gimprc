@@ -6,7 +6,7 @@
 # Most values can be set within GIMP by changing some options in the
 # Preferences dialog.
 
-(swap-compression "best")
+(swap-compression "balanced")
 (tile-cache-size 2000M)
 (default-image
     (icon-name "gimp-video")
@@ -23,6 +23,7 @@
     (fill-type transparent)
     (comment "Created with GIMP"))
 (undo-levels 100)
+(undo-size 500M)
 (import-raw-plug-in "${gimp_plug_in_dir}/plug-ins/file-raw-placeholder/file-raw-placeholder")
 (monitor-xresolution 99)
 (monitor-yresolution 103)

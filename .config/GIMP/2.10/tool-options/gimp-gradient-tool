@@ -1,6 +1,6 @@
 # GIMP gimp-gradient-tool options
 
-(opacity 0.20000000000000001)
+(opacity 0.90000000000000002)
 (gradient "FG to Transparent")
 (brush-size 51)
 (brush-hardness 0.5)

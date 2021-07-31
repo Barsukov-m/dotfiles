@@ -120,7 +120,7 @@
     (visible yes))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-clone-tool")
+    (active-tool "gimp-heal-tool")
     (children
         (GimpToolInfo "gimp-clone-tool"
             (icon-name "gimp-tool-clone")

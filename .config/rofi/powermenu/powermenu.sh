@@ -17,6 +17,7 @@
 
 theme="full_circle"
 dir="$HOME/.config/rofi/powermenu"
+DESKTOP_SESSION="bspwm"
 
 # random colors
 styles=($(ls -p --hide="colors.rasi" $dir/styles))

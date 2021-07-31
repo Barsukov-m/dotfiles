@@ -1,4 +1,4 @@
-; gimp-2.10 GtkAccelMap rc-file         -*- scheme -*-
+; gimp GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
 ; (gtk_accel_path "<Actions>/tools/tools-rotate-image-arbitrary" "")
@@ -603,6 +603,7 @@
 ; (gtk_accel_path "<Actions>/layers/layers-alpha-selection-subtract" "")
 ; (gtk_accel_path "<Actions>/channels/channels-select-top" "")
 ; (gtk_accel_path "<Actions>/plug-in/script-fu-sota-chrome-it" "")
+; (gtk_accel_path "<Actions>/view/view-move-to-screen-:0.0" "")
 ; (gtk_accel_path "<Actions>/plug-in/gimp-palette-export-python" "")
 ; (gtk_accel_path "<Actions>/context/context-swatch-foreground-next" "0")
 ; (gtk_accel_path "<Actions>/select/selection-popup" "")
@@ -770,7 +771,6 @@
 ; (gtk_accel_path "<Actions>/view/view-zoom-out-skip" "")
 ; (gtk_accel_path "<Actions>/dialogs/dialogs-keyboard-shortcuts" "")
 ; (gtk_accel_path "<Actions>/view/view-zoom-maximum" "")
-; (gtk_accel_path "<Actions>/dockable/dockable-preview-size-tiny" "")
 ; (gtk_accel_path "<Actions>/dialogs/dialogs-input-devices" "")
 ; (gtk_accel_path "<Actions>/dockable/dialogs-document-history" "")
 ; (gtk_accel_path "<Actions>/quick-mask/quick-mask-invert-on" "")
@@ -780,8 +780,8 @@
 ; (gtk_accel_path "<Actions>/layers/layers-text-discard" "")
 ; (gtk_accel_path "<Actions>/context/context-foreground-red-maximum" "")
 ; (gtk_accel_path "<Actions>/filters/filters-edge-sobel" "")
+; (gtk_accel_path "<Actions>/dockable/dockable-preview-size-tiny" "")
 ; (gtk_accel_path "<Actions>/plug-in/script-fu-guide-new-percent" "")
-; (gtk_accel_path "<Actions>/view/view-move-to-screen-:1.0" "")
 ; (gtk_accel_path "<Actions>/view/view-show-scrollbars" "")
 ; (gtk_accel_path "<Actions>/filters/filters-render-noise-menu" "")
 ; (gtk_accel_path "<Actions>/channels/channels-delete" "")
@@ -1026,6 +1026,7 @@
 ; (gtk_accel_path "<Actions>/filters/filters-mean-curvature-blur" "")
 ; (gtk_accel_path "<Actions>/layers/layers-color-tag-yellow" "")
 ; (gtk_accel_path "<Actions>/context/context-brush-aspect-decrease-skip" "")
+; (gtk_accel_path "<Actions>/dock/dock-move-to-screen-:0.0" "")
 ; (gtk_accel_path "<Actions>/filters/filters-animation-menu" "")
 ; (gtk_accel_path "<Actions>/filters/filters-noise-reduction" "")
 ; (gtk_accel_path "<Actions>/dialogs/dialogs-gradients" "<Primary>g")
@@ -1191,7 +1192,6 @@
 ; (gtk_accel_path "<Actions>/edit/edit-fill-fg" "<Primary>comma")
 ; (gtk_accel_path "<Actions>/tools/tools-scale" "<Shift>s")
 ; (gtk_accel_path "<Actions>/context/context-brush-select-last" "")
-; (gtk_accel_path "<Actions>/dock/dock-move-to-screen-:1.0" "")
 ; (gtk_accel_path "<Actions>/plug-in/script-fu-distress-selection" "")
 ; (gtk_accel_path "<Actions>/edit/undo-popup" "")
 ; (gtk_accel_path "<Actions>/layers/layers-mode-first" "")

@@ -1,11 +1,13 @@
 # GIMP gimp-paintbrush-tool options
 
-(brush "2. Hardness 050")
+(brush "2. Hardness 075")
 (dynamics "Dynamics Off")
 (gradient "FG to Transparent")
 (palette "Colour History")
-(brush-size 51)
-(brush-spacing 0.01)
-(brush-hardness 0.5)
+(brush-size 3)
+(brush-hardness 0.75)
+(use-smoothing yes)
+(smoothing-quality 100)
+(smoothing-factor 293.80000000000001)
 
 # end of gimp-paintbrush-tool options
