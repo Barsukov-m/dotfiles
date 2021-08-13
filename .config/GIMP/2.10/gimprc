@@ -25,8 +25,8 @@
 (undo-levels 100)
 (undo-size 500M)
 (import-raw-plug-in "${gimp_plug_in_dir}/plug-ins/file-raw-placeholder/file-raw-placeholder")
-(monitor-xresolution 99)
-(monitor-yresolution 103)
+(monitor-xresolution 102)
+(monitor-yresolution 102)
 (default-view
     (show-menubar yes)
     (show-statusbar yes)
@@ -65,6 +65,7 @@
     (padding-in-show-all no))
 (theme "System")
 (icon-theme "Symbolic-High-Contrast")
+(icon-size small)
 (color-profile-policy keep)
 (image-resize-layer-set all)
 (layer-new-name "bg")

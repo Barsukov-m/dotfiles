@@ -1,4 +1,6 @@
 alacritty
+bash-pipes
+bat
 bluez
 broadcom-wl
 bspwm
@@ -12,10 +14,11 @@ gimp
 gnome-font-viewer
 gstreamer
 imagemagick
-keepassxc
 libpulse
 lxappearance
 mlocate
+mtpfs
+nautilus
 neovim
 networkmanager
 networkmanager-openvpn

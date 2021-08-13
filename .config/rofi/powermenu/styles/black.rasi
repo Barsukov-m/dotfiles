@@ -2,8 +2,6 @@
     background:                     #272727;
     background-alt:                 #373737;
     foreground:                     #ebdbb2;
-    border:               		    	#fabc2e;
-    border-alt:               		  #d79920;
+    border:               		    	#a89983;
     selected:               		    #655b53;
-    urgent:               		    	#fabc2e;
 }

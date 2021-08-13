@@ -15,17 +15,16 @@ pamixer -u &
 numlockx &
 xfce4-power-manager &
 
-
 # Config
 bspc monitor -d I II III IV V
 
-bspc config border_width            2
-bspc config window_gap              20
+bspc config border_width            1
+bspc config window_gap              30
 
-bspc config top_padding             40
-bspc config right_padding           20
-bspc config bottom_padding          10
-bspc config left_padding            20
+bspc config top_padding             50
+bspc config right_padding           30
+bspc config bottom_padding          20
+bspc config left_padding            30
 
 bspc config focus_follows_pointer   true
 
@@ -33,9 +32,10 @@ bspc config split_ratio             0.52
 bspc config borderless_monocle      false
 bspc config gapless_monocle         false
 
-bspc config focused_border_color "#989719"
-# bspc config normal_border_color "#"
+bspc config focused_border_color "#a89983"
+bspc config normal_border_color "#272727"
 
-bspc rule -a firefox desktop='^1'
+bspc rule -a brave desktop='^1'
 bspc rule -a TelegramDesktop desktop='^4'
 bspc rule -a Thunderbird desktop='^5'
+bspc rule -a SpeedCrunch state=floating

@@ -1,14 +1,14 @@
 # GIMP user context
 
-(tool "gimp-move-tool")
+(tool "gimp-ellipse-select-tool")
 (paint-info "gimp-paintbrush")
 (brush "2. Hardness 075")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")
 (pattern "Pine")
-(gradient "FG to Transparent")
+(gradient "Custom")
 (palette "Colour History")
-(font "Sans-serif")
+(font "Product Sans")
 (tool-preset "Core Pointer")
 
 # end of user context

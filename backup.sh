@@ -6,7 +6,7 @@ DOTFILES_DIR=~/.config/dotfiles
 mkdir -p $DOTFILES_DIR/{.local/share,.config}
 sudo cp -rv ~/{.themes,.vim,.xinitrc,.Xresources,.zshrc} $DOTFILES_DIR
 sudo cp -rv ~/.local/share/{etc,gnome-shell,icons} $DOTFILES_DIR/.local/share
-sudo cp -rv ~/.config/{alacritty,bspwm,cava,dunst,fontconfig,GIMP,mimeapps.list,neofetch,nnn,nvim,picom,polybar,rofi,SpeedCrunch,sxhkd,xfce4,zathura} $DOTFILES_DIR/.config
+sudo cp -rv ~/.config/{alacritty,bspwm,dunst,flameshot,fontconfig,GIMP,mimeapps.list,neofetch,nnn,nvim,picom,polybar,rofi,scripts,SpeedCrunch,sxhkd,xfce4,zathura} $DOTFILES_DIR/.config
 
 # Check git status
 gs="$(git status | grep -i modified)"

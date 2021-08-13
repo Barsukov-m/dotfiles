@@ -1,3 +1,9 @@
+" ██    ██ ██ ███    ███ 
+" ██    ██ ██ ████  ████ 
+" ██    ██ ██ ██ ████ ██ 
+"  ██  ██  ██ ██  ██  ██ 
+"   ████   ██ ██      ██ 
+
 " VIM-PLUG
 call plug#begin('~/.vim/plugged')
   Plug 'jiangmiao/auto-pairs'
@@ -48,21 +54,31 @@ autocmd FileType html :setlocal sw=4 ts=4 sts=4
 autocmd FileType javascript :setlocal sw=2 ts=2 sts=2
 autocmd FileType python :setlocal sw=4 ts=4 sts=4
 autocmd FileType xml :setlocal sw=4 ts=4 sts=4
+
 colorscheme gruvbox
+highlight link cssBorderProp GruvboxAqua
+highlight link cssDimensionProp GruvboxAqua
+highlight link cssMediaProp GruvboxAqua
+highlight link cssPageProp GruvboxAqua
+highlight link cssPositioningProp GruvboxAqua
+highlight link cssUIProp GruvboxAqua
+let g:gruvbox_italic=1
+
 filetype indent on
+set ch=1              " cmdheight
 set et                " expandtab
 set ic                " ignorecase
 set lbr               " linebreak
 set ls=2              " laststatus
 set mouse=a
+set nosmd             " noshowmode
 set noswapfile
-set nu
+set nu                " number
 set pa+=**            " path
 set rnu               " relativenumber
 set sc                " showcmd
 set scs               " smartcase
 set si                " smartindent
-set nosmd               " noshowmode
 set so=5              " scrolloff
 set sw=2 ts=2 sts=2   " tab options
 set wrap

@@ -24,25 +24,23 @@ remove_packets () {
   done
 }
 
-
 ## NNN Configuration
 export NNN_TRASH=1
 export NNN_COLORS="3241"
 export NNN_FIFO="/tmp/nnn.fifo"
-export NNN_BMS='r:/run/media/;d:~/Documents;D:~/Documents/dotfiles;u:~/Documents/university;f:~/Documents/front-end;'
+export NNN_BMS='r:/run/media/;d:~/.config/dotfiles;u:~/Documents/university;f:~/Documents/front-end;p:~/Pictures;'
 export NNN_PLUG='d:dragdrop;e:suedit;m:nmount;p:preview-tui;t:imgview'
 export NNN_DE_FILE_MANAGER="nautilus"
 export NNN_FALLBACK_OPENER="xdg-open"
 export NNN_FALLBACK_OPENER="gio open"
 export NNN_FALLBACK_OPENER="gvfs-open"
 
-
 ## Aliases
 alias l="ls -A"
 alias ll="ls -Alhgo"
 alias up="sudo pacman -Syu && sudo updatedb"
 alias p="python3"
-alias n="nnn -deH"
+alias n="nnn -de"
 alias sun="sudo nnn -deH"
 alias nf="neofetch"
 alias nv="nvim"
@@ -52,19 +50,15 @@ alias conadd="nmcli device connect $(ls /sys/class/net | grep -o "wl.*")"
 alias t="redshift -P -O"
 alias t0="redshift -x"
 alias btc="bluetoothctl power on && bluetoothctl"
-
+alias HDD="sudo mkdir -p /run/media/michael/HDD && sudo mount /dev/sdb1 /run/media/michael/HDD"
 
 ## Screensavers
 alias rain="sh ~/.local/share/etc/rain.sh"
 alias wtime="tty-clock -cbnC 4"
 alias feh="feh -d --scale-down"
 
-## Kitty
-alias icat="kitty +kitten icat"
-
 ## Pacman
 alias S="sudo pacman -S"                    # Install a package
-alias S!="sudo pacman -Syu"                 # Full upgrade
 alias Syu="sudo pacman -Syu"                # Full upgrade
 alias Qu="pacman -Qu"                       # List upgradable
 alias Qs="pacman -Qs"                       # Short description

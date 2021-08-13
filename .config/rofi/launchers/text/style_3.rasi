@@ -42,7 +42,7 @@ configuration {
 }
 
 window {
-    border: 						2px;
+    border: 						1px;
     border-color: 					@ac;
     border-radius: 					6px;
     padding: 						0;
