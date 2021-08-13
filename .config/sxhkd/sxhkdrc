@@ -22,6 +22,7 @@ super + Escape
 super + alt + Escape
   sh power
 
+
 XF86MonBrightnessUp
   xbacklight -inc 5
 
@@ -33,6 +34,16 @@ XF86AudioRaiseVolume
 
 XF86AudioLowerVolume
   pamixer -d 5
+
+XF86Calculator
+  speedcrunch
+
+XF86AudioMute
+  pamixer -t
+
+XF86AudioPlay
+  playerctl play-pause
+
 
 Print
   mkdir -p ~/Pictures/Screenshots && flameshot full -p ~/Pictures/Screenshots
@@ -80,9 +91,6 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
-#
-# preselect
-#
 
 # preselect the direction
 super + ctrl + {h,j,k,l}
@@ -100,9 +108,6 @@ super + ctrl + space
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
-#
-# move/resize
-#
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}

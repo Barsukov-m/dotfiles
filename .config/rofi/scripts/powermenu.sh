@@ -1,1 +1,0 @@
-/home/michael/.config/rofi/powermenu/powermenu.sh

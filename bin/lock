@@ -2,14 +2,14 @@
 
 IMAGE=~/Pictures/Wallpapers/lock-min.jpg
 
-B='#00000000'  # blank
-C='#ffffff22'  # clear
-D='#ffffffcc'  # default
-T='#ffffffff'  # text
-V='#ffffffff'  # verification
-W='#77dd11bb'  # wrong
+B='#272727'  # blank
+C='#ebdbb211'  # clear
+D='#ebdbb2cc'  # default
+T='#ebdbb2'  # text
+V='#ebdbb2'  # verification
+W='#989719'  # wrong
 
-i3lock -c "#272727" -e --keylayout 1\
+i3lock -c $B -e --keylayout 1\
     --time-font=Lato\
     --date-font=Lato\
     --layout-font=Lato\
