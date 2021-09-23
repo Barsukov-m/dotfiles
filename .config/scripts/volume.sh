@@ -1,2 +1,2 @@
 canberra-gtk-play -i audio-volume-change -d "changeVolume"
-pamixer "$1" 5
+pamixer "$1" "$2"

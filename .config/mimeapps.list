@@ -1,7 +1,7 @@
 [Added Associations]
 text/plain=nvim;org.gnome.gedit.desktop;
 application/pdf=org.pwmt.zathura.desktop;brave-browser.desktop;firefox.desktop;
-x-scheme-handler/tg=userapp-Telegram Desktop-380H10.desktop;userapp-Telegram Desktop-Q2Y030.desktop;userapp-Telegram Desktop-55OD70.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-380H10.desktop;userapp-Telegram Desktop-Q2Y030.desktop;userapp-Telegram Desktop-55OD70.desktop;userapp-Telegram Desktop-25MS90.desktop;
 image/png=feh.desktop;
 image/gif=feh.desktop;
 application/xml=brave-browser.desktop;firefox.desktop;
@@ -23,7 +23,7 @@ application/x-extension-xht=firefox.desktop;
 
 [Default Applications]
 application/pdf=org.pwmt.zathura.desktop
-x-scheme-handler/tg=userapp-Telegram Desktop-55OD70.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-25MS90.desktop
 image/png=feh.desktop
 text/html=firefox.desktop
 x-scheme-handler/http=firefox.desktop

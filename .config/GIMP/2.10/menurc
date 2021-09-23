@@ -1,4 +1,4 @@
-; gimp GtkAccelMap rc-file         -*- scheme -*-
+; gimp-2.10 GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
 ; (gtk_accel_path "<Actions>/tools/tools-rotate-image-arbitrary" "")
@@ -6,9 +6,11 @@
 ; (gtk_accel_path "<Actions>/view/view-show-canvas-boundary" "")
 ; (gtk_accel_path "<Actions>/tools/tools-opacity-set-to-default" "")
 ; (gtk_accel_path "<Actions>/context/context-background-value-decrease" "")
+; (gtk_accel_path "<Actions>/windows/windows-display-0005" "")
 ; (gtk_accel_path "<Actions>/vectors/vectors-color-tag-brown" "")
 ; (gtk_accel_path "<Actions>/tools/tools-opacity-increase-skip" "<Primary>greater")
 ; (gtk_accel_path "<Actions>/tools/tools-vector" "b")
+; (gtk_accel_path "<Actions>/windows/windows-display-0004" "")
 ; (gtk_accel_path "<Actions>/view/view-scroll-left" "")
 ; (gtk_accel_path "<Actions>/image/image-convert-u8" "")
 ; (gtk_accel_path "<Actions>/tools/tools-airbrush-rate-increase" "")
@@ -18,6 +20,7 @@
 ; (gtk_accel_path "<Actions>/vectors/vectors-color-tag-orange" "")
 ; (gtk_accel_path "<Actions>/view/view-zoom-8-1-accel" "KP_4")
 ; (gtk_accel_path "<Actions>/context/context-background-value-set" "")
+; (gtk_accel_path "<Actions>/windows/windows-display-0003" "")
 ; (gtk_accel_path "<Actions>/context/context-paint-mode-menu" "")
 ; (gtk_accel_path "<Actions>/filters/filters-motion-blur-linear" "")
 ; (gtk_accel_path "<Actions>/filters/filters-gegl-graph" "")
@@ -573,7 +576,7 @@
 ; (gtk_accel_path "<Actions>/filters/filters-difference-of-gaussians" "")
 ; (gtk_accel_path "<Actions>/tools/tools-angle-increase-skip" "")
 ; (gtk_accel_path "<Actions>/context/context-swatch-background-last" "")
-; (gtk_accel_path "<Actions>/tools/tools-move" "m")
+(gtk_accel_path "<Actions>/tools/tools-move" "v")
 ; (gtk_accel_path "<Actions>/tools/tools-convolve" "<Shift>u")
 ; (gtk_accel_path "<Actions>/tools/tools-airbrush-flow-increase-skip" "")
 ; (gtk_accel_path "<Actions>/context/context-foreground-saturation-increase-skip" "")
@@ -1290,8 +1293,10 @@
 ; (gtk_accel_path "<Actions>/tools/tools-force-set" "")
 ; (gtk_accel_path "<Actions>/filters/filters-wind" "")
 ; (gtk_accel_path "<Actions>/context/context-foreground-red-minimum" "")
+; (gtk_accel_path "<Actions>/windows/windows-display-0007" "")
 ; (gtk_accel_path "<Actions>/debug/debug-dump-managers" "")
 ; (gtk_accel_path "<Actions>/context/context-tool-select-last" "")
+; (gtk_accel_path "<Actions>/windows/windows-display-0008" "")
 ; (gtk_accel_path "<Actions>/filters/filters-displace" "")
 ; (gtk_accel_path "<Actions>/filters/filters-enhance-menu" "")
 ; (gtk_accel_path "<Actions>/filters/filters-engrave" "")
@@ -1306,6 +1311,7 @@
 ; (gtk_accel_path "<Actions>/select/select-feather" "")
 ; (gtk_accel_path "<Actions>/filters/filters-motion-blur-zoom" "")
 ; (gtk_accel_path "<Actions>/dialogs/dialogs-tool-presets" "")
+; (gtk_accel_path "<Actions>/windows/windows-display-0006" "")
 ; (gtk_accel_path "<Actions>/vectors/vectors-duplicate" "")
 ; (gtk_accel_path "<Actions>/view/view-display-intent-saturation" "")
 ; (gtk_accel_path "<Actions>/tools/tools-foreground-select" "")

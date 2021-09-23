@@ -14,7 +14,7 @@
             (visible yes))))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-ellipse-select-tool")
+    (active-tool "gimp-rect-select-tool")
     (children
         (GimpToolInfo "gimp-rect-select-tool"
             (icon-name "gimp-tool-rect-select")
@@ -24,7 +24,7 @@
             (visible yes))))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-iscissors-tool")
+    (active-tool "gimp-free-select-tool")
     (children
         (GimpToolInfo "gimp-free-select-tool"
             (icon-name "gimp-tool-free-select")
@@ -78,7 +78,7 @@
             (visible yes))))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-warp-tool")
+    (active-tool "gimp-cage-tool")
     (children
         (GimpToolInfo "gimp-warp-tool"
             (icon-name "gimp-tool-warp")
@@ -88,7 +88,7 @@
             (visible yes))))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-gradient-tool")
+    (active-tool "gimp-bucket-fill-tool")
     (children
         (GimpToolInfo "gimp-bucket-fill-tool"
             (icon-name "gimp-tool-bucket-fill")

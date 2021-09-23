@@ -1177,7 +1177,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="adb93a5bfe7dc314c6e9cd9d296ae3bd">
+  <resource identifier="gimp-palette-color-history" checksum="253582b0f2d52fa5cb7a32b6fe72e65b">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">
@@ -1373,6 +1373,36 @@
   </resource>
 
   <resource identifier="BIPs" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Vera Sans" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Vera Sans Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Vera Sans Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Vera Sans Mono" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Vera Sans Mono Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Vera Sans Mono Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Vera Sans Mono Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Vera Sans Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Vera Serif" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Vera Serif Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Blacklisted" checksum="(null)">
@@ -2176,6 +2206,48 @@
   <resource identifier="Liberation Serif Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="Libertinus Keyboard Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Libertinus Math" checksum="(null)">
+  </resource>
+
+  <resource identifier="Libertinus Mono" checksum="(null)">
+  </resource>
+
+  <resource identifier="Libertinus Sans" checksum="(null)">
+  </resource>
+
+  <resource identifier="Libertinus Sans Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Libertinus Sans Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Libertinus Serif" checksum="(null)">
+  </resource>
+
+  <resource identifier="Libertinus Serif Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Libertinus Serif Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Libertinus Serif Display" checksum="(null)">
+  </resource>
+
+  <resource identifier="Libertinus Serif Initials" checksum="(null)">
+  </resource>
+
+  <resource identifier="Libertinus Serif Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Libertinus Serif Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Libertinus Serif Semi-Bold Italic" checksum="(null)">
+  </resource>
+
   <resource identifier="Lobster 1.4," checksum="(null)">
   </resource>
 
@@ -2363,9 +2435,6 @@
   </resource>
 
   <resource identifier="MT Extra" checksum="(null)">
-  </resource>
-
-  <resource identifier="mtx" checksum="(null)">
   </resource>
 
   <resource identifier="Nimbus Mono PS" checksum="(null)">
@@ -4537,12 +4606,6 @@
   <resource identifier="Open Sans Condensed, Bold Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Open Sans Condensed, Light Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Open Sans Condensed, Light Italic Condensed" checksum="(null)">
-  </resource>
-
   <resource identifier="Open Sans Italic" checksum="(null)">
   </resource>
 
@@ -4813,106 +4876,118 @@
   <resource identifier="Social Shapes" checksum="(null)">
   </resource>
 
-  <resource identifier="Source Code Pro" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Pro Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Pro Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Pro Heavy" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Pro Heavy Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Pro Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Pro Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Pro Light Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Pro Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Pro Medium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Pro Semi-Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Pro Semi-Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Pro Ultra-Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Pro Ultra-Light Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable Heavy" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable Heavy Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable Light Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable Medium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable Semi-Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable Semi-Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable Ultra-Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="Source Code Variable Ultra-Light Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="Standard Symbols PS" checksum="(null)">
   </resource>
 
   <resource identifier="Symbol" checksum="(null)">
   </resource>
 
+  <resource identifier="Terminus" checksum="(null)">
+  </resource>
+
   <resource identifier="Terminus Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Terminus Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Adventor" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Adventor Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Adventor Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Adventor Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Bonum" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Bonum Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Bonum Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Bonum Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Chorus Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Cursor" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Cursor Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Cursor Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Cursor Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros Cn Bold Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros Cn Bold Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros Cn Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros Cn Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Heros Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Pagella" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Pagella Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Pagella Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Pagella Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Schola" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Schola Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Schola Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Schola Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Termes" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Termes Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Termes Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="TeX Gyre Termes Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Times New Roman," checksum="(null)">
@@ -5006,9 +5081,6 @@
   </resource>
 
   <resource identifier="Wingdings 3," checksum="(null)">
-  </resource>
-
-  <resource identifier="Wuncon Siji" checksum="(null)">
   </resource>
 
   <resource identifier="Z003 Medium Italic" checksum="(null)">

@@ -20,11 +20,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'subnut/vim-iawriter'
 
   " Plug 'airblade/vim-gitgutter'
-  Plug 'joshdick/onedark.vim'
-  Plug 'nvim-treesitter/nvim-treesitter'
   Plug 'dracula/vim', { 'as': 'dracula' }
+  Plug 'joshdick/onedark.vim'
   Plug 'lilydjwg/colorizer'
   Plug 'morhetz/gruvbox'
+  Plug 'nvim-treesitter/nvim-treesitter'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   let g:coc_global_extensions = [
     \ 'coc-clangd',
