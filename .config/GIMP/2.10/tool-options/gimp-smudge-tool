@@ -1,5 +1,6 @@
 # GIMP gimp-smudge-tool options
 
+<<<<<<< HEAD
 (foreground (color-rgb 1 1 1))
 (background (color-rgb 0.14509804546833038 0.14117647707462311 0.13333334028720856))
 (brush "2. Hardness 100")
@@ -8,5 +9,16 @@
 (palette "Colour History")
 (brush-size 6)
 (brush-force 1)
+=======
+(background (color-rgb 0.10196079313755035 0.29803922772407532 0.21568629145622253))
+(brush "2. Hardness 075")
+(dynamics "Dynamics Off")
+(gradient "FG to Transparent")
+(palette "Colour History")
+(brush-size 5)
+(brush-aspect-ratio 0.10000000000000001)
+(brush-angle -0.40000000000000002)
+(brush-hardness 0.75)
+>>>>>>> b5dd106c9ea7db7e6af8129119688c4d07b5f786
 
 # end of gimp-smudge-tool options

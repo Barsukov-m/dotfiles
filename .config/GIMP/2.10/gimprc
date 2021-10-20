@@ -25,8 +25,13 @@
 (undo-levels 100)
 (undo-size 500M)
 (import-raw-plug-in "${gimp_plug_in_dir}/plug-ins/file-darktable/file-darktable")
+<<<<<<< HEAD
 (monitor-xresolution 102)
 (monitor-yresolution 102)
+=======
+(monitor-xresolution 99)
+(monitor-yresolution 103)
+>>>>>>> b5dd106c9ea7db7e6af8129119688c4d07b5f786
 (default-view
     (show-menubar yes)
     (show-statusbar yes)

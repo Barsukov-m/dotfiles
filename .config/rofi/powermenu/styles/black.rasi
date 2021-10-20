@@ -2,6 +2,6 @@
     background:                     #272727;
     background-alt:                 #373737;
     foreground:                     #ebdbb2;
-    border:               		    	#989719;
+    border:               		    	#a89983;
     selected:               		    #655b53;
 }

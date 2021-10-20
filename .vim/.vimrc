@@ -19,9 +19,16 @@ call plug#begin('~/.vim/plugged')
   Plug 'reedes/vim-colors-pencil'
   Plug 'subnut/vim-iawriter'
 
+<<<<<<< HEAD
   Plug 'nvim-treesitter/nvim-treesitter'
+=======
+  " Plug 'airblade/vim-gitgutter'
+  Plug 'dracula/vim', { 'as': 'dracula' }
+  Plug 'joshdick/onedark.vim'
+>>>>>>> b5dd106c9ea7db7e6af8129119688c4d07b5f786
   Plug 'lilydjwg/colorizer'
   Plug 'morhetz/gruvbox'
+  Plug 'nvim-treesitter/nvim-treesitter'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   let g:coc_global_extensions = [
     \ 'coc-clangd',
