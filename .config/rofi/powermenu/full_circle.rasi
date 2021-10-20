@@ -8,7 +8,7 @@
  */
 
 configuration {
-  font:                           "monospace 12";
+  font:                           "monospace 13";
   show-icons:                     false;
 	icon-theme: 					          "Papirus";
   drun-display-format:            "{name}";
@@ -68,7 +68,7 @@ mainbox {
   background-color:               @background;
   children:                       [ inputbar, listview ];
   spacing:                        5%;
-  padding:                        35% 0% 0% 15%;
+  padding:                        32.50% 0% 0% 9%;
 }
 
 element {
@@ -79,11 +79,9 @@ element {
 }
 
 element-text {
-	font:                           "feather 48";
+	font:                           "feather 64";
   expand:                         true;
-  horizontal-align:               0.5;
-  vertical-align:                 0.5;
-  margin:                         5% 3% 10% 3%;
+  margin:                         6.5% 4% 6.5% 4%;
 }
 
 element normal.urgent,
