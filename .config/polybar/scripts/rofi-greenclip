@@ -1,0 +1,7 @@
+theme="style_8"
+dir="$HOME/.config/rofi/launchers/text"
+
+rofi -no-lazy-grab -show clipboard \
+-modi "clipboard:greenclip print" \
+-theme $dir/"$theme" \
+-run-command '{cmd}'

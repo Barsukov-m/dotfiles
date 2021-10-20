@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+
+<!--
+  libnkutils - Miscellaneous utilities
+
+  Copyright © 2011-2017 Quentin "Sardem FF7" Glidic
+
+  This file is part of libnkutils.
+
+  libnkutils is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  libnkutils is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with libnkutils. If not, see <http://www.gnu.org/licenses/>.
+-->
+<refentry>
+    <refsect2 id="nk-token-reference-description">
+        <para>
+            References use a shell-like format: <userinput>${<replaceable>reference-name</replaceable>}</userinput>.
+            Each reference is resolved to a data that is substitued to the reference at the corresponding place in the string.
+            The <replaceable>reference-name</replaceable> can be composed of alphabetic characters, dashes (<literal>'-'</literal>) and underscores (<literal>'_'</literal>).
+        </para>
+        <para>
+            You can use an array-like syntax for some values: <userinput>${<replaceable>reference-name</replaceable>[<replaceable>key</replaceable>]}</userinput>.
+            The <replaceable>key</replaceable> can be a name or a number depending on the data pointed by <replaceable>reference-name</replaceable>.
+            You can use fallback values, substitute values or regexes on array members.
+        </para>
+        <para>
+            You can use a fallback value if the data resolves to <literal>nothing</literal> or <literal>false</literal>.
+            The syntax is: <userinput>${<replaceable>reference-name</replaceable>:-<replaceable>fallback-value</replaceable>}</userinput>.
+        </para>
+        <para>
+            You can use a substitute value if (and only if) the data resolves to <literal>something</literal> or <literal>true</literal>.
+            The syntax is: <userinput>${<replaceable>reference-name</replaceable>:+<replaceable>substitute-value</replaceable>}</userinput>.
+        </para>
+        <para>
+            You can use a substitute value if (and only if) the data resolves to <literal>nothing</literal> or <literal>false</literal>.
+            The syntax is: <userinput>${<replaceable>reference-name</replaceable>:!<replaceable>substitute-value</replaceable>}</userinput>.
+        </para>
+        <para>
+            You can use a switch substitute if the data resolves to <type>a boolean</type>.
+            The syntax is: <userinput>${<replaceable>reference-name</replaceable>:{<replaceable>separator</replaceable><replaceable>value-if-false</replaceable><replaceable>separator</replaceable><replaceable>value-if-true</replaceable>}}</userinput>.
+        </para>
+        <para>
+            You can use a range substitute if the data resolves to <type>a number</type>.
+            The syntax is: <userinput>${<replaceable>reference-name</replaceable>:[<replaceable>separator</replaceable><replaceable>range-start</replaceable><replaceable>separator</replaceable><replaceable>range-end</replaceable><repeatable><replaceable>separator</replaceable><replaceable>substitute-value</replaceable></repeatable>]}</userinput>.
+        </para>
+        <para>
+            You can use a prettify flag to make a big value more readable.
+            The syntax is: <userinput>${<replaceable>reference-name</replaceable>(<replaceable>flag</replaceable><optional>addition</optional>)]}</userinput>.
+            The following flags are supported:
+        </para>
+        <variablelist>
+            <varlistentry>
+                <term><literal>f</literal></term>
+                <listitem>
+                    <para>Work on <type>a number</type>. It will display the value as a float, allowing for extra formatting, as with printf:</para>
+                    <para>Optionally, you can add a width (optionally with zero-padding): <userinput><optional>0</optional><replaceable>width</replaceable></userinput></para>
+                    <para>Optionally, you can add a precision: <userinput>.<replaceable>presicion</replaceable></userinput></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>p</literal></term>
+                <term><literal>b</literal></term>
+                <listitem>
+                    <para>Work on <type>a number</type>. They will reduce the number to a minimum, adding the corresponding SI prefix (or binary prefix for <literal>b</literal>).</para>
+                    <para>You can use the same additions as flag <literal>f</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>t</literal></term>
+                <listitem>
+                    <para>Work on <type>a number</type>. The number will be used as a UNIX timestamp.</para>
+                    <para>You can have an strftime-like format string as addition.</para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>d</literal></term>
+                <listitem>
+                    <para>Work on <type>a number</type>. The number will be used as seconds.</para>
+                    <para>
+                        You can have a nested format string as addition, with the following data available:
+                        <simplelist>
+                            <member><literal>%{weeks}</literal></member>
+                            <member><literal>%{days}</literal></member>
+                            <member><literal>%{hours}</literal></member>
+                            <member><literal>%{minutes}</literal></member>
+                            <member><literal>%{seconds}</literal></member>
+                            <member><literal>%{milliseconds}</literal></member>
+                            <member><literal>%{microseconds}</literal></member>
+                            <member><literal>%{nanoseconds}</literal></member>
+                        </simplelist>.
+                    </para>
+                    <para>The default format is <literal>%{weeks:+%{weeks} week%{weeks:[;2;2;;s]} }%{days:+%{days} day%{days:[;2;2;;s]} }%{hours:+%{hours} hour%{hours:[;2;2;;s]} }%{minutes:+%{minutes} minute%{minutes:[;2;2;;s]} }%{seconds:-0} second%{seconds:[;2;2;;s]}</literal>.</para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
+        <para>
+            You can replace parts of the data using the regex mechanism.
+            The syntax is: <userinput>${<replaceable>reference-name</replaceable>/<replaceable>regex</replaceable>/<replaceable>replacement</replaceable>}</userinput>.
+            The <replaceable>replacement</replaceable> part is optional (including the preceding forward slash). If it is omitted, matching parts of the data will simply be removed.
+            You can repeat the <userinput>/<replaceable>regex</replaceable>/<replaceable>replacement</replaceable></userinput> part to replace as many patterns as you like.
+            Each pattern is matched against the previous replacement so be careful in your order.
+        </para>
+        <para>Examples (with data and resolved string):</para>
+        <variablelist>
+            <varlistentry>
+                <term><literal>"${name} is eating a ${fruit}."</literal></term>
+                <listitem>
+                    <para><varname>name</varname> is <literal>"Bob"</literal> and <varname>fruit</varname> is <literal>"pear"</literal>.</para>
+                    <para>Resolves to: <literal>Bob is eating a pear.</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"${name} is eating a ${fruit:-banana}."</literal></term>
+                <listitem>
+                    <para><varname>name</varname> is <literal>"Bob"</literal> and <varname>fruit</varname> is <literal>"pear"</literal>.</para>
+                    <para>Resolves to: <literal>Bob is eating a pear.</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"${name} is eating a ${fruit:-banana}."</literal></term>
+                <listitem>
+                    <para><varname>name</varname> is <literal>"Bob"</literal> and <varname>fruit</varname> is <literal>nothing</literal>.</para>
+                    <para>Resolves to: <literal>Bob is eating a banana.</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"${name} is eating a ${fruit}${addition:+ cooked with }${addition}."</literal></term>
+                <listitem>
+                    <para><varname>name</varname> is <literal>"Bob"</literal>, <varname>fruit</varname> is <literal>"pear"</literal> and <varname>addition</varname> is <literal>"chocolate"</literal>.</para>
+                    <para>Resolves to: <literal>Bob is eating a pear cooked with chocolate.</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"${name} is eating a ${fruit}${addition:+ cooked with }${addition}."</literal></term>
+                <listitem>
+                    <para><varname>name</varname> is <literal>"Bob"</literal>, <varname>fruit</varname> is <literal>"pear"</literal>and <varname>addition</varname> is <literal>nothing</literal>.</para>
+                    <para>Resolves to: <literal>Bob is eating a pear.</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"${name} is eating a ${addition:! raw }${fruit}."</literal></term>
+                <listitem>
+                    <para><varname>name</varname> is <literal>"Bob"</literal>, <varname>fruit</varname> is <literal>"pear"</literal> and <varname>addition</varname> is <literal>"chocolate"</literal>.</para>
+                    <para>Resolves to: <literal>Bob is eating a pear.</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"${name} is eating a ${addition:! raw }${fruit}."</literal></term>
+                <listitem>
+                    <para><varname>name</varname> is <literal>"Bob"</literal>, <varname>fruit</varname> is <literal>"pear"</literal>and <varname>addition</varname> is <literal>nothing</literal>.</para>
+                    <para>Resolves to: <literal>Bob is eating a raw pear.</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"${mode} mode is ${active:{;active;inactive}}."</literal></term>
+                <listitem>
+                    <para><varname>mode</varname> is <literal>"Random"</literal> and <varname>active</varname> is <literal>true</literal>.</para>
+                    <para>Resolves to: <literal>Random mode is active.</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"${name} is eating a ${note:[;1;5;very bad;bad;good;very good]} ${fruit}."</literal></term>
+                <listitem>
+                    <para><varname>name</varname> is <literal>"Bob"</literal>, <varname>fruit</varname> is <literal>"apple"</literal>and <varname>note</varname> is <literal>5</literal>.</para>
+                    <para>Resolves to: <literal>Bob is eating a very good apple.</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"Battery power: ${power(f03.1)}%."</literal></term>
+                <listitem>
+                    <para><varname>power</varname> is <literal>80.1</literal>.</para>
+                    <para>Resolves to: <literal>Battery power: 080.1%.</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"Disk space: ${space(b)}B."</literal></term>
+                <listitem>
+                    <para><varname>space</varname> is <literal>1048576</literal>.</para>
+                    <para>Resolves to: <literal>Disk space: 1MiB.</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"${time(t)}"</literal></term>
+                <listitem>
+                    <para><varname>time</varname> is <literal>1519910048</literal>.</para>
+                    <para>Resolves to: <literal>Thu Mar  1 14:14:08 2018</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"${time(t%F %T)}"</literal></term>
+                <listitem>
+                    <para><varname>time</varname> is <literal>1519910048</literal>.</para>
+                    <para>Resolves to: <literal>2018-03-01 14:14:08</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"${buildtime(d)}"</literal></term>
+                <listitem>
+                    <para><varname>buildtime</varname> is <literal>905</literal>.</para>
+                    <para>Resolves to: <literal>15 minutes 5 seconds</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"${name} is eating a ${fruit}${addition/^/ cooked with }."</literal></term>
+                <listitem>
+                    <para><varname>name</varname> is <literal>"Bob"</literal>, <varname>fruit</varname> is <literal>"pear"</literal> and <varname>addition</varname> is <literal>"chocolate"</literal>.</para>
+                    <para>Resolves to: <literal>Bob is eating a pear cooked with chocolate.</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"${name} is eating a ${fruit}${addition/^/ cooked with }."</literal></term>
+                <listitem>
+                    <para><varname>name</varname> is <literal>"Bob"</literal>, <varname>fruit</varname> is <literal>"pear"</literal>and <varname>addition</varname> is <literal>nothing</literal>.</para>
+                    <para>Resolves to: <literal>Bob is eating a pear.</literal></para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><literal>"${name} is eating a ${fruit}${addition/^/ cooked with /$/ from Switzerland}."</literal></term>
+                <listitem>
+                    <para><varname>name</varname> is <literal>"Bob"</literal>, <varname>fruit</varname> is <literal>"pear"</literal> and <varname>addition</varname> is <literal>"chocolate"</literal>.</para>
+                    <para>Resolves to: <literal>Bob is eating a pear cooked with chocolate from Switzerland.</literal></para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
+    </refsect2>
+
+    <refsect2 id="nk-colour-type-description">
+        <title>Colour strings</title>
+
+        <para>
+            The <type>colour string</type> format is borrowed from the <ulink url="https://www.w3.org/TR/css-color-4/#hex-notation">CSS4 colour values</ulink>.
+            Hexadecimal (<literal>#</literal>-prefixed) and decimal (<literal>rgb()</literal> format) RGB(A) notations are supported.
+        </para>
+
+        <para>Here is a quick description:</para>
+        <variablelist>
+            <varlistentry>
+                <term><userinput>#<replaceable>RR</replaceable><replaceable>GG</replaceable><replaceable>BB</replaceable><optional><replaceable>AA</replaceable></optional></userinput></term>
+                <term><userinput>#<replaceable>R</replaceable><replaceable>G</replaceable><replaceable>B</replaceable><optional><replaceable>A</replaceable></optional></userinput></term>
+                <listitem>
+                    <para>Each value is an <type>hexadecimal</type> value in the <literal>0x00</literal>-<literal>0xff</literal> range.</para>
+                    <para>The alpha value is an extension of the CSS3 notation and is optional.</para>
+                    <para>The single-letter version means <emphasis>duplicating</emphasis> the character (e.g. <literal>"#123"</literal> means <literal>"#112233"</literal>).</para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><userinput>rgb(<replaceable>red</replaceable>, <replaceable>green</replaceable>, <replaceable>blue</replaceable>)</userinput></term>
+                <term><userinput>rgba(<replaceable>red</replaceable>, <replaceable>green</replaceable>, <replaceable>blue</replaceable>, <replaceable>alpha</replaceable>)</userinput></term>
+                <listitem>
+                    <para>Each colour value can be an <type>number</type> in the <literal>0</literal>-<literal>255</literal> range or a <type>percentage</type> value.</para>
+                    <para>The alpha value is a <type>floating point</type> or a <type>percentage</type> value.</para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><userinput>hsl(<replaceable>hue</replaceable>, <replaceable>saturation</replaceable>, <replaceable>lightness</replaceable>)</userinput></term>
+                <term><userinput>hsla(<replaceable>hue</replaceable>, <replaceable>saturation</replaceable>, <replaceable>lightness</replaceable>, <replaceable>alpha</replaceable>)</userinput></term>
+                <listitem>
+                    <para>Hue is an <type>angle</type> either in <type>degrees</type> (unit <userinput>deg</userinput> or no unit), <type>gradians</type> (unit <userinput>grab</userinput>), <type>radians</type> (unit <userinput>rad</userinput>) or <type>turns</type> (unit <userinput>turn</userinput>, a <type>floating point number</type> from <literal>0</literal> to <literal>1</literal>).</para>
+                    <para>The saturation and lightness values are <type>percentage</type> values.</para>
+                    <para>The alpha value is the same as the <userinput>rgba()</userinput> notation.</para>
+                </listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><userinput>hwb(<replaceable>hue</replaceable>, <replaceable>whiteness</replaceable>, <replaceable>blackness</replaceable><optional>, <replaceable>alpha</replaceable></optional>)</userinput></term>
+                <listitem>
+                    <para>Hue is the same as the <userinput>hsl()</userinput> notation.</para>
+                    <para>The whiteness and blackness values are <type>percentage</type> values.</para>
+                    <para>The alpha value is the same as the <userinput>rgba()</userinput> notation.</para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
+    </refsect2>
+
+    <refsect2 id="nk-bindings-type-description">
+        <title>Binding strings</title>
+
+        <para>
+            The <type>binding string</type> format supports two (and a half) notations. It can be either <literal><replaceable>Modifier</replaceable>-<replaceable>Modifier</replaceable>-<replaceable>Bind</replaceable></literal>
+            or the <ulink url="https://developer.gnome.org/gtk3/stable/gtk3-Keyboard-Accelerators.html#gtk-accelerator-parse">GTK+ accelerator format</ulink>.
+            The bind can either be a keysym name, a keycode in square brackets (e.g. <literal>[10]</literal>) or a mouse button specification (e.g. <literal>MousePrimary</literal> or <literal>MouseDPrimary</literal> for double click).
+        </para>
+    </refsect2>
+</refentry>

@@ -1,4 +1,5 @@
 # GIMP gimp-align-tool options
 
+(align-reference image)
 
 # end of gimp-align-tool options

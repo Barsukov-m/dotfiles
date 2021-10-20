@@ -19,10 +19,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'reedes/vim-colors-pencil'
   Plug 'subnut/vim-iawriter'
 
-  " Plug 'airblade/vim-gitgutter'
-  Plug 'joshdick/onedark.vim'
   Plug 'nvim-treesitter/nvim-treesitter'
-  Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'lilydjwg/colorizer'
   Plug 'morhetz/gruvbox'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -33,7 +30,6 @@ call plug#begin('~/.vim/plugged')
     \ 'coc-eslint',
     \ 'coc-html',
     \ 'coc-json',
-    \ 'coc-prettier',
     \ 'coc-python',
     \ 'coc-tsserver'
     \ ]
@@ -64,6 +60,9 @@ highlight link cssPositioningProp GruvboxAqua
 highlight link cssUIProp GruvboxAqua
 let g:gruvbox_italic=1
 
+packadd termdebug
+let g:termdebug_wide=1
+
 filetype indent on
 set ch=1              " cmdheight
 set et                " expandtab
@@ -75,7 +74,7 @@ set nosmd             " noshowmode
 set noswapfile
 set nu                " number
 set pa+=**            " path
-set rnu               " relativenumber
+" set rnu               " relativenumber
 set sc                " showcmd
 set scs               " smartcase
 set si                " smartindent
@@ -95,6 +94,8 @@ nnoremap д l
 nnoremap л k
 nnoremap о j
 nnoremap р h
+nnoremap Ф A
+nnoremap Ш I
 vnoremap <C-c> "+y
 vnoremap <silent> <F9> :sort<cr>
 noremap <silent> <F1> :Iawriter<cr>
@@ -109,15 +110,15 @@ endfunction
 nnoremap tt :call OpenTerminal()<cr>
 set splitbelow
 set splitright
-tnoremap <Esc> <C-\><C-n>
+tnoremap <esc> <C-\><C-n>
 
 
 " TABS & PANELS 
-inoremap <silent> <C-H> <C-W>
-nnoremap <silent> <C-h> <C-w>h
-nnoremap <silent> <C-j> <C-w>j
-nnoremap <silent> <C-k> <C-w>k
-nnoremap <silent> <C-l> <C-w>l
+inoremap <silent> <c-H> <c-W>
+nnoremap <silent> <c-h> <esc><c-w>h
+nnoremap <silent> <c-j> <esc><c-w>j
+nnoremap <silent> <c-k> <esc><c-w>k
+nnoremap <silent> <c-l> <esc><c-w>l
 nnoremap <silent> <M-S-h> :tabmove -1<cr>
 nnoremap <silent> <M-S-l> :tabmove +1<cr>
 nnoremap <silent> <M-h> :tabprevious<cr>
@@ -139,7 +140,7 @@ let g:nnn#action = {
   \ '<C-x>': 'split',
   \ '<C-s>': 'vsplit' }
 let g:nnn#session = 'local'
-let g:nnn#command = 'nnn -deH'
+let g:nnn#command = 'nnn -de'
 
 
 " FZF

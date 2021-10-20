@@ -1,8 +1,11 @@
 # GIMP gimp-gradient-tool options
 
-(opacity 0.90000000000000002)
-(gradient "Custom")
+(foreground (color-rgb 1 1 1))
+(background (color-rgb 0.14509804546833038 0.14117647707462311 0.13333334028720856))
+(opacity 0.5)
+(gradient "FG to Transparent")
 (brush-size 51)
 (brush-hardness 0.5)
+(instant yes)
 
 # end of gimp-gradient-tool options

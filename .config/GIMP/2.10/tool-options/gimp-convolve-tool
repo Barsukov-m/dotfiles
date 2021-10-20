@@ -1,9 +1,11 @@
 # GIMP gimp-convolve-tool options
 
-(brush "2. Hardness 075")
+(foreground (color-rgb 1 1 1))
+(background (color-rgb 0.14509804546833038 0.14117647707462311 0.13333334028720856))
+(brush "2. Hardness 100")
 (dynamics "Dynamics Off")
 (palette "Colour History")
-(brush-size 1014)
-(brush-hardness 0.75)
+(brush-size 6)
+(brush-force 1)
 
 # end of gimp-convolve-tool options

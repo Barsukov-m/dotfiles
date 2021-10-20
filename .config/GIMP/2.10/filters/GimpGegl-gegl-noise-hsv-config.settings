@@ -1,5 +1,19 @@
 # settings
 
+(GimpGegl-gegl-noise-hsv-config "2021-10-02 11:02:49"
+    (time 1633161769)
+    (holdness 2)
+    (hue-distance 0)
+    (saturation-distance 0)
+    (value-distance 0.060000000000000046)
+    (seed 0))
+(GimpGegl-gegl-noise-hsv-config "2021-10-02 00:24:58"
+    (time 1633123498)
+    (holdness 3)
+    (hue-distance 0)
+    (saturation-distance 0)
+    (value-distance 0.05999999999999997)
+    (seed 20))
 (GimpGegl-gegl-noise-hsv-config "2021-08-02 12:20:18"
     (time 1627896018)
     (holdness 2)

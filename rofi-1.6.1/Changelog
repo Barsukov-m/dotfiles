@@ -1,0 +1,521 @@
+v1.6.1: Tortoise Power
+   - Use GdkPixbuf for Icon parsing.
+   - Add FileBrowser to default mode.
+   - Fix parsing dicts in config file (with " in middle of string.)
+   - Add -normalize-match option, that tries to o match ö, é match e. (#1119)
+   - [Theme] Add min/max operator support to calc() (#1172)
+   - Show error message and return to list instead of closing (#1187)
+   - [Theme] Add nested media support. (#1189)
+   - [Textbox] Try to fix estimated font height. (#1190)
+   - [DRun] Fix broken caching mechanism.
+
+v1.6.0: The Masked Launcher
+   -  Add `themes/` directory in the users rofi config directory to the theme search path. (#1001)
+   -  Split listview element into box widget holding icon and textbox. Supporting more dynamic themes. (#949)
+   -  Fix default theme.
+   -  Add -upgrade-config option.
+   -  Add `ROFI_PLUGIN_PATH` variable.
+   -  Add check for running rofi inside a Script mode.
+   -  Remove gnome-terminal from rofi-sensible-terminal (#1074)
+   -  Set window title based on mode name. (#969)
+   -  Subpixel rendering workaround. (#303)
+   -  Support character type in configuration {} block . (#1131)
+   -  Use `XDG_CONFIG_DIRS` (#1133)
+   -  [Box] Bug fix update propagation.
+   -  [Build] Fix meson build with meson 0.55.
+   -  [DMenu] Add `-keep-right` flag. (#1089)
+   -  [DMenu] Don't match markup when filtering. (#579,#1128)
+   -  [DRUN] Support Type=Link (#1166)
+   -  [DRun] Add % to escape variable.
+   -  [DRun] Add an optional cache for desktop files. (#1040)
+   -  [DRun] Add keywords as default match item. (#1061)
+   -  [DRun] Don't run custom commands.
+   -  [DRun] Match keywords field.
+   -  [DRun] Only show selected categories. (#817)
+   -  [Dmenu|Script] Add non-selectable entries. (#1024)
+   -  [Doc] Update documentation.
+   -  [IconFetcher] Add jpeg support.
+   -  [Icon] Set default size to 1.2 CH.
+   -  [Icon] support distance for size.
+   -  [Listview] Add widget to show keybinding index. (#1050)
+   -  [Listview] Fix distribution of remaining space.
+   -  [Listview] Fix left-to-right scrolling. (#1028)
+   -  [Listview] Fix updating elements. (#1032)
+   -  [Matching] Make Fuzzy matching non greedy.
+   -  [Script] Add delimiter option. (#1041)
+   -  [Script] Add environment variable indicating state.
+   -  [Script] Add extra matchign field (meta). (#1052)
+   -  [Script] Add info option, hidden field that gets passed to script via `ROFI_INFO` environment.
+   -  [Script] Add no-custom option.
+   -  [Textbox] Add cursor blinking option.
+   -  [Textbox] Add placeholder. (#1020)
+   -  [Theme] Add `calc()` support. (#1105)
+   -  [Theme] Add alpha channel to highlight color. (#1033)
+   -  [Theme] Add sidebar as mode-switcher alias.
+   -  [Theme] Add some initial @media support. (#893)
+   -  [Theme] Support buttons in the UI.
+   -  [View] Add two widgets. One showing number of rows, other number of filtered rows. (#1026)
+   -  [Window] Add window thumbnail option.
+   -  [Window] Remove arbitrary # window limit. (#1047)
+   -  [Window] check buffer overflow.
+
+v1.5.5:
+v1.5.4: Painful tardiness
+	- SSH: Fix wrong malloc size, causing crash.
+
+v1.5.3: Time delayed progress
+	- Update manpage with missing entry. (#937)
+	- Rename sidebar widget to mode-switcher and allow configuration from theme.
+	- Timing: Moving timing output to glib debug system.
+	- SSH: Fix unitialized variable issue.
+	- SSH: resolve ':' conflict in history entries.
+	- RASI Lexer: Fix nested () in variable default field.
+	- USABILITY: When mode not found, show in gui not just on commandline.
+	- ICON: Allow aligning image in icon widget.
+	- Meson build system: cleanups and improvements.
+	- Meson build system: add documentation (#943)
+	- Window: Fix default formatting and remove (invalid) deprecation warning.
+	- DMenu: Add support for showing icons infront of displayed list.
+	- Overlay: Fix overlay widget to correctly integrate in new theme format.
+	- Update libnkutils, libgwater.
+	- SSH: be case-insensitive when parsing keywords.
+	- DMENU: Add format option to strip pango markup from return value.
+	- ListView: allow user to change ellipsizing displayed value at run-time.
+
+v1.5.2: Procrastination in progress
+	- Clearify Check dependency. (#879)
+	- Add option to change negate character. (#877)
+	- Fix assert and update test. (#875)
+	- Add missing example Script (#869)
+	- Add drun-display-format option. (#858)
+	- Fixing typos (#867,#837,#831,#804)
+	- Fix loading icons that are in cache (#860)
+	- Improve ssh known_host parser. (#820)
+	- Add terminals to rofi-sensible-terminal (#808)
+	- Lexer Fix several ambiguity and handling of empty input.
+	- IconFetcher preload the user set icon theme.
+	- IconFetcher use generic threadpool.
+	- Lexer support environment variables.
+	- Cleanup syntax for sorting. (#816)
+	- Documents update.
+	- Fix how borders are drawn. (#792, #783)
+
+v1.5.1:
+	- Egor Zvorykin: Fix typos in theme manpage. (#760)
+	- Ben: Fix README config file location. (#761)
+	- [SSH] Reload when ssh entry is deleted.
+	- Add support for randr 1.5 monitors. (#749)
+	- Diki Anata: Fix border layout structure.
+	- Remove duplicate tests. (#543)
+	- Fix make test in libnkutils.
+
+v1.5.0:
+	- [Theme] Accept integer notation for double properties. (#752)
+	- [View] Theme textboxes are vertically sized and horizontal wrapped. (#754)
+	- Rofi 1.4.2 doesn't capture ←, ↑, →, ↓ binding to keys to work in combination with Mode_switch (#744)
+	- Add konsole to list of sensible terminals. (#739)
+	- Allow drun to filter based on comment field. (#733)
+	- Add prompt widget to default theme.
+	- Add manpage for rofi-theme-selector.
+	- Dump theme without # prefix and separator .
+	- Fix issue with xnomad and -4 placing. (#683)
+	- DRun obey OnlyShowIn and NotShowIn properties.
+	- Store default theme in rofi binary using GResources.
+	- Add extra margin between prompt and entry.
+	- Remove colon from prompt. (#637)
+	- Add support for passing extra properties in script mode.
+	- Better error message on invalid argb syntax.
+	- Fix default theme border.
+	- Make '#' in the parser optional.
+	- Update themes.
+	- Add -drun/window-match-fields option (thx to Askrenteam) for drun/window menu. (#690/#656)
+	- Implement negated match. (#665)
+	- Fix parsing of non-existing fields. (#700)
+	- rofi-theme-selector fixes.
+	- Fix spelling error (thx to jmkjaer)
+	- Fix test on i686/arm. (#692)
+	- Fix error in theme manpage. (#686)
+	- Allow history size to be specified. (#613)
+	- Fix drun history implementation. (#579)
+	- Add gentoo install instruction. (#685)
+
+v1.4.2: 
+	- Add sort to manpage. (#682)
+	- Add tranaparent to theme manpage. (#688)
+	- Re-add theme headers. (#679)
+	- Fix super key. (#684)
+	- Unknown option libnkutils:uuid. (#677)
+	- Mode window is not found. (#686)
+	- Fix meson build in dist file. 
+
+v1.4.1: All Hail Rasi
+	- Bump meson release version
+
+v1.4.0: I reject your truth and substitute my own
+	New Features:
+		- FZF style sorting for fuzzy matching (thanks to MaskRay) (#533)
+		- Improve error messages.
+		  - Theme parsing.
+		  - Keybinding.
+		  - invalid commandline options.
+		  - etc.
+		- Customizable highlight.
+		- Give up when keyboard is not grabbed in first 5 seconds.
+		- Improved manpage
+			- rofi (1)
+			- rofi-themes (5)
+		- Super-{1..10} hotkey for first 10 rows.
+		- Allow x-align/y-align for textbox.
+		- Support matching bangs on multiple characters in combi mode. (#542)
+		- Set WM_CLASS (#549)
+		- Async pre-read 25 rows for improving user experience. (#550)
+		- Improve handling in floating window manager by always setting window size.
+		- DRun speedup.
+		- Make lazy-grab defualt.
+		- Remove extra layer in textbox. (#553)
+		- Ignore fonts that result in a family name or size 0. (#554)
+		- [Combi] Allow bang to match multiple modes. (#552)
+		- Add detection of window manager and work around quirks.
+		- Support dynamic plugins.
+		- DMENU tty detection.
+		- Support for icons in drun, combi and window mode.
+		- Startup notification of launched application support.
+		- Meson support.
+		- Fuzzy matching with fzf based sorting algorithm.
+		- Auto-detect DPI.
+		- Set cursor at the end of the input field. (#662)
+		- Meson support (thx to SardemFF7).
+		- [Script] parse the command as if it was commandline. (#650)
+		- Don't enable asan by meson. (#642)
+		- Allow text widgets to be added in theme and string to be set.
+		- [Dmenu] Support the -w flag.
+		- Allow window (via window id) to be location for rofi window.
+		- [Dmenu] Allow multi-select mode in `-no-custom` mode.
+
+v1.3.1: Dan vs. Greg: The never ending story, reloaded.
+	New Features
+		- [DRun] Search categories. (#449)
+	Improvements
+		- Fix exit when failed to grab keyboard. (#524)
+		- Introduce lazy keyboard grab mode for people who want rofi to show on key-down in i3.
+		- Add copyrights to theme (needed for debian packaging).
+		- DMENU: Correctly detect end-of-file (#518)
+		- Directly queue redraw on overlay change.
+		- Remove pango markup from workspace names in I3. (#507)
+
+v1.3.0: Dan vs. Greg: The never ending story.
+	New Features
+		- Use randr for getting monitor layout. Fallback to xinerama if not available.
+		- Re-add fuzzy matcher.
+		- Restructure internal code to use dynamic sizing widgets. (hbox, vbox and lists)
+		- Async mode for dmenu.
+		- Add theme selector script.
+		- Include 21 themes.
+		- Dynamically sizing window with content.
+		- When placed at bottom of screen re-order screen to have entry at bottom.
+	Improvements
+		- Fix pasting secondary clipboard. (#516)
+		- By default use all cores to filter entries.
+		- Make sure drawing priority is higher then reading input data.
+		- Improve resizing of window, don't make X whipe background.
+		- Improve close window (shift-delete) action, by sending NET_WM_CLOSE instead of destroying window.
+		- Create cache and run directory on startup. (#497)
+		- Fix uneeded redraws on cursor blinking. (#491)
+		- Improve time till grabbing keyboard. (#494)
+		- Better error message when failing to parse keybindings, also continue parsing on error.
+		- Fix problem with custom layouts (#485)
+		- Speedup drawing of screen. Works well now for 4k and 8k screens. (factor 1000+ speedup for the flipping of
+		buffer) (#496)
+		- DRun mode more compatible with specification.
+		- Debug output via g_log.
+		- Fix password entry cursor position.
+		- Use bash instead of sh for get_git_rev.sh (#445)
+		- Add Control+G for cancel (#452)
+		- Add padding option to textbox (#449)
+		- Ctrl-click does alternate accept entry. (#429)
+		- Hide window decoration in normal window mode. 
+		- Click to exit option. (#460)
+		- Fix cursor blinking on moving. (#462)
+		- Remove entry from history if fails to execute (#466)
+		- Fix margins. (#467)
+		- Improved documentation of functions in code.
+		- DRun: Set work directory when executing file. (#482)
+		- Memory leak fixes.
+		- Improve scrollbar behaviour.
+	Removals
+		- opacity option. The transparency support in the theme can do the same and more.
+	
+v1.2.0
+	New Features
+		- Highlight matched part of the string.
+		- Make window switcher string customizable.
+	Improvements
+		- Improved selection mode in dmenu with selection counter. 
+		- Improved selection mode with 'dot' indicator.
+		- Fix Current Desktop window switcher.
+		- Fix  launching in terminal.
+		- Supports include in config.
+		- Add Control+k remove till eol keybinding.
+		- Change clear line to Control+w and make Control+u remove till sol (matching readline)
+		- Track origin of option value e.g. who set the option.
+		- Comment default values in dump-xresources.
+		- Fix displaying on 30bit 10bpc X setup.
+	Removals:
+		- Remove xlib dependency (xcb-xrm)
+		- Remove fuzzy option
+		- Remove i3 workaround as it no longer needed since I3 v4.9. (Feb. 2015)
+
+v1.1.0
+    New Features
+        - Keys mode, showing keybindings.
+        - Stop cycling option (#407) (Thx to Yaroslav)
+        - Kill window on delete entry (#316)
+    Improvements
+        - Add Control+Backspace as remove word back keybinding.
+        - Allow user to use X11 background for fake transparency (#390)
+        - Allow user to specify background image.
+        - Improved keybinding handling, allowing on-release and modifier only (#384).
+        - Use display name for prompt (#409)
+        - Parse subdirectories in drun parser (#416)
+        - Switch to stop cycling (#407)
+    Bug fixes
+        - Grab mouse pointer with keyboard
+
+1.0.1
+    Bug fixes
+         - Fix typo in manpage.
+         - Return old behaviour for rofi placement (#395, #389)
+         - Switch desktop when switching window (#393)
+         - Remove unneeded use of bash (#391)
+         - Make history parser more robust against corrupted files. (#388)
+         - Fix desktop number (#386)
+
+1.0.0
+    New Features
+
+        - Blinking cursor
+        - BliSeparate configuration file
+        - BliHistory in drun mode (#343)
+        - BliContext menu mode, show rofi at the mouse pointer
+
+    Improvement
+        - auto select and single item on dmenu mode (#281)
+        - Unlimited window title length.
+        - Correctly follow the active desktop, instead of active window.
+        - If requesting modi that is not enabled, show it anyway.
+        - DMenu password mode. (#315)
+        - Levenshtein sort is now UTF-8 aware.
+        - Use xcb instead of large xlib library.
+        - Use GLib mainloop for cleaner code and easier external event based
+        - handling in future.
+        - Run dialog: Try to convert between locale, fs encoding and utf8.
+        - Fixing problems with non-utf8 filesystem encodings.
+        - Try to display non-utf8 strings as good as possible.
+        - Autocomplete bang hint in combi mode (#380)
+        - Remove magic line length limits by switching to getline
+        - from fgets.
+        - Print git version for git builds in version string.
+
+    Bug fixes
+        - Fix subpixel rendering. (#303)
+        - Fix basic tests on OpenBSD (#272)
+        - Fix wrong use of memcpy (thx to Jasperia).
+        - Work around for sigwaitinfo on OpenBSD.
+        - Ignore invalid entries (non-utf8) in dmenu mode.
+        - Glib signal handling.
+        - Fix connecting to i3 on bsd.
+        - Be able to distinguish between empty and cancel in dmenu mode. (#323)
+        - Fix memcpy on single memory region. (#312)
+        - Fix opening file with mode a+ and using fseek to overwrite on bsd.
+
+0.15.12:
+    New features:
+        - Initial `-dump` command for dmenu mode. (#216)
+        - Threading support.
+            - Parallel checking for ASCII.
+            - Parallel string matching.
+            - Autodetect number of HW-threads.
+            - Disabled by default.
+        - Highlight multiple selected rows (#287,#293)
+        - Dmenu can read from file instead of stdin.
+        - Regex matching (#113)
+        - Take Screenshot of rofi using keybinding.
+        - Hotkey for sorting: (#298)
+		- Option to set scrollbar width.
+    Improvements:
+		- Fix return code of multi-select.
+        - Update manpage (#289, #291)
+        - Improve speed of reading stdin in dmenu mode.
+        - Correctly handle modifier keys now. Should now support most weird keyboard layouts and switching between them.
+        (#268, #265, #286)
+        - Correctly set locale, fixing issues with entering special characters. (#282)
+        - DRun mode support `NoDisplay` setting (#283)
+        - Pango markup is matched when filtering. (#273)
+    Bug fixes:
+        - Improve error message (#290)
+        - Correctly switch to next entry on multi-select when list is filtered (#292)
+        - Switch __FUNCTION__ for __func__. (#288)
+        - Fix segfault on empty list and moving through it. (#256,#275)
+        - Fix one off of colors (#269)
+        - Drun fix uninitialized memory (#285)
+
+0.15.11:
+    New features:
+        - (Experimental) Desktop file support
+    Improvement:
+        - Add xdg-terminal to rofi-sensible-terminal
+    Bug fixes:
+        - manpage fixes (#261)
+        - Crash in error mesg on invalid config
+        - Fix urgent and active being activated at same time
+        - Fix crasher on empty list
+0.15.10:
+    New feature:
+        - Support for Startup Notification
+        - Standalone mode in dmenu
+        - ssh: known_hosts parsing
+        - Full screen support
+        - Glob style matching
+        - Cairo drawing
+        - Fast ascii filtering (thx to Tom Hinton)
+        - Combi bang support
+        - normal window mode for dmenu
+        - Startup notification support
+        - Current desktop window mode
+    Improvements:
+        - Keep same line selected
+        - Cleanup menu code by re-using Switcher
+        - Fix drawing on resize
+        - Fix rofi -h output
+        - allow disabling of tokenizing
+        - Dragging scrollbar
+        - Allow none type on separator
+        - Dmenu support markup in fields
+    Bug fixes:
+        - dmenu use switcher system
+        - release keyboard on focus out event, regrab it on focus in event
+        - Support `\0` separator
+
+0.15.8:
+    New feature:
+        - Scrollbar.
+        - More custom keybindings.
+    Improvements:
+        - dmenu compatibility.
+        - Don't refilter on all keypresses.
+        - Hide Docks and desktops from the window list. (remove i3bar hack)
+    Bug fixes:
+        - Fix Desktop numbering.
+        - Mis-alignment of arrow down box with message (#189)
+        - Fix issue with mouse interaction needing keyboard press to complete.
+        - Fix -no-custom still allows escape to quit.
+        - Fix compiler warnings.
+        - Fix dmenu mode. (#200)
+        - Break CMD AI to have dmenu compatibility.
+        - Fix processing of signals.
+
+0.15.7:
+    Bug fixes:
+        - Auto-wrap text in message dialog.
+        - Fix ellipsiziing in entry box.
+        - Fix crash on empty list with custom input (#175).
+        - SSH: Ignore comments in Host line (#178).
+        - Fix issues with BSD (#180)
+    New feature:
+        - Markup support error message.
+        - Implement -no-custom as alternative to -only-select (#176).
+        - Fuzzy match option. (#133)
+    Improvements:
+        - Make more keys user-configurable. (#66)
+
+0.15.5:
+    Bug fixes:
+        - Reduce time waiting for keyboard grab (#153)
+        - Also grab Key Release on exit. (#167)
+        - Fix failing font size estimation code.
+    New feature:
+        - [DMENU] Allow to select line matching pattern from cmdline.(#165)
+        - [DMENU] Allow to set filter from cmdline. (#164)
+        - [DMENU] Allow output to be formatted (string, filter, index, index 1 based)
+        - [DMENU] Only match input lines mode.
+        - [DMENU] Custom keybinding for return value.(#154,#156)
+        - [DMENU] Allow additional message line. (#166)
+    Improvements:
+        - (Start) adding keybinding support (#131)
+        - Cleanup warnings from clang checkers.
+        - Fix keybindings on Russian layout (#169)
+    Open bugs:
+        - Urgency hint not always working (#162)
+
+0.15.4:
+    New feature:
+        - Number mode for dmenu. allows user to get index back instead of content.
+        - Combi mode. Combine multiple views into one.
+        - Highlight current window.
+        - Highlight urgent and active row in window view.
+        - DMenu allow rows to be highlighted. (single, multiple, ranges)
+        - New color specification based on I3. (Can be enabled by settings) (#147)
+        - /etc/hosts support for ssh mode. (#137)
+    Bug fixes:
+        - On a single item in list disable auto-select.
+        - Fix cursor position (#140)
+        - Resolving manpage. (#142)
+        - Fix pasting cursor one off. (#150)
+        - Fix grave key -> ctrl+grave (#151)
+    Improvements:
+        - Better handle input methods.. Now international keyboard layout works as expected: `e ->è
+        - Be more verbose about starting in daemon mode.
+        - Print a user-understandable error when launching in daemon mode without a key bound.
+        - Add Ctrl(Shift)Tab to switch modi's.
+        - Auto size number of columns based on available columns.
+        - Better way to determine font height.
+        - Fix font vertical centering.
+        - One-off when pasting text.
+        - Improve rendering of boxes (fixed height     and margins)
+        - Fix modi switcher boxes size+layout.
+        - Reduce work on redraws (do not always calculate new size/position), set text, etc.
+        - OO-ify the switchers.
+        - Remove unneeded filtered array.
+    Cleanup:
+        - Do not lug argc,argv around everywhere.
+
+0.15.2:
+    Removed features:
+        - Remove (broken) hmode
+        - Old style key binding and mode launcher.
+        - Old TIMING code.
+    New features:
+        - Word movement in entry box. (#126)
+        - PID file to avoid duplicate Rofi.
+        - Generic keybinding and launching for modi. (#128)
+        - Auto select mode (previously called zeltak mode)
+    Bug fixes:
+        - Shift left/right movement between modi (#125)
+        - Document updates (#123,#116,#124,etc.)
+        - DMenu mode based on executable name with full path (#119)
+        - Fix missing keystrokes.
+        - On broken UTF-8 show everything up to the broken character. (#121)
+    Others:
+        - Significant code refactoring.
+        - Rewriting of config parser, Commandline Parser uses structure from Xresource parser.
+          Avoiding duplication and making it easier to maintain.
+    Performance improvements:
+        - Fix blocking on grabbing keyboard.
+
+0.15.1:
+    New features:
+        - Improved transparency
+        - Changelog
+        - Case sensitivity support, with indicator. (Edwin Pujols)
+        - Mouse scroll wheel support
+        - Alternate Row colors
+        - Run-list command for adding entries to run-dialog
+        - Dmenu: preselect line.
+    Bug fixes:
+        - Manpage fixes
+        - SSH viewer, support lists of hostnames (Tblue)
+        - SSH improve parsing of odly indented host files
+        - Do not loose keypresses when system under load
+        - Cleanups, small fixes. (Edwin Pujols, blueyed )
+    Performance improvements:
+        - Lazy refilter for large lists

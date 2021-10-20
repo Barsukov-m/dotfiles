@@ -1,21 +1,19 @@
 #!/bin/bash
 
-IMAGE=~/Pictures/Wallpapers/lock-min.jpg
-
 B='#00000000'  # blank
-C='#ffffff22'  # clear
-D='#ffffffcc'  # default
-T='#ffffffff'  # text
-V='#ffffffff'  # verification
-W='#77dd11bb'  # wrong
+C='#ebdbb222'  # clear
+D='#ebdbb2cc'  # default
+T='#ebdbb2ff'  # text
+V='#ebdbb2ff'  # verification
+W='#d79920bb'  # wrong
 
 i3lock -c "#272727" -e --keylayout 1\
-    --time-font=Lato\
-    --date-font=Lato\
-    --layout-font=Lato\
-    --verif-font=Lato\
-    --wrong-font=Lato\
-    --greeter-font=Lato\
+    --time-font=monospace\
+    --date-font=monospace\
+    --layout-font=monospace\
+    --verif-font=monospace\
+    --wrong-font=monospace\
+    --greeter-font=monospace\
     --insidever-color=$C\
     --ringver-color=$V\
     --insidewrong-color=$C\
@@ -37,5 +35,5 @@ i3lock -c "#272727" -e --keylayout 1\
     --wrong-text="Try again"\
     --lock-text=""\
     --lockfailed-text=""\
-    --radius=100\
-    --ring-width=5
+    --radius=120\
+    --ring-width=3

@@ -44,6 +44,8 @@ ttf-ubuntu-font-family
 vim
 vlc
 wget
+wine
+winetricks
 xclip
 xdotool
 xfce4-power-manager

@@ -16,7 +16,7 @@
     (open-on-exit)
     (aux-info
         (left-docks-width "186")
-        (right-docks-width "269")
+        (right-docks-width "261")
         (maximized "no"))
     (gimp-toolbox
         (side left)
@@ -33,15 +33,11 @@
             (dockable "gimp-undo-history"
                 (tab-style automatic)
                 (aux-info
-                    (show-button-bar "true")))
-            (dockable "gimp-image-list"
-                (tab-style automatic)
-                (aux-info
                     (show-button-bar "true")))))
     (gimp-dock
         (side right)
         (book
-            (current-page 0)
+            (current-page 4)
             (dockable "gimp-brush-grid"
                 (tab-style automatic)
                 (aux-info
@@ -57,16 +53,16 @@
             (dockable "gimp-document-list"
                 (tab-style automatic)
                 (aux-info
-                    (show-button-bar "true"))))
-        (book
-            (position 496)
-            (current-page 0)
-            (dockable "gimp-layer-list"
+                    (show-button-bar "true")))
+            (dockable "gimp-vectors-list"
                 (tab-style automatic)
                 (preview-size 32)
                 (aux-info
-                    (show-button-bar "true")))
-            (dockable "gimp-vectors-list"
+                    (show-button-bar "true"))))
+        (book
+            (position 188)
+            (current-page 0)
+            (dockable "gimp-layer-list"
                 (tab-style automatic)
                 (preview-size 32)
                 (aux-info
@@ -103,7 +99,7 @@
     (size 900 675))
 (session-info "toplevel"
     (factory-entry "gimp-operation-tool-dialog")
-    (position 937 187))
+    (position 1309 355))
 (session-info "toplevel"
     (factory-entry "gimp-curves-tool-dialog")
     (position 833 54)
@@ -120,14 +116,22 @@
     (position 428 285))
 (session-info "toplevel"
     (factory-entry "gimp-brightness-contrast-tool-dialog")
-    (position 795 167))
+    (position 1336 537))
 (session-info "toplevel"
     (factory-entry "gimp-input-devices-dialog")
     (position 543 313))
 (session-info "toplevel"
     (factory-entry "gimp-keyboard-shortcuts-dialog")
     (position 739 230)
-    (size 438 616))
+    (size 439 616))
+(session-info "toplevel"
+    (factory-entry "gimp-controller-editor-dialog")
+    (position 741 240)
+    (size 436 632))
+(session-info "toplevel"
+    (factory-entry "gimp-controller-action-dialog")
+    (position 779 257)
+    (size 441 563))
 
 (hide-docks no)
 (single-window-mode yes)

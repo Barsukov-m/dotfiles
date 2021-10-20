@@ -1,6 +1,8 @@
 # GIMP gimp-text-tool options
 
+(foreground (color-rgb 1 1 1))
 (palette "Colour History")
-(font "Product Sans")
+(font "Source Code Pro")
+(font-size 40)
 
 # end of gimp-text-tool options

@@ -1,7 +1,10 @@
 # GIMP gimp-crop-tool options
 
-(aspect-denominator 1087)
+(aspect-denominator 1350)
 (aspect-numerator 1080)
+(overridden-fixed-aspect yes)
+(foreground (color-rgb 1 1 1))
+(background (color-rgb 0.14509804546833038 0.14117647707462311 0.13333334028720856))
 (pattern "Pine")
 
 # end of gimp-crop-tool options

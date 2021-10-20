@@ -1,0 +1,7 @@
+theme="style_3"
+dir="$HOME/.config/rofi/launchers/text"
+
+rofi -no-lazy-grab -show = \
+-modi "=:greenclip print" \
+-theme $dir/"$theme" \
+-run-command '{cmd}'

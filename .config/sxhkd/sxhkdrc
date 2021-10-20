@@ -4,6 +4,9 @@ super + Return
 super + d
 	rofi-launcher
 
+super + c
+	rofi-greenclip
+
 super + alt + r
 	pkill -USR1 -x sxhkd
 
@@ -24,16 +27,16 @@ super + alt + Escape
 
 
 XF86MonBrightnessUp
-  xbacklight -inc 5
+  xbacklight -inc 5 && canberra-gtk-play -i bell
 
 XF86MonBrightnessDown
-  xbacklight -dec 5
+  xbacklight -dec 5 && canberra-gtk-play -i bell
 
 XF86AudioRaiseVolume
-  pamixer -i 5
+  pamixer -i 5 && canberra-gtk-play -i message
 
 XF86AudioLowerVolume
-  pamixer -d 5
+  pamixer -d 5 && canberra-gtk-play -i message
 
 XF86Calculator
   speedcrunch

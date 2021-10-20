@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+pluginsdir=${exec_prefix}/lib/rofi/
+
+Name: rofi
+Description: Header files for rofi plugins
+Requires.private: glib-2.0 >= 2.40 gmodule-2.0 cairo
+Version: 1.6.1
+Cflags: -I${includedir}/

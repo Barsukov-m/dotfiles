@@ -1177,7 +1177,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="adb93a5bfe7dc314c6e9cd9d296ae3bd">
+  <resource identifier="gimp-palette-color-history" checksum="13733d9f4ad5ddb6e53b868b9b58ac2c">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">
@@ -1405,16 +1405,7 @@
   <resource identifier="Cantarell Light" checksum="(null)">
   </resource>
 
-  <resource identifier="Cantarell Light" checksum="(null)">
-  </resource>
-
   <resource identifier="Cantarell Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="Cantarell Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="Cantarell Ultra-Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Cantarell Ultra-Bold" checksum="(null)">
@@ -2363,9 +2354,6 @@
   </resource>
 
   <resource identifier="MT Extra" checksum="(null)">
-  </resource>
-
-  <resource identifier="mtx" checksum="(null)">
   </resource>
 
   <resource identifier="Nimbus Mono PS" checksum="(null)">
@@ -5006,9 +4994,6 @@
   </resource>
 
   <resource identifier="Wingdings 3," checksum="(null)">
-  </resource>
-
-  <resource identifier="Wuncon Siji" checksum="(null)">
   </resource>
 
   <resource identifier="Z003 Medium Italic" checksum="(null)">

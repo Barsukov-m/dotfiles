@@ -1,0 +1,291 @@
+<p><a href="https://app.codacy.com/app/davatorium/rofi?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=davatorium/rofi&amp;utm_campaign=Badge_Grade_Settings"><img src="https://api.codacy.com/project/badge/Grade/ca0310962a7c4b829d0c57f1ab023531" alt="Codacy Badge" title="" /></a>
+<a href="https://travis-ci.org/davatorium/rofi"><img src="https://travis-ci.org/davatorium/rofi.svg?branch=master" alt="Build Status" title="" /></a>
+<a href="https://codecov.io/github/davatorium/rofi?branch=master"><img src="https://codecov.io/github/davatorium/rofi/coverage.svg?branch=master" alt="codecov.io" title="" /></a>
+<a href="https://github.com/davatorium/rofi/issues"><img src="https://img.shields.io/github/issues/davatorium/rofi.svg" alt="Issues" title="" /></a>
+<a href="https://github.com/davatorium/rofi/network"><img src="https://img.shields.io/github/forks/davatorium/rofi.svg" alt="Forks" title="" /></a>
+<a href="https://github.com/davatorium/rofi/stargazers"><img src="https://img.shields.io/github/stars/davatorium/rofi.svg" alt="Stars" title="" /></a>
+<a href="https://github.com/davatorium/rofi/releases"><img src="https://img.shields.io/github/downloads/davatorium/rofi/total.svg" alt="Downloads" title="" /></a>
+<a href="https://scan.coverity.com/projects/davedavenport-rofi"><img src="https://scan.coverity.com/projects/3850/badge.svg" alt="Coverity" title="" /></a>
+<a href="https://reddit.com/r/qtools/"><img src="https://img.shields.io/badge/forum-online-green.svg" alt="Forum" title="" /></a>
+ <a href="https://repology.org/metapackage/rofi/versions"><img src="https://repology.org/badge/tiny-repos/rofi.svg" alt="Packages" title="" /></a></p>
+
+<h1>A window switcher, Application launcher and dmenu replacement</h1>
+
+<p><strong>Rofi</strong> started as a clone of simpleswitcher, written by <a href="http://github.com/seanpringle/simpleswitcher">Sean Pringle</a> - a
+popup window switcher roughly based on <a href="http://code.google.com/p/superswitcher/">superswitcher</a>.
+Simpleswitcher laid the foundations, and therefore Sean Pringle deserves most of the credit for this tool. <strong>Rofi</strong>
+(renamed, as it lost the <em>simple</em> property) has been extended with extra features, like an application launcher and 
+ssh-launcher, and can act as a drop-in dmenu replacement, making it a very versatile tool.</p>
+
+<p><strong>Rofi</strong>, like dmenu, will provide the user with a textual list of options where one or more can be selected.
+This can either be running an application, selecting a window, or options provided by an external script.</p>
+
+<p>Its main features are:</p>
+
+<ul>
+<li>Fully configurable keyboard navigation</li>
+<li>Type to filter
+<ul>
+<li>Tokenized: type any word in any order to filter</li>
+<li>Case insensitive (togglable)</li>
+<li>Support for fuzzy-, regex-, and glob matching</li>
+</ul></li>
+<li>UTF-8 enabled
+<ul>
+<li>UTF-8-aware string collating</li>
+<li>International keyboard support (`e -> è)</li>
+</ul></li>
+<li>RTL language support</li>
+<li>Cairo drawing and Pango font rendering</li>
+<li>Built-in modes:
+<ul>
+<li>Window switcher mode
+<ul>
+<li>EWMH compatible WM</li>
+</ul></li>
+<li>Application launcher</li>
+<li>Desktop file application launcher</li>
+<li>SSH launcher mode</li>
+<li>Combi mode, allowing several modes to be merged into one list</li>
+</ul></li>
+<li>History-based ordering — last 25 choices are ordered on top based on use (optional)</li>
+<li>Levenshtein distance ordering of matches (optional)</li>
+<li>Drop-in dmenu replacement
+<ul>
+<li>Many added improvements</li>
+</ul></li>
+<li>Easily extensible using scripts</li>
+<li>Theming</li>
+</ul>
+
+<p><strong>Rofi</strong> has several built-in modes implementing common use cases and can be extended by scripts (either called from
+<strong>Rofi</strong> or calling <strong>Rofi</strong>).</p>
+
+<p>Below is a list of the different modes:</p>
+
+<h2>Window Switcher</h2>
+
+<p><img src="https://davatorium.github.io/rofi/images/rofi/window-list.png" alt="Window List" title="" /></p>
+
+<p>The window switcher shows the following informations in columns (can be customized):</p>
+
+<ol>
+<li>Desktop name</li>
+<li>Window class</li>
+<li>Window title</li>
+</ol>
+
+<p>Window mode features:</p>
+
+<ul>
+<li>Closing applications with <code>Shift-Delete</code></li>
+<li>Custom command with <code>Shift-Return</code></li>
+</ul>
+
+<h2>Application launcher</h2>
+
+<p><img src="https://davatorium.github.io/rofi/images/rofi/run-dialog.png" alt="run mode" title="" /></p>
+
+<p>The run mode allows users to quickly search for and launch a program.</p>
+
+<p>Run mode features:</p>
+
+<ul>
+<li><code>Shift-Return</code> to run the selected program in a terminal</li>
+<li>Favorites list, with frequently used programs sorted on top</li>
+<li>Custom entries, like aliases, added by executing a command</li>
+</ul>
+
+<h2>Desktop File Application launcher</h2>
+
+<p>The desktop run mode allows users to quickly search and launch an application from the <em>freedesktop.org</em> Desktop
+Entries. These are used by most Desktop Environments to populate launchers and menus.
+Drun mode features:</p>
+
+<ul>
+<li>Favorites list, with frequently used programs sorted on top</li>
+<li>Auto starting terminal applications in a terminal</li>
+</ul>
+
+<h2>SSH launcher</h2>
+
+<p><img src="https://davatorium.github.io/rofi/images/rofi/ssh-dialog.png" alt="SSH Launcher" title="" /></p>
+
+<p>Quickly <code>ssh</code> into remote machines. Parses <code>~/.ssh/config</code> and <code>~/.ssh/known_hosts</code> to find hosts.</p>
+
+<h2>Script mode</h2>
+
+<p>Loads external scripts to add modes to <strong>Rofi</strong>, for example a file-browser.</p>
+
+<p><code>
+rofi  -show fb -modi fb:../Examples/rofi-file-browser.sh
+</code></p>
+
+<h2>COMBI mode</h2>
+
+<p>Combine multiple modes in one view. This is especially useful when merging the window and run mode into one view.
+Allowing to quickly switch to an application, either by switching to it when it is already running or starting it.</p>
+
+<p>Example to combine Desktop run and the window switcher:</p>
+
+<p><code>
+rofi -combi-modi window,drun -show combi -modi combi
+</code></p>
+
+<h2>dmenu replacement</h2>
+
+<p><img src="https://davatorium.github.io/rofi/images/rofi/dmenu-replacement.png" alt="DMENU replacement (running teiler)" title="" /></p>
+
+<p>Drop in dmenu replacement. (Screenshot shows rofi used by
+<a href="https://github.com/carnager/teiler">teiler</a> ).</p>
+
+<p><strong>Rofi</strong> features several improvements over dmenu to improve usability. There is the option to add
+an extra message bar (<code>-mesg</code>), pre-entering of text (<code>-filter</code>), or selecting entries based on a
+pattern (<code>-select</code>). Also highlighting (<code>-u</code> and <code>-a</code>) options and modi to force user to select one
+provided option (<code>-only-match</code>). In addition to this, rofi's dmenu mode can select multiple lines and
+write them to stdout.</p>
+
+<h1>Usage</h1>
+
+<p>If used with <code>-show [mode]</code>, rofi will immediately open in the specified [mode].</p>
+
+<p>If used with <code>-dmenu</code>, rofi will use data from STDIN to let the user select an option.</p>
+
+<p>For example, to show a run dialog:</p>
+
+<p><code>rofi -show run</code></p>
+
+<p>To show a ssh dialog:</p>
+
+<p><code>rofi -show ssh</code></p>
+
+<h2>dmenu</h2>
+
+<p>If rofi is passed the <code>-dmenu</code> option, or run as <code>dmenu</code> (ie, /usr/bin/dmenu is symlinked to /usr/bin/rofi),
+it will use the data passed from STDIN.</p>
+
+<p><code>
+~/scripts/my_script.sh | rofi -dmenu
+echo -e "Option #1\nOption #2\nOption #3" | rofi -dmenu
+</code></p>
+
+<p>In both cases, rofi will output the user's selection to STDOUT.</p>
+
+<h2>Switching Between Modi</h2>
+
+<p>Type <code>Shift-/Left/Right</code> to switch between active modi.</p>
+
+<h2>Key bindings</h2>
+
+<p>| Key                                  | Action                                                             |
+|:-------------------------------------|:-------------------------------------------------------------------|
+|<code>Ctrl-v, Insert</code>                      | Paste from clipboard |
+|<code>Ctrl-Shift-v, Shift-Insert</code>          | Paste primary selection |
+|<code>Ctrl-w</code>                              | Clear the line |
+|<code>Ctrl-u</code>                              | Delete till the start of line |
+|<code>Ctrl-a</code>                              | Move to beginning of line |
+|<code>Ctrl-e</code>                              | Move to end of line |
+|<code>Ctrl-f, Right</code>                       | Move forward one character |
+|<code>Alt-f, Ctrl-Right</code>                   | Move forward one word |
+|<code>Ctrl-b, Left</code>                        | Move back one character |
+|<code>Alt-b, Ctrl-Left</code>                    | Move back one word |
+|<code>Ctrl-d, Delete</code>                      | Delete character |
+|<code>Ctrl-Alt-d</code>                          | Delete word |
+|<code>Ctrl-h, Backspace, Shift-Backspace</code>  | Backspace (delete previous character) |
+|<code>Ctrl-Alt-h</code>                          | Delete previous word |
+|<code>Ctrl-j,Ctrl-m,Enter</code>                 | Accept entry |
+|<code>Ctrl-n,Down</code>                         | Select next entry |
+|<code>Ctrl-p,Up</code>                           | Select previous entry |
+|<code>Page Up</code>                             | Go to the previous page |
+|<code>Page Down</code>                           | Go to the next page |
+|<code>Ctrl-Page Up</code>                        | Go to the previous column |
+|<code>Ctrl-Page Down</code>                      | Go to the next column |
+|<code>Ctrl-Enter</code>                          | Use entered text as a command (in <code>ssh/run modi</code>) |
+|<code>Shift-Enter</code>                         | Launch the application in a terminal (in run mode) |
+|<code>Shift-Enter</code>                         | Return the selected entry and move to the next item while keeping Rofi open. (in dmenu) |
+|<code>Shift-Right</code>                         | Switch to the next modi. The list can be customized with the -modi option. |
+|<code>Shift-Left</code>                          | Switch to the previous modi. The list can be customized with the -modi option. |
+|<code>Ctrl-Tab</code>                            | Switch to the next modi. The list can be customized with the -modi option. |
+|<code>Ctrl-Shift-Tab</code>                      | Switch to the previous modi. The list can be customized with the -modi option. |
+|<code>Ctrl-space</code>                          | Set selected item as input text. |
+|<code>Shift-Del</code>                           | Delete entry from history. |
+|<code>grave</code>                               | Toggle case sensitivity. |
+|<code>Alt-grave</code>                           | Toggle levenshtein sort. |
+|<code>Alt-Shift-S</code>                         | Take a screenshot and store it in the Pictures directory. |</p>
+
+<p>For the full list of key bindings, see: <code>rofi -show keys</code> or <code>rofi -help</code>.</p>
+
+<h1>Configuration</h1>
+
+<p>There are currently three methods of setting configuration options:</p>
+
+<ul>
+<li>Local configuration. Normally, depending on XDG, in <code>~/.config/rofi/config</code>. This uses the Xresources format.</li>
+<li>Xresources: A method of storing key values in the Xserver. See
+<a href="https://en.wikipedia.org/wiki/X_resources">here</a> for more information.</li>
+<li>Command line options: Arguments are passed to <strong>Rofi</strong>.</li>
+</ul>
+
+<p>A distribution can ship defaults in <code>/etc/rofi.conf</code>.</p>
+
+<p>The Xresources options and the command line options are aliased. To define option X set:</p>
+
+<pre><code>`rofi.X: value`
+</code></pre>
+
+<p>In the Xresources file. To set/override this from command line pass the same key
+prefixed with '-':</p>
+
+<pre><code>`rofi -X value`
+</code></pre>
+
+<p>To get a list of available options formatted as Xresources entries, run:</p>
+
+<pre><code>`rofi -dump-Xresources`
+</code></pre>
+
+<p>or in a more readable format:</p>
+
+<pre><code>`rofi -help`
+</code></pre>
+
+<p>The configuration system supports the following types:</p>
+
+<ul>
+<li>String</li>
+<li>Integer (signed and unsigned)</li>
+<li>Char</li>
+<li>Boolean</li>
+</ul>
+
+<p>The Boolean option has a non-default command line syntax, to enable option X you do:</p>
+
+<pre><code>`rofi -X`
+</code></pre>
+
+<p>to disable it:</p>
+
+<pre><code>`rofi -no-X`
+</code></pre>
+
+<h1>Manpage</h1>
+
+<p>For more detailed information, please see the <a href="doc/rofi.1.markdown">manpage</a>, the <a href="https://github.com/davatorium/rofi/wiki">wiki</a>, or the <a href="https://reddit.com/r/qtools/">forum</a>.</p>
+
+<h1>Installation</h1>
+
+<p>Please see the <a href="https://github.com/davatorium/rofi/blob/next/INSTALL.md">installation guide</a> for instructions on how to
+install <strong>Rofi</strong>.</p>
+
+<h1>What is rofi not?</h1>
+
+<p>Rofi is not:</p>
+
+<ul>
+<li>A preview application. In other words, it will not show a (small) preview of images, movies or other files.</li>
+<li>A UI toolkit.</li>
+<li>A library to be used in other applications.</li>
+<li>An application that can support every possible use-case. It tries to be generic enough to be usable by everybody.
+Specific functionality can be added using scripts.</li>
+<li>Just a dmenu replacement. The dmenu functionality is a nice 'extra' to <strong>rofi</strong>, not its main purpose.</li>
+</ul>

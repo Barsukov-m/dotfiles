@@ -52,13 +52,13 @@ scrolling:
 
 font:
   normal:
-    family: JetBrains Mono Nerd Font
+    family: monospace
     style: Regular
   bold:
-    family: JetBrains Mono Nerd Font
+    family: monospace
     style: Bold
   italic:
-    family: JetBrains Mono Nerd Font
+    family: monospace
     style: Italic
   size: 13
 

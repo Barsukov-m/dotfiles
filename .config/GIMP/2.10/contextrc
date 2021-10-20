@@ -1,14 +1,16 @@
 # GIMP user context
 
-(tool "gimp-ellipse-select-tool")
+(tool "gimp-brightness-contrast-tool")
 (paint-info "gimp-paintbrush")
-(brush "2. Hardness 075")
+(foreground (color-rgb 1 1 1))
+(background (color-rgb 0.14509804546833038 0.14117647707462311 0.13333334028720856))
+(brush "2. Hardness 100")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")
 (pattern "Pine")
-(gradient "Custom")
+(gradient "FG to Transparent")
 (palette "Colour History")
-(font "Product Sans")
+(font "Source Code Pro")
 (tool-preset "Core Pointer")
 
 # end of user context

@@ -2,10 +2,14 @@ export ZSH="/home/michael/.config/oh-my-zsh"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="brave"
+export TERM="alacritty"
+export TERMINAL="alacritty"
 export FZF_DEFAULT_COMMAND="ag -g '' --hidden"
 
 ZSH_THEME="main"
 DISABLE_UPDATE_PROMPT="true"
+DISABLE_AUTO_UPDATE=true
+
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
@@ -14,22 +18,19 @@ source $ZSH/oh-my-zsh.sh
 xset b off
 xset r rate 250 50
 
-mkcd () {
-  mkdir -p -- "$1" && cd -P -- "$1"
-}
-
 remove_packets () {
   for i in $(pacman -Qdtq); do
     sudo pacman -R "$i";
   done
 }
 
+
 ## NNN Configuration
 export NNN_TRASH=1
 export NNN_COLORS="3241"
 export NNN_FIFO="/tmp/nnn.fifo"
-export NNN_BMS='r:/run/media/;d:~/.config/dotfiles;u:~/Documents/university;f:~/Documents/front-end;p:~/Pictures;'
-export NNN_PLUG='d:dragdrop;e:suedit;m:nmount;p:preview-tui;t:imgview'
+export NNN_BMS='r:/run/media/;d:~/.config/dotfiles;u:~/Documents/university;f:~/Documents/front-end;p:~/Pictures;e:~/Documents/extrahomespace;'
+export NNN_PLUG='d:dragdrop;e:suedit;p:preview-tui;t:imgview'
 export NNN_DE_FILE_MANAGER="nautilus"
 export NNN_FALLBACK_OPENER="xdg-open"
 export NNN_FALLBACK_OPENER="gio open"
@@ -41,9 +42,10 @@ alias ll="ls -Alhgo"
 alias up="sudo pacman -Syu && sudo updatedb"
 alias p="python3"
 alias n="nnn -de"
-alias sun="sudo nnn -deH"
+alias sun="sudo nnn -de"
 alias nf="neofetch"
 alias nv="nvim"
+alias agh="ag --hidden -g"
 alias ascii="less ~/.local/share/etc/ascii"
 alias inet="ping archlinux.org"
 alias conadd="nmcli device connect $(ls /sys/class/net | grep -o "wl.*")"
