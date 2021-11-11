@@ -1,11 +1,14 @@
 super + Return
 	alacritty
 
+super + c
+	rofi-greenclip
+
 super + d
 	rofi-launcher
 
-super + c
-	rofi-greenclip
+super + e
+	rofi-splatmoji
 
 super + alt + r
 	pkill -USR1 -x sxhkd
@@ -20,10 +23,10 @@ super + w
 	bspc node -c
 
 super + Escape
-  sh lock
+  lock
 
 super + alt + Escape
-  sh power
+  power
 
 
 XF86MonBrightnessUp
@@ -49,7 +52,7 @@ XF86AudioPlay
 
 
 Print
-  mkdir -p ~/Pictures/Screenshots && flameshot full -p ~/Pictures/Screenshots
+  screenshot
 
 shift + Print
   flameshot gui

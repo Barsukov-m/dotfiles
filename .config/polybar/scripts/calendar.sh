@@ -1,11 +1,11 @@
-#! /bin/sh
+#! /bin/bash
 
 send_notification() {
-	TODAY=$(date '+%d')
+	TODAY=$(date '+%-d')
 	HEAD=$(cal "$1" | head -n1)
-	BODY=$(cal "$1" | tail -n7 | sed -z "s|$TODAY|<u><b>$TODAY</b></u>|g")
+	BODY=$(cal "$1" | tail -n7 | sed -z "s|$TODAY|<u><b>$TODAY</b></u>|1")
 	dunstify -h string:x-canonical-private-synchronous:calendar \
-  "$HEAD" "$BODY" -u NORMAL
+		"$HEAD" "$BODY" -u NORMAL
 }
 
 handle_action() {
@@ -29,4 +29,3 @@ case $1 in
 esac
 
 handle_action
-

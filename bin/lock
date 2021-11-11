@@ -1,11 +1,8 @@
 #!/bin/bash
 
 B='#00000000'  # blank
-C='#ebdbb222'  # clear
-D='#ebdbb2cc'  # default
-T='#ebdbb2ff'  # text
-V='#ebdbb2ff'  # verification
-W='#d79920bb'  # wrong
+T='#ebdbb2'  # text
+W='#989719'  # wrong
 
 i3lock -c "#272727" -e --keylayout 1\
     --time-font=monospace\
@@ -14,14 +11,14 @@ i3lock -c "#272727" -e --keylayout 1\
     --verif-font=monospace\
     --wrong-font=monospace\
     --greeter-font=monospace\
-    --insidever-color=$C\
-    --ringver-color=$V\
-    --insidewrong-color=$C\
+    --insidever-color=$B\
+    --ringver-color=$B\
+    --insidewrong-color=$B\
     --ringwrong-color=$W\
     --inside-color=$B\
-    --ring-color=$D\
+    --ring-color=$B\
     --line-color=$B\
-    --separator-color=$D\
+    --separator-color=$B\
     --verif-color=$T\
     --wrong-color=$T\
     --time-color=$T\
@@ -30,10 +27,11 @@ i3lock -c "#272727" -e --keylayout 1\
     --keyhl-color=$W\
     --bshl-color=$W\
     --time-str="%H:%M"\
-    --date-str="%A, %m %Y"\
+    --date-str="Type your password..."\
     --verif-text="..."\
-    --wrong-text="Try again"\
+    --wrong-text="Nah"\
     --lock-text=""\
+    --no-modkey-text \
     --lockfailed-text=""\
     --radius=120\
     --ring-width=3

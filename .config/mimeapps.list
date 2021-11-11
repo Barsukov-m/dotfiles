@@ -1,10 +1,10 @@
 [Added Associations]
 text/plain=nvim;org.gnome.gedit.desktop;
-application/pdf=org.pwmt.zathura.desktop;brave-browser.desktop;firefox.desktop;
+application/pdf=org.pwmt.zathura.desktop;firefox.desktop;brave-browser.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-380H10.desktop;userapp-Telegram Desktop-Q2Y030.desktop;userapp-Telegram Desktop-55OD70.desktop;
 image/png=sxiv.desktop;feh.desktop;
-image/gif=feh.desktop;
-application/xml=brave-browser.desktop;firefox.desktop;
+image/gif=sxiv.desktop;feh.desktop;
+application/xml=firefox.desktop;brave-browser.desktop;
 font/ttf=org.gnome.FontManager.desktop;
 application/x-cd-image=nnn.desktop;
 text/x-patch=vim.desktop;nvim.desktop;
@@ -24,13 +24,13 @@ application/x-extension-xht=firefox.desktop;
 [Default Applications]
 application/pdf=org.pwmt.zathura.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-55OD70.desktop
-image/png=feh.desktop
-text/html=brave-browser.desktop
-x-scheme-handler/http=brave-browser.desktop
-x-scheme-handler/https=brave-browser.desktop
-x-scheme-handler/about=brave-browser.desktop
-x-scheme-handler/unknown=brave-browser.desktop
-x-scheme-handler/mailto=userapp-Evolution-3CFP60.desktop
+image/png=sxiv.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
+x-scheme-handler/mailto=firefox.desktop
 text/plain=nvim.desktop
 font/ttf=org.gnome.FontManager.desktop
 application/xhtml+xml=firefox.desktop

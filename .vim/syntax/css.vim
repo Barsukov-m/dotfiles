@@ -68,7 +68,7 @@ endtry
 " digits
 syn match cssValueInteger contained "[-+]\=\d\+" contains=cssUnitDecorators
 syn match cssValueNumber contained "[-+]\=\d\+\(\.\d*\)\=" contains=cssUnitDecorators
-syn match cssValueLength contained "[-+]\=\d\+\(\.\d*\)\=\(mm\|cm\|in\|pt\|pc\|em\|ex\|px\|rem\|dpi\|dppx\|dpcm\|fr\|vw\|vh\|vmin\|vmax\)\>" contains=cssUnitDecorators
+syn match cssValueLength contained "[-+]\=\d\+\(\.\d*\)\=\(mm\|cm\|in\|pt\|pc\|em\|ex\|px\|rem\|dpi\|dppx\|dpcm\|fr\|vw\|vh\|vmin\|vmax\|ch\)\>" contains=cssUnitDecorators
 syn match cssValueLength contained "[-+]\=\d\+\(\.\d*\)\=%" contains=cssUnitDecorators
 syn match cssValueAngle contained "[-+]\=\d\+\(\.\d*\)\=\(deg\|grad\|rad\)\>" contains=cssUnitDecorators
 syn match cssValueTime contained "+\=\d\+\(\.\d*\)\=\(ms\|s\)\>" contains=cssUnitDecorators
@@ -87,7 +87,7 @@ syn match cssColor contained /\<darkslate\(blue\|gray\|grey\)\>/
 syn match cssColor contained /\<dark\(turquoise\|violet\)\>/
 syn keyword cssColor contained deeppink deepskyblue dimgray dimgrey dodgerblue firebrick
 syn keyword cssColor contained floralwhite forestgreen gainsboro ghostwhite gold
-syn keyword cssColor contained goldenrod greenyellow grey honeydew htpink
+syn keyword cssColor contained goldenrod greenyellow grey honeydew hotpink
 syn keyword cssColor contained indianred indigo ivory khaki lavender lavenderblush lawngreen
 syn keyword cssColor contained lemonchiffon limegreen linen magenta
 syn match cssColor contained /\<light\(blue\|coral\|cyan\|goldenrodyellow\|gray\|green\)\>/
@@ -134,6 +134,7 @@ syn match cssFunctionComma contained ","
 " Common Prop and Attr
 syn keyword cssCommonAttr contained auto none inherit all default normal
 syn keyword cssCommonAttr contained top bottom center stretch hidden visible
+syn match cssCommonAttr contained "\<\(max-\|min-\|fit-\)content\>"
 "------------------------------------------------
 " CSS Animations
 " http://www.w3.org/TR/css3-animations/
@@ -168,11 +169,11 @@ syn match cssBackgroundAttr contained "\<repeat\(-[xy]\)\=\>"
 " background-size attributes
 syn keyword cssBackgroundAttr contained cover contain
 
-syn match cssBoxProp contained "\<border\(-\(top\|right\|bottom\|left\)\)\=\(-\(width\|color\|style\)\)\=\>"
-syn match cssBoxProp contained "\<border\(-\(top\|bottom\)-\(left\|right\)\)\=-radius\>"
-syn match cssBoxProp contained "\<border-image\(-\(outset\|repeat\|slice\|source\|width\)\)\=\>"
-syn match cssBoxProp contained "\<box-decoration-break\>"
-syn match cssBoxProp contained "\<box-shadow\>"
+syn match cssBorderProp contained "\<border\(-\(top\|right\|bottom\|left\)\)\=\(-\(width\|color\|style\)\)\=\>"
+syn match cssBorderProp contained "\<border\(-\(top\|bottom\)-\(left\|right\)\)\=-radius\>"
+syn match cssBorderProp contained "\<border-image\(-\(outset\|repeat\|slice\|source\|width\)\)\=\>"
+syn match cssBorderProp contained "\<box-decoration-break\>"
+syn match cssBorderProp contained "\<box-shadow\>"
 
 " border-image attributes
 syn keyword cssBorderAttr contained stretch round fill
@@ -291,9 +292,9 @@ syn match cssListAttr contained "\<\(decimal\(-leading-zero\)\=\|cjk-ideographic
 syn keyword cssListAttr contained disc circle square hebrew armenian georgian
 syn keyword cssListAttr contained inside outside
 
-syn keyword cssBoxProp contained bottom clear clip display float left
-syn keyword cssBoxProp contained position right top visibility
-syn match cssBoxProp contained "\<z-index\>"
+syn keyword cssPositioningProp contained bottom clear clip display float left
+syn keyword cssPositioningProp contained position right top visibility
+syn match cssPositioningProp contained "\<z-index\>"
 syn keyword cssPositioningAttr contained block compact grid
 syn match cssPositioningAttr contained "\<table\(-\(row-group\|\(header\|footer\)-group\|row\|column\(-group\)\=\|cell\|caption\)\)\=\>"
 syn keyword cssPositioningAttr contained left right both
@@ -309,7 +310,7 @@ syn keyword cssTableAttr contained fixed collapse separate show hide once always
 
 
 syn keyword cssTextProp contained color direction hyphens
-syn match cssBoxProp "\<\(\(word\|letter\)-spacing\|text\(-\(decoration\|transform\|align\|index\|shadow\)\)\=\|vertical-align\|unicode-bidi\|line-height\)\>"
+syn match cssTextProp "\<\(\(word\|letter\)-spacing\|text\(-\(decoration\|transform\|align\|index\|shadow\)\)\=\|vertical-align\|unicode-bidi\|line-height\)\>"
 syn match cssTextProp contained "\<text-\(justify\|outline\|warp\|align-last\|size-adjust\|rendering\|stroke\|indent\)\>"
 syn match cssTextProp contained "\<\(word\|line\)-break\|\(overflow\|word\)-wrap\>"
 syn match cssTextProp contained "\<white-space\>"
@@ -334,9 +335,9 @@ syn match cssTextAttr contained "\<break-word\>"
 syn keyword cssTextAttr contained manual
 syn match cssTextAttr contained "\<bidi-override\>"
 
-syn match cssBoxProp contained "\<transform\(-\(origin\|style\)\)\=\>"
-syn match cssBoxProp contained "\<perspective\(-origin\)\=\>"
-syn match cssBoxProp contained "\<backface-visibility\>"
+syn match cssTransformProp contained "\<transform\(-\(origin\|style\)\)\=\>"
+syn match cssTransformProp contained "\<perspective\(-origin\)\=\>"
+syn match cssTransformProp contained "\<backface-visibility\>"
 
 " CSS Transitions
 " http://www.w3.org/TR/css3-transitions/
@@ -352,7 +353,7 @@ syn match cssTransitionAttr contained "\<step\(-start\|-end\)\=\>"
 syn match cssUIProp contained "\<box-sizing\>"
 syn match cssUIAttr contained "\<\(content\|padding\|border\)\(-box\)\=\>"
 
-syn keyword cssBoxProp contained cursor
+syn keyword cssUIProp contained cursor
 syn match cssUIAttr contained "\<\(\([ns]\=[ew]\=\)\|col\|row\|nesw\|nwse\)-resize\>"
 syn keyword cssUIAttr contained crosshair help move pointer alias copy
 syn keyword cssUIAttr contained progress wait text cell move
@@ -414,7 +415,7 @@ syn keyword cssAuralAttr contained male female child code digits continuous
 " mobile text
 syn match cssMobileTextProp contained "\<text-size-adjust\>"
 
-syn keyword cssBoxProp contained width height orientation scan
+syn keyword cssMediaProp contained width height orientation scan
 syn match cssMediaProp contained /\(\(max\|min\)-\)\=\(\(device\)-\)\=aspect-ratio/
 syn match cssMediaProp contained /\(\(max\|min\)-\)\=device-pixel-ratio/
 syn match cssMediaProp contained /\(\(max\|min\)-\)\=device-\(height\|width\)/
@@ -464,7 +465,7 @@ syn region cssStringQQ start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=cssUnicodeEsc
 syn region cssStringQ start=+'+ skip=+\\\\\|\\'+ end=+'+ contains=cssUnicodeEscape,cssSpecialCharQ
 
 " Vendor Prefix
-syn match cssBoxProp contained "-\(webkit\|moz\|o\|ms\)-"
+syn match cssVendor contained "-\(webkit\|moz\|o\|ms\)-"
 
 " Various CSS Hack characters
 " In earlier versions of IE (6 and 7), one can prefix property names
@@ -481,7 +482,7 @@ syn region cssAttrRegion start=/:/ end=/\ze\(;\|)\|}\|{\)/ contained contains=cs
 
 " Hack for transition
 " 'transition' has Props after ':'.
-syn region cssBoxProp start=/transition\s*:/ end=/\ze\(;\|)\|}\)/ contained contains=css.*Prop,css.*Attr,cssColor,cssImportant,cssValue.*,cssFunction,cssString.*,cssURL,cssComment,cssUnicodeEscape,cssVendor,cssError,cssAttrComma,cssNoise
+syn region cssAttrRegion start=/transition\s*:/ end=/\ze\(;\|)\|}\)/ contained contains=css.*Prop,css.*Attr,cssColor,cssImportant,cssValue.*,cssFunction,cssString.*,cssURL,cssComment,cssUnicodeEscape,cssVendor,cssError,cssAttrComma,cssNoise
 
 syn match cssAtKeyword /@\(font-face\|media\|keyframes\|import\|charset\|namespace\|page\|supports\)/
 
@@ -647,3 +648,4 @@ endif
 let &cpo = s:cpo_save
 unlet s:cpo_save
 " vim: ts=8
+

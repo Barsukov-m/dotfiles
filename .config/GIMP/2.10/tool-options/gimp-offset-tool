@@ -1,9 +1,4 @@
 # GIMP gimp-offset-tool options
 
-<<<<<<< HEAD
-(background (color-rgb 0.14509804546833038 0.14117647707462311 0.13333334028720856))
-=======
-(background (color-rgb 0.10196079313755035 0.29803922772407532 0.21568629145622253))
->>>>>>> b5dd106c9ea7db7e6af8129119688c4d07b5f786
 
 # end of gimp-offset-tool options

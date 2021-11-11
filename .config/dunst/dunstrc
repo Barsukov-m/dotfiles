@@ -2,7 +2,7 @@
     ### Display ###
 
     # Which monitor should the notifications be displayed on.
-    monitor =
+    monitor = 0
 
     # Display notification on focused monitor.  Possible modes are:
     #   mouse: follow mouse pointer
@@ -64,7 +64,7 @@
     frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#989719"
+    frame_color = "#a89983"
 
     # Define a color for the separator.
     # possible values are:

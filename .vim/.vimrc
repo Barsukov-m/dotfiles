@@ -1,34 +1,28 @@
-" ██    ██ ██ ███    ███ 
-" ██    ██ ██ ████  ████ 
-" ██    ██ ██ ██ ████ ██ 
-"  ██  ██  ██ ██  ██  ██ 
-"   ████   ██ ██      ██ 
+" ██╗   ██╗██╗███╗   ███╗██████╗  ██████╗
+" ██║   ██║██║████╗ ████║██╔══██╗██╔════╝
+" ██║   ██║██║██╔████╔██║██████╔╝██║     
+" ╚██╗ ██╔╝██║██║╚██╔╝██║██╔══██╗██║     
+"  ╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗
+"   ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
 
-" VIM-PLUG
 call plug#begin('~/.vim/plugged')
   Plug 'jiangmiao/auto-pairs'
   Plug 'mg979/vim-visual-multi'
   Plug 'tpope/vim-commentary'
 
-  Plug 'Yggdroot/indentLine'
-  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-  Plug 'itchyny/lightline.vim'
-  Plug 'mcchrish/nnn.vim'
-  Plug 'junegunn/goyo.vim'
-  Plug 'junegunn/limelight.vim'
-  Plug 'reedes/vim-colors-pencil'
-  Plug 'subnut/vim-iawriter'
-
-<<<<<<< HEAD
   Plug 'nvim-treesitter/nvim-treesitter'
-=======
-  " Plug 'airblade/vim-gitgutter'
-  Plug 'dracula/vim', { 'as': 'dracula' }
-  Plug 'joshdick/onedark.vim'
->>>>>>> b5dd106c9ea7db7e6af8129119688c4d07b5f786
   Plug 'lilydjwg/colorizer'
   Plug 'morhetz/gruvbox'
-  Plug 'nvim-treesitter/nvim-treesitter'
+
+  " Plug 'Yggdroot/indentLine'
+  " Plug 'itchyny/lightline.vim'
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+  Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'nvim-lualine/lualine.nvim'
+  Plug 'mcchrish/nnn.vim'
+  Plug 'mhinz/vim-startify'
+  Plug 'romgrk/barbar.nvim'
+
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   let g:coc_global_extensions = [
     \ 'coc-clangd',
@@ -43,7 +37,7 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 
-" LOOK & FEEL
+" VIM LOOK
 if !has('gui_running')
   set t_Co=256
 endif
@@ -71,6 +65,7 @@ packadd termdebug
 let g:termdebug_wide=1
 
 filetype indent on
+" set rnu               " relativenumber
 set ch=1              " cmdheight
 set et                " expandtab
 set ic                " ignorecase
@@ -81,7 +76,6 @@ set nosmd             " noshowmode
 set noswapfile
 set nu                " number
 set pa+=**            " path
-" set rnu               " relativenumber
 set sc                " showcmd
 set scs               " smartcase
 set si                " smartindent
@@ -105,7 +99,6 @@ nnoremap Ф A
 nnoremap Ш I
 vnoremap <C-c> "+y
 vnoremap <silent> <F9> :sort<cr>
-noremap <silent> <F1> :Iawriter<cr>
 
 
 " INTEGRATED TERMINAL
@@ -120,22 +113,32 @@ set splitright
 tnoremap <esc> <C-\><C-n>
 
 
-" TABS & PANELS 
-inoremap <silent> <c-H> <c-W>
+" PANELS & BARBAR (TABS)
+inoremap <silent> <c-h> <c-w>
 nnoremap <silent> <c-h> <esc><c-w>h
 nnoremap <silent> <c-j> <esc><c-w>j
 nnoremap <silent> <c-k> <esc><c-w>k
 nnoremap <silent> <c-l> <esc><c-w>l
-nnoremap <silent> <M-S-h> :tabmove -1<cr>
-nnoremap <silent> <M-S-l> :tabmove +1<cr>
-nnoremap <silent> <M-h> :tabprevious<cr>
-nnoremap <silent> <M-l> :tabnext<cr>
+" nnoremap <silent> <M-S-h> :tabmove -1<cr>
+" nnoremap <silent> <M-S-l> :tabmove +1<cr>
+" nnoremap <silent> <M-h> :tabprevious<cr>
+" nnoremap <silent> <M-l> :tabnext<cr>
+
+nnoremap <silent> <m-s-h> :BufferMovePrevious<cr>
+nnoremap <silent> <m-s-l> :BufferMoveNext<cr>
+nnoremap <silent> <m-h> :BufferPrevious<cr>
+nnoremap <silent> <m-l> :BufferNext<cr>
+nnoremap <silent> <c-w><cr> :BufferClose<cr>
+let bufferline = get(g:, 'bufferline', {})
+let bufferline.animation = v:false
+let bufferline.auto_hide = v:true
+let bufferline.tabpages = v:false
 
 
 " LIGTHLINE
-let g:lightline = {
-  \ 'colorscheme': 'seoul256',
-  \ }
+" let g:lightline = {
+"   \ 'colorscheme': 'seoul256',
+"   \ }
 
 
 " NNN
@@ -151,7 +154,7 @@ let g:nnn#command = 'nnn -de'
 
 
 " FZF
-nnoremap <C-p> :FZF<cr>
+nnoremap <C-p> :FZF ~/<cr>
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
@@ -160,7 +163,6 @@ let g:fzf_action = {
 
 
 " COC        
-set cmdheight=2     
 set updatetime=300  
 set shortmess+=c    
 
@@ -210,3 +212,21 @@ let g:mkdp_preview_options = {
   \ 'disable_filename': 0
   \ }
 nmap mp <Plug>MarkdownPreviewToggle
+
+
+" STARTIFY
+let g:startify_files_number = 5
+let g:startify_bookmarks = [
+  \ {'d': '~/.config/dotfiles'},
+  \ {'u': '~/Documents/university'},
+  \ {'f': '~/Documents/front-end'}
+  \ ]
+
+" hi StartifyHeader  guifg=#928373
+" hi StartifyBracket guifg=
+" hi StartifyFile    guifg=
+" hi StartifyFooter  guifg=
+" hi StartifyNumber  guifg=
+" hi StartifyPath    guifg=
+" hi StartifySlash   guifg=
+" hi StartifySpecial guifg=

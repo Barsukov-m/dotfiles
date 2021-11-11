@@ -3,6 +3,7 @@
 # Autostart
 pgrep -x sxhkd > /dev/null || sxhkd &
 greenclip daemon &
+greenclip clear
 xrdb merge .Xresources
 xss-lock -- lock &
 
@@ -40,3 +41,4 @@ bspc rule -a firefox desktop='^1'
 bspc rule -a TelegramDesktop desktop='^4'
 bspc rule -a Thunderbird desktop='^5'
 bspc rule -a SpeedCrunch state=floating
+bspc rule -a Zathura state=tiled
