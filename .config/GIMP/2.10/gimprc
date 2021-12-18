@@ -6,8 +6,7 @@
 # Most values can be set within GIMP by changing some options in the
 # Preferences dialog.
 
-(swap-compression "balanced")
-(tile-cache-size 2000M)
+(tile-cache-size 6G)
 (default-image
     (icon-name "gimp-video")
     (width 1920)
@@ -22,8 +21,8 @@
     (color-profile NULL)
     (fill-type transparent)
     (comment "Created with GIMP"))
-(undo-levels 100)
-(undo-size 500M)
+(undo-levels 50)
+(undo-size 100M)
 (import-raw-plug-in "${gimp_plug_in_dir}/plug-ins/file-darktable/file-darktable")
 (monitor-xresolution 102)
 (monitor-yresolution 102)

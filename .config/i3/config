@@ -5,9 +5,35 @@ set $exec_aw_noid exec_always --no-startup-id
 set $mod Mod4
 floating_modifier $mod
 
-font pango:Hack 9
-$exec_noid xss-lock -- lock
-bindsym $mod+Shift+q kill
+font pango:JetBrains Mono 9
+
+# essentials
+bindsym $mod+w kill
+bindsym $mod+Return exec alacritty
+bindsym $mod+Escape exec sh lock
+bindsym $mod+Mod1+Escape exec power
+
+
+bindsym $mod+d exec rofi-launcher
+bindsym $mod+c exec rofi-greenclip
+bindsym $mod+e exec rofi-splatmoji
+
+# screenshots
+bindsym Print exec screenshot
+bindsym Shift+Print exec flameshot gui
+
+# brightness & sound
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 && canberra-gtk-play -i bell
+bindsym XF86MonBrightnessDown exec  xbacklight -dec 5 && canberra-gtk-play -i bell
+bindsym XF86AudioRaiseVolume exec pamixer -i 5 && canberra-gtk-play -i message
+bindsym XF86AudioLowerVolume exec pamixer -d 5 && canberra-gtk-play -i message
+bindsym XF86AudioPlay exex playerctl play-pause
+bindsym XF86AudioMute exec pamixer -t
+
+
+# scratchpad
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
 
 # focus
 bindsym $mod+h focus left
@@ -18,6 +44,8 @@ bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+
+focus_follows_mouse no
 
 # move windows
 bindsym $mod+Shift+h move left
@@ -34,10 +62,10 @@ bindsym $mod+semicolon split h
 bindsym $mod+v split v
 
 # modes
+# bindsym $mod+s layout stacking
 bindsym $mod+f fullscreen toggle
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+s layout toggle split
+bindsym $mod+t layout tabbed
 bindsym $mod+Shift+f floating toggle
 
 # workspaces
@@ -84,70 +112,51 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # resize
 bindsym $mod+r mode "resize"
 mode "resize" {
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
 
-# colors
-# class                 border  backgr. text    indicator child_border
-client.focused          #fabc2e #d79920 #ffffff #fabc2e   #d79920
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-client.background       #ffffff
 
-# xorg
-# exec_always setxkbmap -layout us,ua -option grp:win_space_toggle
-# exec_always setxkbmap -option compose:menu
-exec_always xset r rate 250 50
-exec_always pamixer -u
-$exec_noid sh ~/.fehbg
-$exec_noid numlockx
-bindsym $mod+Escape exec sh lock
-bindsym $mod+d $exec_noid rofi -show drun
-bindsym $mod+Return exec kitty
+# colors
+# class                  border  backgr. text    indicator child_border
+client.focused           #928373 #928373 #ebdbb2 #928373   #928373
+client.urgent            #928373 #928373 #ebdbb2 #928373   #928373
+client.focused_inactive  #928373 #272727 #ebdbb2 #272727   #272727 
+client.unfocused         #272727 #272727 #928373 #292d2e   #222222
+client.background        #272727 
+
 
 # autostart
-$exec_noid picom &
-$exec_noid dunst -config ~/.config/dunst/dunstrc
-$exec_noid sleep 3 && xfce4-power-manager
-exec_always sh ~/.config/polybar/launch.sh
-exec_always eval `ssh-agent -s`
-$exec_aw_noid autotiling
+exec xss-lock -- lock
+exec greenclip daemon &
+exec_always greenclip clear
+exec_always xrdb merge ~/.Xresources
+$exec_aw_noid autotiling &
 
-# screenshots
-bindsym Print exec mkdir -p ~/Pictures/Screenshots && flameshot full -p ~/Pictures/Screenshots
-bindsym Shift+Print exec flameshot gui
+exec picom &
+exec_always sh ~/.config/polybar/launch.sh &
+$exec_aw_noid sh ~/.fehbg
 
-# brightness
-bindsym XF86MonBrightnessUp $exec_noid xbacklight -inc 5
-bindsym XF86MonBrightnessDown $exec_noid xbacklight -dec 5
+$exec_noid dunst -config ~/.config/dunst/dunstrc &
+exec_always nmcli connection up Barsik_2
+$exec_aw_noid pamixer -u
+$exec_noid numlockx &
+$exec_noid xfce4-power-manager &
 
-# volume
-bindsym XF86AudioRaiseVolume $exec_noid pamixer -i 5
-bindsym XF86AudioLowerVolume $exec_noid pamixer -d 5
-
-# scratchpad
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus scratchpad show
 
 # windows
-for_window [class=".*"] border pixel 2
-gaps inner 15
-gaps outer 25
-workspace $ws4 gaps outer 60
-# assign [class="Brave-browser"] $ws1
-# assign [class="firefox"] $ws1
-assign [class="Code"] $ws3
+for_window [class=".*"] border pixel 1
+gaps inner 20
+gaps outer 30
+assign [class="firefox"] $ws1
 assign [class="TelegramDesktop"] $ws4
 for_window [class="SpeedCrunch"] floating enable

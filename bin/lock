@@ -2,7 +2,8 @@
 
 B='#00000000'  # blank
 T='#ebdbb2'  # text
-W='#989719'  # wrong
+V='#989719'  # verif
+W='#fb4833'  # wrong
 
 i3lock -c "#272727" -e --keylayout 1\
     --time-font=monospace\
@@ -11,6 +12,12 @@ i3lock -c "#272727" -e --keylayout 1\
     --verif-font=monospace\
     --wrong-font=monospace\
     --greeter-font=monospace\
+    --time-size=30\
+    --date-size=14\
+    --layout-size=14\
+    --verif-size=14\
+    --wrong-size=20\
+    --greeter-size=14\
     --insidever-color=$B\
     --ringver-color=$B\
     --insidewrong-color=$B\
@@ -24,8 +31,8 @@ i3lock -c "#272727" -e --keylayout 1\
     --time-color=$T\
     --date-color=$T\
     --layout-color=$T\
-    --keyhl-color=$W\
-    --bshl-color=$W\
+    --keyhl-color=$V\
+    --bshl-color=$V\
     --time-str="%H:%M"\
     --date-str="Type your password..."\
     --verif-text="..."\
@@ -33,5 +40,5 @@ i3lock -c "#272727" -e --keylayout 1\
     --lock-text=""\
     --no-modkey-text \
     --lockfailed-text=""\
-    --radius=120\
+    --radius=110\
     --ring-width=3

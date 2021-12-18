@@ -14,8 +14,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'lilydjwg/colorizer'
   Plug 'morhetz/gruvbox'
 
-  " Plug 'Yggdroot/indentLine'
   " Plug 'itchyny/lightline.vim'
+  Plug 'Yggdroot/indentLine'
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'nvim-lualine/lualine.nvim'
@@ -87,16 +87,36 @@ syntax on
 
 " KEY MAPPINGS
 imap <C-v> <esc>P
-nnoremap <C-j> gj
-nnoremap <C-k> gk
 nmap <silent> <space> :noh<cr>
 nnoremap tw :set wrap!<cr>
+
 nnoremap д l
 nnoremap л k
 nnoremap о j
 nnoremap р h
+
+nnoremap в d
+nnoremap В D
+nnoremap г u
+nnoremap Г U
+nnoremap з p
+nnoremap З P
+nnoremap к r
+nnoremap К R
+nnoremap м V
+nnoremap М V
+nnoremap н y
+nnoremap Н Y
+nnoremap с c
+nnoremap С C
+nnoremap ф a
 nnoremap Ф A
+nnoremap ц w
+nnoremap Ц W
+nnoremap ш i
 nnoremap Ш I
+nnoremap щ o
+nnoremap Щ O
 vnoremap <C-c> "+y
 vnoremap <silent> <F9> :sort<cr>
 
@@ -104,8 +124,7 @@ vnoremap <silent> <F9> :sort<cr>
 " INTEGRATED TERMINAL
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 function! OpenTerminal()
-  split term://zsh
-  resize 10
+  vs term://zsh
 endfunction
 nnoremap tt :call OpenTerminal()<cr>
 set splitbelow

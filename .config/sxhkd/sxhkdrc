@@ -16,9 +16,6 @@ super + alt + r
 super + shift + {r,e}
   bspc {wm -r, quit}
 
-super + shift + q
-  bspc node -c
-
 super + w
 	bspc node -c
 
@@ -40,9 +37,6 @@ XF86AudioRaiseVolume
 
 XF86AudioLowerVolume
   pamixer -d 5 && canberra-gtk-play -i message
-
-XF86Calculator
-  speedcrunch
 
 XF86AudioMute
   pamixer -t
@@ -117,11 +111,11 @@ super + ctrl + shift + space
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
-	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+	bspc node -z {left -40 0,bottom 0 40,top 0 -40,right 40 0}
 
 # contract a window by moving one of its side inward
 super + alt + shift + {h,j,k,l}
-	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+	bspc node -z {right -40 0,top 0 40,bottom 0 -40,left 40 0}
 
 # move a floating window
 super + {Left,Down,Up,Right}

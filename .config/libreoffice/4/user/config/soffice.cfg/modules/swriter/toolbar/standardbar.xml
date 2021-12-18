@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE toolbar:toolbar PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "toolbar.dtd">
+<toolbar:toolbar xmlns:toolbar="http://openoffice.org/2001/toolbar" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <toolbar:toolbaritem xlink:href=".uno:ExportDirectToPDF"/>
+ <toolbar:toolbaritem xlink:href=".uno:Print"/>
+ <toolbar:toolbaritem xlink:href=".uno:PrintPreview"/>
+ <toolbar:toolbarseparator/>
+ <toolbar:toolbaritem xlink:href=".uno:Undo"/>
+ <toolbar:toolbaritem xlink:href=".uno:Redo"/>
+ <toolbar:toolbaritem xlink:href=".uno:FormatPaintbrush"/>
+ <toolbar:toolbaritem xlink:href=".uno:ResetAttributes"/>
+ <toolbar:toolbaritem xlink:href=".uno:ControlCodes"/>
+ <toolbar:toolbarseparator/>
+ <toolbar:toolbaritem xlink:href=".uno:InsertTable"/>
+ <toolbar:toolbaritem xlink:href=".uno:InsertObjectStarMath"/>
+ <toolbar:toolbaritem xlink:href=".uno:DrawText"/>
+ <toolbar:toolbarseparator/>
+ <toolbar:toolbaritem xlink:href=".uno:InsertFieldCtrl"/>
+ <toolbar:toolbaritem xlink:href=".uno:CharmapControl"/>
+ <toolbar:toolbaritem xlink:href=".uno:EmojiControl"/>
+ <toolbar:toolbaritem xlink:href=".uno:InsertAnnotation"/>
+</toolbar:toolbar>

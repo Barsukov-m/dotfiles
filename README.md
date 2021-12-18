@@ -5,8 +5,10 @@ I decided not to tweak anything else, because this is freaking perfect.
 ---
 This repository is basically for my system settings, backups, etc.
 
-![screenshot](screen.png)
+![screenshot](screen-laptop.jpg)
+![screenshot](screen-pc.jpg)
 
 ## Wallpapers
 
-![wallpapers](wall.jpg)
+![wallpapers](bg-laptop.jpg)
+![wallpapers](bg-pc.jpg)

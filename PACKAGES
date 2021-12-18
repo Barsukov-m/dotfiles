@@ -55,7 +55,9 @@ xclip
 xdotool
 xf86-video-intel
 xfce4-power-manager
+xsel
 xss-lock
+xxd
 yarn
 zathura zathura-pdf-mupdf
 zsh

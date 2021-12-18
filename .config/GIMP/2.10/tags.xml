@@ -1177,7 +1177,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="be1ceb15eae4507471755a5560477661">
+  <resource identifier="gimp-palette-color-history" checksum="6ed89eeae8258b4cfd3f793f6aed84d4">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">
@@ -3986,6 +3986,27 @@
   </resource>
 
   <resource identifier="Noto Serif Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif CJK HK" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif CJK HK Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif CJK HK Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif CJK HK Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif CJK HK Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif CJK HK Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif CJK HK Ultra-Light" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Serif CJK JP" checksum="(null)">
