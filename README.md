@@ -10,5 +10,5 @@ This repository is basically for my system settings, backups, etc.
 
 ## Wallpapers
 
-![wallpapers](bg-laptop.jpg)
 ![wallpapers](bg-pc.jpg)
+![wallpapers](bg-laptop.jpg)
