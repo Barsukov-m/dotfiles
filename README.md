@@ -9,5 +9,5 @@ I decided not to tweak anything else, because this is simply perfect.
 
 ## Wallpapers
 
-![wallpapers](bg-pc.jpg)
-![wallpapers](bg-laptop.jpg)
+![wallpapers](wallpapers/bg-pc.jpg)
+![wallpapers](wallpapers/bg-laptop.jpg)
