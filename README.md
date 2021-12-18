@@ -1,11 +1,10 @@
 # dotfiles
-**Finally, I've made the OS of my dreams! 🤩**<br>
-I decided not to tweak anything else, because this is freaking perfect.
+**This repository is basically my system settings, backups, etc.**
 
----
-This repository is basically for my system settings, backups, etc.
+Finally, I've made the OS of my dreams! 🤩
 
-![screenshot](screen-laptop.jpg)
+I decided not to tweak anything else, because this is simply perfect.
+
 ![screenshot](screen-pc.jpg)
 
 ## Wallpapers
