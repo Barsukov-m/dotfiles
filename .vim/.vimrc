@@ -6,22 +6,21 @@
 "   ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
 
 call plug#begin('~/.vim/plugged')
-  Plug 'jiangmiao/auto-pairs'
-  Plug 'mg979/vim-visual-multi'
-  Plug 'tpope/vim-commentary'
-
-  Plug 'nvim-treesitter/nvim-treesitter'
-  Plug 'lilydjwg/colorizer'
-  Plug 'morhetz/gruvbox'
-
-  " Plug 'itchyny/lightline.vim'
   Plug 'Yggdroot/indentLine'
-  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
   Plug 'kyazdani42/nvim-web-devicons'
-  Plug 'nvim-lualine/lualine.nvim'
+  Plug 'lilydjwg/colorizer'
+  Plug 'mbbill/undotree'
   Plug 'mcchrish/nnn.vim'
+  Plug 'mg979/vim-visual-multi'
   Plug 'mhinz/vim-startify'
+  Plug 'morhetz/gruvbox'
+  Plug 'nvim-lualine/lualine.nvim'
+  Plug 'nvim-treesitter/nvim-treesitter'
   Plug 'romgrk/barbar.nvim'
+  Plug 'tpope/vim-commentary'
 
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   let g:coc_global_extensions = [
@@ -46,19 +45,21 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-autocmd FileType css :setlocal sw=4 ts=4 sts=4
-autocmd FileType html :setlocal sw=4 ts=4 sts=4
-autocmd FileType javascript :setlocal sw=2 ts=2 sts=2
-autocmd FileType python :setlocal sw=4 ts=4 sts=4
-autocmd FileType xml :setlocal sw=4 ts=4 sts=4
+au FileType css :setlocal sw=4 ts=4 sts=4
+au FileType html :setlocal sw=4 ts=4 sts=4
+au FileType javascript :setlocal sw=2 ts=2 sts=2
+au FileType python :setlocal sw=4 ts=4 sts=4
+au FileType xml :setlocal sw=4 ts=4 sts=4
 
-colorscheme gruvbox
-highlight link cssBorderProp GruvboxAqua
-highlight link cssDimensionProp GruvboxAqua
-highlight link cssMediaProp GruvboxAqua
-highlight link cssPageProp GruvboxAqua
-highlight link cssPositioningProp GruvboxAqua
-highlight link cssUIProp GruvboxAqua
+colo gruvbox
+hi link cssBorderProp GruvboxAqua
+hi link cssDimensionProp GruvboxAqua
+hi link cssMediaProp GruvboxAqua
+hi link cssPageProp GruvboxAqua
+hi link cssPositioningProp GruvboxAqua
+hi link cssUIProp GruvboxAqua
+" set no bg colour in terminal
+hi Normal ctermbg=NONE ctermfg=NONE guifg=NONE guibg=NONE
 let g:gruvbox_italic=1
 
 packadd termdebug
@@ -88,37 +89,63 @@ syntax on
 " KEY MAPPINGS
 imap <C-v> <esc>P
 nmap <silent> <space> :noh<cr>
-nnoremap tw :set wrap!<cr>
+nnoremap <tab> >>
+nnoremap <s-tab> <<
+vnoremap <tab> >>
+vnoremap <s-tab> <<
+noremap tw :set wrap!<cr>
 
-nnoremap д l
-nnoremap л k
-nnoremap о j
-nnoremap р h
+noremap д l
+noremap л k
+noremap о j
+noremap р h
 
-nnoremap в d
-nnoremap В D
-nnoremap г u
-nnoremap Г U
-nnoremap з p
-nnoremap З P
-nnoremap к r
-nnoremap К R
-nnoremap м V
-nnoremap М V
-nnoremap н y
-nnoremap Н Y
-nnoremap с c
-nnoremap С C
-nnoremap ф a
-nnoremap Ф A
-nnoremap ц w
-nnoremap Ц W
-nnoremap ш i
-nnoremap Ш I
-nnoremap щ o
-nnoremap Щ O
+noremap в d
+noremap В D
+noremap г u
+noremap Г U
+noremap з p
+noremap З P
+noremap к r
+noremap К R
+noremap м v
+noremap М V
+noremap н y
+noremap Н Y
+noremap с c
+noremap С C
+noremap ф a
+noremap Ф A
+noremap ц w
+noremap Ц W
+noremap ш i
+noremap Ш I
+noremap щ o
+noremap Щ O
+noremap Б <
+noremap Ю >
 vnoremap <C-c> "+y
 vnoremap <silent> <F9> :sort<cr>
+
+
+" Undotree
+nnoremap <silent> tu :UndotreeToggle<cr>
+
+let g:undotree_WindowLayout = 3
+let g:undotree_SetFocusWhenToggle = 1
+
+if has("persistent_undo")
+ let target_path = expand('~/.undodir')
+
+  " create the directory and any parent directories
+  " if the location does not exist.
+  if !isdirectory(target_path)
+    call mkdir(target_path, "p", 0700)
+  endif
+
+  let &undodir=target_path
+  set udf
+endif
 
 
 " INTEGRATED TERMINAL
@@ -126,7 +153,7 @@ au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 function! OpenTerminal()
   vs term://zsh
 endfunction
-nnoremap tt :call OpenTerminal()<cr>
+nnoremap <silent> tt :call OpenTerminal()<cr>
 set splitbelow
 set splitright
 tnoremap <esc> <C-\><C-n>
@@ -138,10 +165,12 @@ nnoremap <silent> <c-h> <esc><c-w>h
 nnoremap <silent> <c-j> <esc><c-w>j
 nnoremap <silent> <c-k> <esc><c-w>k
 nnoremap <silent> <c-l> <esc><c-w>l
-" nnoremap <silent> <M-S-h> :tabmove -1<cr>
-" nnoremap <silent> <M-S-l> :tabmove +1<cr>
-" nnoremap <silent> <M-h> :tabprevious<cr>
-" nnoremap <silent> <M-l> :tabnext<cr>
+
+" nnoremap <silent> <m-s-h> :tabmove -1<cr>
+" nnoremap <silent> <m-s-l> :tabmove +1<cr>
+" nnoremap <silent> <m-h> :tabprevious<cr>
+" nnoremap <silent> <m-l> :tabnext<cr>
+" nnoremap <silent> <c-w><cr> :tabclose<cr>
 
 nnoremap <silent> <m-s-h> :BufferMovePrevious<cr>
 nnoremap <silent> <m-s-l> :BufferMoveNext<cr>
@@ -152,12 +181,6 @@ let bufferline = get(g:, 'bufferline', {})
 let bufferline.animation = v:false
 let bufferline.auto_hide = v:true
 let bufferline.tabpages = v:false
-
-
-" LIGTHLINE
-" let g:lightline = {
-"   \ 'colorscheme': 'seoul256',
-"   \ }
 
 
 " NNN
@@ -172,13 +195,15 @@ let g:nnn#session = 'local'
 let g:nnn#command = 'nnn -de'
 
 
+
 " FZF
-nnoremap <C-p> :FZF ~/<cr>
-let g:fzf_action = {
-  \ 'ctrl-t': 'tab split',
-  \ 'ctrl-x': 'split',
-  \ 'ctrl-s': 'vsplit'
-  \ } 
+nnoremap <c-f> :Files ~/<cr>
+" nnoremap <c-f> :FZF ~/<cr>
+" let g:fzf_action = {
+"   \ 'ctrl-t': 'tab split',
+"   \ 'ctrl-x': 'split',
+"   \ 'ctrl-s': 'vsplit'
+"   \ } 
 
 
 " COC        

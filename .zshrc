@@ -38,14 +38,14 @@ debug() {
 
 
 ## NNN Configuration
-export NNN_BMS='r:/run/media/;d:~/.config/dotfiles;u:~/Documents/university;f:~/Documents/front-end;p:~/Pictures;c:~/Documents/university/prog-2/Coursework;'
+export NNN_BMS='r:/run/media/;d:~/.config/dotfiles;u:~/Documents/university;f:~/Documents/front-end;p:~/Pictures;'
 export NNN_COLORS='3241'
 export NNN_DE_FILE_MANAGER='nautilus'
 export NNN_FALLBACK_OPENER='gio open'
 export NNN_FALLBACK_OPENER='gvfs-open'
 export NNN_FALLBACK_OPENER='xdg-open'
 export NNN_FIFO='/tmp/nnn.fifo'
-export NNN_PLUG='d:dragdrop;e:suedit;p:preview-tui;t:imgview'
+export NNN_PLUG='d:dragdrop;e:suedit;p:preview-tui;t:imgview;x:xdgdefault;'
 export NNN_TRASH=1
 
 ## Aliases
