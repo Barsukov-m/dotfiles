@@ -1,13 +1,13 @@
 # GIMP gimp-pencil-tool options
 
-(foreground (color-rgb 0.21960785984992981 0.3490196168422699 0.22518595282373757))
+(foreground (color-rgb 1 1 1))
 (background (color-rgb 0.91372555494308472 0.92549026012420654 0.93725496530532837))
 (brush "2. Hardness 100")
 (dynamics "Dynamics Off")
 (gradient "FG to Transparent")
 (palette "Colour History")
-(brush-size 51)
-(brush-hardness 0.64000000000000168)
+(brush-size 61)
+(brush-hardness 0.79000000000000004)
 (brush-force 1)
 
 # end of gimp-pencil-tool options

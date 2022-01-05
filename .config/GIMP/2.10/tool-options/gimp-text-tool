@@ -1,6 +1,6 @@
 # GIMP gimp-text-tool options
 
-(foreground (color-rgb 0.21960785984992981 0.3490196168422699 0.22518595282373757))
+(foreground (color-rgb 1 1 1))
 (palette "Colour History")
 (font "Product Sans")
 (font-size 30)

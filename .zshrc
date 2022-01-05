@@ -15,12 +15,16 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 # source ~/.local/share/icons-in-terminal/icons_bash.sh
 
-xset b off
-xset r rate 250 50
+# xset b off
+# xset r rate 250 50
+
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  exec startx
+fi
 
 remove_packets() {
   for i in $(pacman -Qdtq); do
-    sudo pacman -R '$i';
+    sudo pacman -R $i;
   done
 }
 

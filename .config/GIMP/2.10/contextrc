@@ -1,10 +1,9 @@
 # GIMP user context
 
-(tool "gimp-heal-tool")
-(paint-info "gimp-heal")
-(foreground (color-rgb 0.21960785984992981 0.3490196168422699 0.22518595282373757))
+(tool "gimp-unified-transform-tool")
+(paint-info "gimp-paintbrush")
+(foreground (color-rgb 1 1 1))
 (background (color-rgb 0.91372555494308472 0.92549026012420654 0.93725496530532837))
-(opacity 0.98999999999999999)
 (brush "2. Hardness 100")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")

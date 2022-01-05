@@ -1,5 +1,40 @@
 # settings
 
+(GimpGegl-gegl-noise-hsv-config "2022-01-02 18:33:05"
+    (time 1641141185)
+    (holdness 1)
+    (hue-distance 3)
+    (saturation-distance 0)
+    (value-distance 0.029999999999999999)
+    (seed 0))
+(GimpGegl-gegl-noise-hsv-config "2022-01-02 17:55:11"
+    (time 1641138911)
+    (holdness 1)
+    (hue-distance 0)
+    (saturation-distance 0)
+    (value-distance 0.026999999999999989)
+    (seed 0))
+(GimpGegl-gegl-noise-hsv-config "2022-01-02 17:53:22"
+    (time 1641138802)
+    (holdness 1)
+    (hue-distance 0)
+    (saturation-distance 0)
+    (value-distance 0.042000000000000003)
+    (seed 0))
+(GimpGegl-gegl-noise-hsv-config "2022-01-02 17:49:06"
+    (time 1641138546)
+    (holdness 1)
+    (hue-distance 0)
+    (saturation-distance 1)
+    (value-distance 0.155)
+    (seed 0))
+(GimpGegl-gegl-noise-hsv-config "2022-01-02 17:47:37"
+    (time 1641138457)
+    (holdness 6)
+    (hue-distance 3)
+    (saturation-distance 0)
+    (value-distance 0.059999999999999998)
+    (seed 0))
 (GimpGegl-gegl-noise-hsv-config "2021-12-01 16:51:32"
     (time 1638370292)
     (holdness 3)
