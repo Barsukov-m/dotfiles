@@ -45,10 +45,11 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-au FileType css :setlocal sw=4 ts=4 sts=4
+au FileType css :setlocal sw=2 ts=2 sts=2
 au FileType html :setlocal sw=4 ts=4 sts=4
 au FileType javascript :setlocal sw=2 ts=2 sts=2
 au FileType python :setlocal sw=4 ts=4 sts=4
+au FileType cpp :setlocal sw=2 ts=2 sts=2 noet
 au FileType xml :setlocal sw=4 ts=4 sts=4
 
 colo gruvbox
@@ -192,7 +193,7 @@ let g:nnn#action = {
   \ '<C-x>': 'split',
   \ '<C-s>': 'vsplit' }
 let g:nnn#session = 'local'
-let g:nnn#command = 'nnn -de'
+let g:nnn#command = 'nnn -e'
 
 
 

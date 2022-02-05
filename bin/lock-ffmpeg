@@ -2,9 +2,50 @@
 TMPBG=/tmp/screen.png
 # RES=1366x768
 RES=1920x1080
+BLANK='#00000000'      # blank
+INSIDE_BG='#272727aa'  # background
+TEXT='#ebdbb2'         # text
+VERIFY='#989719'       # verif
+WRONG='#fb4833'        # wrong
 
 rm $TMPBG
 
 ffmpeg -f x11grab -video_size $RES -i $DISPLAY -filter_complex "boxblur=8:8" -vframes 1 $TMPBG
 
-i3lock -i $TMPBG
+i3lock -i $TMPBG -e --keylayout 1\
+    --time-font=monospace\
+    --date-font=monospace\
+    --layout-font=monospace\
+    --verif-font=monospace\
+    --wrong-font=monospace\
+    --greeter-font=monospace\
+    --time-size=30\
+    --date-size=14\
+    --layout-size=14\
+    --verif-size=14\
+    --wrong-size=20\
+    --greeter-size=14\
+    --insidever-color=$INSIDE_BG\
+    --ringver-color=$BLANK\
+    --insidewrong-color=$INSIDE_BG\
+    --ringwrong-color=$WRONG\
+    --inside-color=$INSIDE_BG\
+    --ring-color=$BLANK\
+    --line-color=$BLANK\
+    --separator-color=$BLANK\
+    --verif-color=$TEXT\
+    --wrong-color=$TEXT\
+    --time-color=$TEXT\
+    --date-color=$TEXT\
+    --layout-color=$TEXT\
+    --keyhl-color=$VERIFY\
+    --bshl-color=$VERIFY\
+    --time-str="%H:%M"\
+    --date-str="Type your password..."\
+    --verif-text="..."\
+    --wrong-text="Nah"\
+    --lock-text=""\
+    --no-modkey-text \
+    --lockfailed-text=""\
+    --radius=110\
+    --ring-width=3

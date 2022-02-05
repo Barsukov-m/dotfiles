@@ -47,3 +47,5 @@ application/x-extension-shtml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
 application/octet-stream=nvim.desktop
+image/x-canon-cr2=sxiv.desktop
+image/webp=sxiv.desktop

@@ -5,22 +5,43 @@ export BROWSER='brave'
 export TERM='alacritty'
 export TERMINAL='alacritty'
 export FZF_DEFAULT_COMMAND='ag -g "" --hidden'
+export FZF_DEFAULT_OPTS='--height 50% --border'
 
 ZSH_THEME='main'
 DISABLE_UPDATE_PROMPT='true'
 DISABLE_AUTO_UPDATE=true
-
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-# source ~/.local/share/icons-in-terminal/icons_bash.sh
-
-# xset b off
-# xset r rate 250 50
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
   exec startx
 fi
+
+n () {
+  # Block nesting of nnn in subshells
+  if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
+    echo "nnn is already running"
+    return
+  fi
+
+  export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+
+  nnn -de "$@"
+
+  if [ -f "$NNN_TMPFILE" ]; then
+    . "$NNN_TMPFILE"
+    rm -f "$NNN_TMPFILE" > /dev/null
+  fi
+}
+
+nnn_cd() {
+  if ! [ -z "$NNN_PIPE" ]; then
+    printf "%s\0" "0c${PWD}" > "${NNN_PIPE}" !&
+  fi  
+}
+
+trap nnn_cd EXIT
 
 remove_packets() {
   for i in $(pacman -Qdtq); do
@@ -43,18 +64,17 @@ debug() {
 
 ## NNN Configuration
 export NNN_BMS='r:/run/media/;d:~/.config/dotfiles;u:~/Documents/university;f:~/Documents/front-end;p:~/Pictures;'
-export NNN_COLORS='3241'
+export NNN_COLORS='3219'
 export NNN_DE_FILE_MANAGER='nautilus'
 export NNN_FALLBACK_OPENER='gio open'
 export NNN_FALLBACK_OPENER='gvfs-open'
 export NNN_FALLBACK_OPENER='xdg-open'
 export NNN_FIFO='/tmp/nnn.fifo'
-export NNN_PLUG='d:dragdrop;e:suedit;p:preview-tui;t:imgview;x:xdgdefault;'
+export NNN_PLUG='d:dragdrop;e:suedit;p:preview-tui;t:imgview;x:xdgdefault;f:fzcd;'
 export NNN_TRASH=1
 
 ## Aliases
 alias HDD='sudo mkdir -p /run/media/michael/HDD && sudo mount /dev/sdb1 /run/media/michael/HDD'
-alias N='sudo nnn -de'
 alias agh='ag --hidden -g'
 alias ascii='less ~/.local/share/etc/ascii'
 alias btc='bluetoothctl power on && bluetoothctl'
@@ -62,9 +82,11 @@ alias conadd='nmcli device connect $(ls /sys/class/net | grep -o "wl.*")'
 alias inet='ping archlinux.org'
 alias l='ls -A'
 alias ll='ls -Alhgo'
-alias n='nnn -de'
+# alias n='nnn -de'
+alias N='sudo nnn -de'
 alias nf='neofetch'
 alias nv='nvim'
+alias Nv='sudo nvim'
 alias p='python3'
 alias t0='redshift -x'
 alias t='redshift -P -O'

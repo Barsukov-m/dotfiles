@@ -1,12 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/michael/Documents'
+let g:netrw_dirhist_0='/home/michael/Documents/front-end/js'
+let g:netrw_dirhist_9='/home/michael/Documents/front-end'
+let g:netrw_dirhist_8='/home/michael/Documents'
 let g:netrw_dirhist_7='/home/michael/.config/nvim'
 let g:netrw_dirhist_6='/home/michael/.config/picom'
 let g:netrw_dirhist_5='/home/michael/.config/kitty'
 let g:netrw_dirhist_4='/home/michael/Documents/dotfiles/.config/i3'
 let g:netrw_dirhist_3='/home/michael/.vim'
 let g:netrw_dirhist_2='/home/michael/.config/xnviewmp'
-let g:netrw_dirhist_1='/home/michael/.oh-my-zsh'
-let g:netrw_dirhist_0='/home/michael/.oh-my-zsh/tools'
-let g:netrw_dirhist_9='/home/michael/.oh-my-zsh'
-let g:netrw_dirhist_8='/home/michael/.oh-my-zsh/plugins'

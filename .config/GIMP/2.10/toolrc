@@ -78,7 +78,7 @@
             (visible yes))))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-cage-tool")
+    (active-tool "gimp-warp-tool")
     (children
         (GimpToolInfo "gimp-warp-tool"
             (icon-name "gimp-tool-warp")
@@ -120,7 +120,7 @@
     (visible yes))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-heal-tool")
+    (active-tool "gimp-clone-tool")
     (children
         (GimpToolInfo "gimp-clone-tool"
             (icon-name "gimp-tool-clone")
@@ -156,13 +156,13 @@
     (children
         (GimpToolInfo "gimp-color-picker-tool"
             (icon-name "gimp-tool-color-picker")
-            (visible yes))
+            (visible no))
         (GimpToolInfo "gimp-measure-tool"
             (icon-name "gimp-tool-measure")
             (visible yes))))
 (GimpToolInfo "gimp-zoom-tool"
     (icon-name "gimp-tool-zoom")
-    (visible yes))
+    (visible no))
 (GimpToolInfo "gimp-brightness-contrast-tool"
     (icon-name "gimp-tool-brightness-contrast")
     (visible no))
