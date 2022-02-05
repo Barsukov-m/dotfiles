@@ -1,0 +1,17 @@
+# settings
+
+(GimpGegl-gegl-gradient-map-config "2022-02-05 21:03:29"
+    (time 1644087809)
+    (color1 (color-rgba 0 0 0 1))
+    (stop1 0)
+    (color2 (color-rgba 1 1 1 1))
+    (stop2 1)
+    (color3 (color-rgba 1 1 1 1))
+    (stop3 1)
+    (color4 (color-rgba 1 1 1 1))
+    (stop4 1)
+    (color5 (color-rgba 1 1 1 1))
+    (stop5 1)
+    (srgb no))
+
+# end of settings

@@ -1,6 +1,6 @@
 # GIMP user context
 
-(tool "gimp-paintbrush-tool")
+(tool "gimp-free-select-tool")
 (paint-info "gimp-paintbrush")
 (brush "Wilber")
 (dynamics "Dynamics Off")

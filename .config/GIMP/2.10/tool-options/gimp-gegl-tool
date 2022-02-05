@@ -1,4 +1,5 @@
 # GIMP gimp-gegl-tool options
 
+(average-radius 13)
 
 # end of gimp-gegl-tool options

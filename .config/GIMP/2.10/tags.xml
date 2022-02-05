@@ -31,7 +31,7 @@
   <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-025.vbr" checksum="24f599a94c72395b1733a8cf64bf4527">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-050.vbr" checksum="9310f19efe787702922bbbbbda6bf220">
+  <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-050.vbr" checksum="22550538bb856626930902cb0c398f74">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-075.vbr" checksum="c196ef1b139d8f2744e6519c7a220cf1">
@@ -1177,7 +1177,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="e0847e591a2169ebfe349dd873c2bd14">
+  <resource identifier="gimp-palette-color-history" checksum="0aebeb1bd21efe6638d0813085dbb7a7">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">

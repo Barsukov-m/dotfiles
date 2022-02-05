@@ -1019,6 +1019,97 @@
         (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
         (proc-arg 13 "image" "Input image (used for indexed images)")
         (proc-arg 16 "drawable" "Input drawable")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/resynthesizer_gui" 1642627114
+    (proc-def "plug-in-resynth-controls" 1
+         "Make tiles, apply themes, render texture, remove features, etc."
+         "The resynthesizer control panel."
+         "Paul Francis Harrison, Lloyd Konneker"
+         "2000 Paul Francis Harrison, 2010 Lloyd Konneker"
+         "2010"
+         "_Resynthesize..."
+         1
+        (menu-path "<Image>/Filters/Map")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         13 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 0 "vtile" "Make tilable vertically 0,1")
+        (proc-arg 0 "htile" "Make tilable horizontally 0,1")
+        (proc-arg 0 "use-context" "Make edges match context 0,1,2,...")
+        (proc-arg 0 "corpus" "Layer to use as corpus")
+        (proc-arg 0 "inmask" "Layer to use as input mask, -1 for none")
+        (proc-arg 0 "outmask" "Layer to use as output mask, -1 for none")
+        (proc-arg 3 "map-weight" "Weight to give to map, if map is used")
+        (proc-arg 3 "autism" "Sensitivity to outliers")
+        (proc-arg 0 "neighbourhood" "Neighbourhood size")
+        (proc-arg 0 "trys" "Search thoroughness"))
+    (locale-def "resynthesizer" "${gimp_installation_dir}/local/share/locale"))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/resynthesizer" 1642627114
+    (proc-def "plug-in-resynthesizer" 1
+         "Engine for resynthesizer kind of texture synthesis."
+         "The resynthesizer engine."
+         "Paul Francis Harrison, Lloyd Konneker"
+         "2000 Paul Francis Harrison, 2010 Lloyd Konneker"
+         "2010"
+         ""
+         0
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         13 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 0 "vtile" "Make tilable vertically 0,1")
+        (proc-arg 0 "htile" "Make tilable horizontally 0,1")
+        (proc-arg 0 "use-context" "Make edges match context 0,1,2,...")
+        (proc-arg 0 "corpus" "Layer to use as corpus")
+        (proc-arg 0 "inmask" "Layer to use as input mask, -1 for none")
+        (proc-arg 0 "outmask" "Layer to use as output mask, -1 for none")
+        (proc-arg 3 "map-weight" "Weight to give to map, if map is used")
+        (proc-arg 3 "autism" "Sensitivity to outliers")
+        (proc-arg 0 "neighbourhood" "Neighbourhood size")
+        (proc-arg 0 "trys" "Search thoroughness")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-jxl/file-jxl" 1643504923
+    (proc-def "file-jxl-load" 1
+         "Loads JPEG XL image files"
+         "Loads JPEG XL image files"
+         "JPEG XL Project"
+         "JPEG XL Project"
+         "2019"
+         "JPEG XL image"
+         0
+        (icon icon-name -1 "")
+        (load-proc
+            (extensions "jxl")
+            (magics "0,string,ÿ\n,0,string,\\000\\000\\000\fJXL\\040\\015\\012‡\\012")
+            (mime-types "image/jxl"))
+         ""
+         3 1
+        (proc-arg 0 "run-mode" "Run mode")
+        (proc-arg 4 "filename" "The name of the file to load")
+        (proc-arg 4 "raw-filename" "The name of the file, as entered by the user")
+        (proc-arg 13 "image" "Loaded image"))
+    (proc-def "file-jxl-save" 1
+         "Saves JPEG XL image files"
+         "Saves JPEG XL image files"
+         "JPEG XL Project"
+         "JPEG XL Project"
+         "2019"
+         "JPEG XL image"
+         0
+        (icon icon-name -1 "")
+        (save-proc
+            (extensions "jxl")
+            (mime-types "image/jxl"))
+         "RGB*, GRAY*"
+         5 0
+        (proc-arg 0 "run-mode" "Run mode")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Drawable to save")
+        (proc-arg 4 "filename" "The name of the file to save")
+        (proc-arg 4 "raw-filename" "The name of the file to save")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/film/film" 1639999690
     (proc-def "plug-in-film" 1
          "Combine several images on a film strip"
@@ -3114,58 +3205,6 @@
         (proc-arg 7 "rank" "Ranks of the dimensions")
         (proc-arg 0 "dimension" "Dimension (again)")
         (proc-arg 9 "sel" "Selection modes")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/resynthesizer_gui" 1642627114
-    (proc-def "plug-in-resynth-controls" 1
-         "Make tiles, apply themes, render texture, remove features, etc."
-         "The resynthesizer control panel."
-         "Paul Francis Harrison, Lloyd Konneker"
-         "2000 Paul Francis Harrison, 2010 Lloyd Konneker"
-         "2010"
-         "_Resynthesize..."
-         1
-        (menu-path "<Image>/Filters/Map")
-        (icon icon-name -1 "")
-         "RGB*, GRAY*"
-         13 0
-        (proc-arg 0 "run-mode" "Interactive, non-interactive")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Input drawable")
-        (proc-arg 0 "vtile" "Make tilable vertically 0,1")
-        (proc-arg 0 "htile" "Make tilable horizontally 0,1")
-        (proc-arg 0 "use-context" "Make edges match context 0,1,2,...")
-        (proc-arg 0 "corpus" "Layer to use as corpus")
-        (proc-arg 0 "inmask" "Layer to use as input mask, -1 for none")
-        (proc-arg 0 "outmask" "Layer to use as output mask, -1 for none")
-        (proc-arg 3 "map-weight" "Weight to give to map, if map is used")
-        (proc-arg 3 "autism" "Sensitivity to outliers")
-        (proc-arg 0 "neighbourhood" "Neighbourhood size")
-        (proc-arg 0 "trys" "Search thoroughness"))
-    (locale-def "resynthesizer" "${gimp_installation_dir}/local/share/locale"))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/resynthesizer" 1642627114
-    (proc-def "plug-in-resynthesizer" 1
-         "Engine for resynthesizer kind of texture synthesis."
-         "The resynthesizer engine."
-         "Paul Francis Harrison, Lloyd Konneker"
-         "2000 Paul Francis Harrison, 2010 Lloyd Konneker"
-         "2010"
-         ""
-         0
-        (icon icon-name -1 "")
-         "RGB*, GRAY*"
-         13 0
-        (proc-arg 0 "run-mode" "Interactive, non-interactive")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Input drawable")
-        (proc-arg 0 "vtile" "Make tilable vertically 0,1")
-        (proc-arg 0 "htile" "Make tilable horizontally 0,1")
-        (proc-arg 0 "use-context" "Make edges match context 0,1,2,...")
-        (proc-arg 0 "corpus" "Layer to use as corpus")
-        (proc-arg 0 "inmask" "Layer to use as input mask, -1 for none")
-        (proc-arg 0 "outmask" "Layer to use as output mask, -1 for none")
-        (proc-arg 3 "map-weight" "Weight to give to map, if map is used")
-        (proc-arg 3 "autism" "Sensitivity to outliers")
-        (proc-arg 0 "neighbourhood" "Neighbourhood size")
-        (proc-arg 0 "trys" "Search thoroughness")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-gif-save/file-gif-save" 1639999690
     (proc-def "file-gif-save" 1
          "exports files in Compuserve GIF file format"

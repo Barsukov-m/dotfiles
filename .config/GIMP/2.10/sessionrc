@@ -83,11 +83,11 @@
                     (show-button-bar "true"))))))
 (session-info "toplevel"
     (factory-entry "gimp-file-open-dialog")
-    (position 577 128)
+    (position 576 127)
     (size 900 683))
 (session-info "toplevel"
     (factory-entry "gimp-action-search-dialog")
-    (position 898 422)
+    (position 899 421)
     (size 166 540))
 (session-info "toplevel"
     (factory-entry "gimp-preferences-dialog")
@@ -132,6 +132,9 @@
 (session-info "toplevel"
     (factory-entry "gimp-toolbox-color-dialog")
     (position 749 210))
+(session-info "toplevel"
+    (factory-entry "gimp-gegl-tool-dialog")
+    (position 267 101))
 
 (hide-docks no)
 (single-window-mode yes)
