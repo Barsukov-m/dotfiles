@@ -1,0 +1,10 @@
+#/etc/hosts:
+127.0.0.1  domain.com
+
+#/etc/httpd/conf/extra/httpd-vhosts.conf
+<VirtualHost *:80>
+    ServerAdmin admin@test.com
+    DocumentRoot "/srv/http/project"
+    ServerName domain.com
+    ServerAlias www.domain.com
+</VirtualHost>

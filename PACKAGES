@@ -1,5 +1,6 @@
 alacritty
 bash-pipes
+bat
 bluez
 broadcom-wl
 bspwm
@@ -22,6 +23,7 @@ mtpfs
 neovim
 networkmanager
 networkmanager-openvpn
+nodejs
 noto-fonts
 noto-fonts-cjk
 npm
@@ -35,13 +37,12 @@ pcmanfm
 picom
 python-pip
 redshift
-rofi
+rofi 1.6.*
 speedcrunch
 sxhkd
 sxiv
 telegram-desktop
 the_silver_searcher
-thunderbird
 tk
 trash-cli
 ttf-dejavu
@@ -53,7 +54,7 @@ unrar
 usbutils
 vlc
 wget
-xbacklight
+xorg-xbacklight
 xclip
 xdotool
 xf86-video-intel

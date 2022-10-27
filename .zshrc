@@ -99,6 +99,7 @@ alias feh='feh -d --scale-down'
 
 ## Pacman
 alias S='sudo pacman -S'                    # Install a package
+alias Sy='sudo pacman -Sy'                    # Install a package
 alias Syu='sudo pacman -Syu'                # Full upgrade
 alias Qu='pacman -Qu'                       # List upgradable
 alias Qs='pacman -Qs'                       # Short description

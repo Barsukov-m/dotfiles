@@ -155,8 +155,8 @@ $exec_noid xfce4-power-manager &
 
 # windows
 for_window [class=".*"] border pixel 1
-gaps inner 20
-gaps outer 30
+gaps inner 10
+gaps outer 20
 assign [class="firefox"] $ws1
 assign [class="TelegramDesktop"] $ws4
 for_window [class="SpeedCrunch"] floating enable
