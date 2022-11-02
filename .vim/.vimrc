@@ -185,7 +185,7 @@ let bufferline.tabpages = v:false
 
 
 " NNN
-nnoremap <silent> ; :Np %:p:h<cr>
+nnoremap <silent> ; :NnnPicker<cr>
 " let g:nnn#layout = { 'left': '~20%' } " or right, up, down
 let g:nnn#layout = { 'window': { 'width': 0.6, 'height': 0.8, 'highlight': 'Debug' } }
 let g:nnn#action = {

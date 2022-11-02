@@ -1,5 +1,0 @@
-gsettings set org.gnome.shell.keybindings switch-to-application-1 "[]"
-gsettings set org.gnome.shell.keybindings switch-to-application-2 "[]"
-gsettings set org.gnome.shell.keybindings switch-to-application-3 "[]"
-gsettings set org.gnome.shell.keybindings switch-to-application-4 "[]"
-gsettings set org.gnome.shell.keybindings switch-to-application-5 "[]"
